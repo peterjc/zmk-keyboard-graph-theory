@@ -1,9 +1,10 @@
-# Gamma-Omega T36K (Tutte Coxeter 36 keys)
+# Gamma-Omega TC36K keyboard firmware
 
 This is firmware for a Raspberry Pi Pico PR2040 controller monoblock 36 key design
-(split 3x5_3 - three rows of five, and three thumb keys, for each hand). This is a
-*diode-free* design with a sparse 13 by 13 scanning matrix designed using a partial
-[Tutte-Coxeter](https://en.wikipedia.org/wiki/Tutte%E2%80%93Coxeter_graph) graph
+(split 3x5_3 - three rows of five, and three thumb keys, for each hand): the
+[Gamma Omega TC36K keyboard](https://github.com/unspecworks/gamma-omega/tree/main/tc36k).
+This is a *diode-free* design with a sparse 13 by 13 scanning matrix designed using a
+partial [Tutte-Coxeter Graph](https://en.wikipedia.org/wiki/Tutte%E2%80%93Coxeter_graph)
 (using only 26 vertices or GPIO pins, with 36 edges or keys - see this
 [blog post](https://astrobeano.blogspot.com/2025/05/ergo-mech-keyboard-wiring-using-tutte-coxeter-graph.html)
 for background, although the final pin selection and trace routing changed).
@@ -41,11 +42,6 @@ The keys here are labeled as per Qwerty, with L1, L2, L3, R3, R2, and R1 for the
 | A | S |  D |  F |  G |   |  H |  J |  K | L | ; |
 | Z | X |  C |  V |  B |   |  N |  M |  , | . | / |
 |   |   | L1 | L2 | L3 |   | R3 | R2 | R1 |   |   |
-
-The first physical PCB for this was designed using the [Gamma Omega
-keyboard](https://github.com/unspecworks/gamma-omega) footprint from Ergogen.
-That is intended for use with the same Raspberry Pi Pico YD-RP2040 microcontroller
-board in order to fit the same 3D printed case, including reset button placement.
 
 See also the [QMK TC36K firmware](https://github.com/peterjc/qmk_userspace/tree/main/keyboards/tutte_coxeter_36k),
 the [Heawood42 keyboard](https://github.com/triliu/Heawood42) which was the first no-diode
