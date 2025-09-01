@@ -1,6 +1,7 @@
-# Peter's ZMK Keyboard Firmware
+# Peter's ZMK Keyboard Firmware for Graph Theory based designs
 
 A ZMK module holding a collection of keyboard firmware for my keyboard PCB designs.
+These use Graph Theory based sparse scanning matrices to avoid ghosting, rather than diodes.
 They have simple minimal Qwerty layouts including ZKM Studio support to cover basic usage:
 
 * [Gamma Omega TC36K](boards/shields/tc36k), a Graph Theory based diode-free keyboard with
