@@ -1,4 +1,0 @@
-name: zmk-keyboard-tc36k
-build:
-  settings:
-    board_root: .
