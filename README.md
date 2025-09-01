@@ -1,10 +1,18 @@
-# ZMK Module Template
+# Peter's ZMK Keyboard Firmware
 
-This repository contains a template for a ZMK module, as it would most frequently be used. 
+A ZMK module holding a collection of keyboard firmware for my keyboard PCB designs.
+They have simple minimal Qwerty layouts including ZKM Studio support to cover basic usage:
+
+* [Gamma Omega TC36K](boards/shields/tc36k), a Graph Theory based diode-free keyboard with
+  26 GPIO pins for 36 keys and 6-key roll-over using a partial Tutte-Coxeter Graph.
 
 ## Usage
 
-Read through the [ZMK Module Creation](https://zmk.dev/docs/development/module-creation) page for details on how to configure this template.
+If you had built on of my keyboard PCB designs and wanted to customise the firmware, you
+would probably want to clone the [Unified ZMK Config Template](https://github.com/zmkfirmware/unified-zmk-config-template),
+and include a reference to the keyboard and this module in your `config/west.yml` file. 
+
+See my personal [ZMK Config](https://github.com/peterjc/zmk-config) as an example.
 
 ## More Info
 
