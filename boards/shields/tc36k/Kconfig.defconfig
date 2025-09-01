@@ -6,8 +6,4 @@ if SHIELD_TC36K
 config ZMK_KEYBOARD_NAME
     default "TC36K"
 
-
-config ZMK_HID_INDICATORS
-    default y
-
 endif
