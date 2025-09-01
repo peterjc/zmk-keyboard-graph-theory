@@ -1,4 +1,4 @@
-# Peter's ZMK Keyboard Firmware for Graph Theory based designs
+# ZMK Firmware for Graph Theory based keyboards
 
 A ZMK module holding a collection of keyboard firmware for my keyboard PCB designs.
 These use Graph Theory based sparse scanning matrices to avoid ghosting, rather than diodes.
