@@ -5,10 +5,10 @@ ProMicro52840) controller monoblock 36 key design (split 3x5_3 - three rows of f
 and three thumb keys, for each hand): the
 [Gamma Omega Hesse keyboard](https://github.com/unspecworks/gamma-omega/tree/main/hesse).
 This is a *diode-free* design with a sparse 9 by 12 scanning matrix designed using the
-Hesse Configuration Incidence Graph (using all 21 GPIO pins). This is a bipartite graph
-with 9 (scanning rows) plus 12 (scanning columns) giving 21 vertices, and 36 edges
-(keys). The graph is girth 6, meaning sadly the keyboard has only 4-key roll-over.
-See this
+[Hesse Configuration Incidence Graph](https://houseofgraphs.org/graphs/44164) (using
+all 21 GPIO pins). This is a bipartite graph with 9 (scanning rows) plus 12 (scanning
+columns) giving 21 vertices, and 36 edges (keys). The graph is girth 6, meaning sadly
+the keyboard has only 4-key roll-over. See this
 [blog post](https://astrobeano.blogspot.com/2025/05/topology-meets-custom-keyboard-circuit.html)
 for background.
 
