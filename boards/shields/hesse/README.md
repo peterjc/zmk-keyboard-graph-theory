@@ -17,17 +17,17 @@ scanning matrix. The allocation of keys to matrix elements and scanning matrix r
 and columns to GPIO pins was arbitrary and down to how easy it was to layout the PCB
 traces:
 
-| GP | 11 | 10 | 3 | 4 | 7 | 26 | 27 | 28 | 15 | 21 | 19 | 20 |
-|---:|:--:|:--:|:-:|:-:|:-:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
-| 12 |  Q |  W | E | R |   |    |    |    |    |    |    |    |
-| 8  |  Z |    |   |   | B | L1 | R3 |    |    |    |    |    |
-| 9  |  A |    |   |   |   |    |    |  H |  U |  , |    |    |
-| 1  |    |  S |   |   | G |    |    |  Y |    |    |  L |    |
-| 6  |    |  X |   |   |   | L3 |    |    |  M |    |    |  ; |
-| 2  |    |    | C |   |   |    | R2 |  N |    |    |    |  / |
-| 22 |    |    | D |   |   | L2 |    |    |    |  I |  O |    |
-| 0  |    |    |   | V |   |    | R1 |    |  J |    |  . |    |
-| 13 |    |    |   | F | T |    |    |    |    |  K |    |  P |
+| GPIO| D8 | D7 | D1 | D2 | D6 | D9 | 1.07 | D15 | D18 | D19 | 1.01 | 1.02 |
+|:----|:--:|:--:|:--:|:--:|:--:|:--:|:----:|:---:|:---:|:---:|:----:|:----:|
+| D0  |  Q |  W |  E |  R |    |    |      |     |     |     |      |      |
+| D10 |  Z |    |    |    |  B | L1 |  R3  |     |     |     |      |      |
+| D4  |  A |    |    |    |    |    |      |  H  |  U  |  ,  |      |      |
+| D3  |    |  S |    |    |  G |    |      |  Y  |     |     |   L  |      |
+| D16 |    |  X |    |    |    | L3 |      |     |  M  |     |      |   ;  |
+| D14 |    |    |  C |    |    |    |  R2  |  N  |     |     |      |   /  |
+| D21 |    |    |  D |    |    | L2 |      |     |     |  I  |   O  |      |
+| D5  |    |    |    |  V |    |    |  R1  |     |  J  |     |   .  |      |
+| D20 |    |    |    |  F |  T |    |      |     |     |  K  |      |   P  |
 
 The keys here are labeled as per Qwerty, with L1, L2, L3, R3, R2, and R1 for the thumbs:
 
