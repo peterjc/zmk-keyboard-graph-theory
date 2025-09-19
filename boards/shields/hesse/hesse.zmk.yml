@@ -1,0 +1,9 @@
+file_format: "1"
+id: hesse
+name: "Hesse"
+type: shield
+url: https://github.com/unspecworks/gamma-omega/tree/main/hesse
+requires: [nice_nano_v2]
+features:
+  - keys
+  - studio

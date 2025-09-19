@@ -1,0 +1,80 @@
+/*
+ * Copyright (c) 2020 The ZMK Contributors
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+#include <dt-bindings/zmk/matrix_transform.h>
+#include <physical_layouts.dtsi>
+#include "hesse-layouts.dtsi"
+
+
+/* The promicro aliases only cover D0 to D21, not the three extra pins in the middle
+ *
+ * Those are P1.01, P1.02, and P1.07 - referenced here via their &gpio1 names.
+ */
+/ {
+    kscan0: kscan0 {
+        compatible = "zmk,kscan-gpio-matrix";
+        diode-direction = "col2row";
+        wakeup-source;
+
+        col-gpios
+            = <&pro_micro 8 GPIO_OPEN_SOURCE>
+            , <&pro_micro 7 GPIO_OPEN_SOURCE>
+            , <&pro_micro 1 GPIO_OPEN_SOURCE>
+            , <&pro_micro 2 GPIO_OPEN_SOURCE>
+            , <&pro_micro 6 GPIO_OPEN_SOURCE>
+            , <&pro_micro 9 GPIO_OPEN_SOURCE>
+            , <&gpio1 1 GPIO_OPEN_SOURCE>
+            , <&pro_micro 18 GPIO_OPEN_SOURCE>
+            , <&pro_micro 18 GPIO_OPEN_SOURCE>
+            , <&pro_micro 19 GPIO_OPEN_SOURCE>
+            , <&gpio1 2 GPIO_OPEN_SOURCE>
+            , <&gpio1 7 GPIO_OPEN_SOURCE>
+            ;
+
+        row-gpios
+            = <&pro_micro 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&pro_micro 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&pro_micro 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&pro_micro 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&pro_micro 16 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&pro_micro 14 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&pro_micro 21 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&pro_micro 5 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&pro_micro 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            ;
+    };
+};
+
+/ {
+    default_transform: keymap_transform0 {
+        compatible = "zmk,matrix-transform";
+        columns = <12>;
+        rows = <9>;
+        map = <
+            RC(0,0) RC(0,1) RC(0,2) RC(0,3) RC(8,4) RC(3,5) RC(2,8) RC(6,9) RC(6,10) RC(8,11)
+            RC(2,0) RC(3,1) RC(6,2) RC(8,3) RC(3,4) RC(2,5) RC(7,8) RC(8,9) RC(3,10) RC(4,11)
+            RC(1,0) RC(4,1) RC(5,2) RC(7,3) RC(1,4) RC(5,5) RC(4,8) RC(2,9) RC(7,10) RC(5,11)
+                            RC(1,7) RC(6,7) RC(4,7) RC(1,8) RC(5,8) RC(7,8)
+        >;
+    };
+};
+
+/ {
+    physical_layout0: physical_layout_0 { // First physical layout, use different naming for other layouts
+        compatible = "zmk,physical-layout";
+        display-name = "Default Layout";
+        kscan = <&kscan0>; // Label of the kscan node, optional if all layouts use the same
+        transform = <&default_transform>; // Label of the matrix transform for this layout
+    };
+};
+
+/ {
+    chosen {
+        zmk,physical-layout = &physical_layout0;
+        // Other chosen items
+    };
+};
+
