@@ -6,6 +6,9 @@ They have simple minimal Qwerty layouts including ZKM Studio support to cover ba
 
 * [Gamma Omega TC36K](boards/shields/tc36k), a Graph Theory based diode-free keyboard with
   26 GPIO pins for 36 keys and 6-key roll-over using a partial Tutte-Coxeter Graph.
+* [Gamma Omega Hesse](boards/shields/hesse), a Graph Theory based diode-free Bluetooth
+  keyboard with 21 GPIO pins for 36 keys and 4-key roll-over using the Hesse Configuration
+  Incidence Graph.
 
 See also my [QMK keyboard firmware](https://github.com/peterjc/qmk_userspace).
 
