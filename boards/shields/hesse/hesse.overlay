@@ -26,12 +26,12 @@
             , <&pro_micro 2 GPIO_OPEN_SOURCE>
             , <&pro_micro 6 GPIO_OPEN_SOURCE>
             , <&pro_micro 9 GPIO_OPEN_SOURCE>
-            , <&gpio1 1 GPIO_OPEN_SOURCE>
-            , <&pro_micro 18 GPIO_OPEN_SOURCE>
+            , <&gpio1 7 GPIO_OPEN_SOURCE>
+            , <&pro_micro 15 GPIO_OPEN_SOURCE>
             , <&pro_micro 18 GPIO_OPEN_SOURCE>
             , <&pro_micro 19 GPIO_OPEN_SOURCE>
+            , <&gpio1 1 GPIO_OPEN_SOURCE>
             , <&gpio1 2 GPIO_OPEN_SOURCE>
-            , <&gpio1 7 GPIO_OPEN_SOURCE>
             ;
 
         row-gpios
