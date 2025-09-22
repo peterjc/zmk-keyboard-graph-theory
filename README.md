@@ -14,11 +14,13 @@ See also my [QMK keyboard firmware](https://github.com/peterjc/qmk_userspace).
 
 ## Usage
 
-If you had built one of my keyboard PCB designs and wanted to customise the firmware, you
-would probably want to clone the [Unified ZMK Config
-Template](https://github.com/zmkfirmware/unified-zmk-config-template), and include a
-reference to the keyboard and this module in your `config/west.yml` file. 
+If you had built one of my keyboard PCB designs you can download the [latest build
+of firmware for these keyboards](https://github.com/peterjc/zmk-keyboard-graph-theory/releases/tag/latest),
+using a default Qwerty layout with ZMK Studio enabled as a starting point.
 
+If you then wanted to customise the firmware, you would probably want to clone the
+[Unified ZMK Config Template](https://github.com/zmkfirmware/unified-zmk-config-template),
+and include a reference to the keyboard and this module in your `config/west.yml` file. 
 See my personal [ZMK Config](https://github.com/peterjc/zmk-config) as an example.
 
 ## More Info
