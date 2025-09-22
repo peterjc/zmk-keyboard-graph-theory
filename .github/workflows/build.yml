@@ -18,4 +18,5 @@ jobs:
         if: github.ref == 'refs/heads/main' && always() && !cancelled()
         with:
           name: Latest ZMK firmware
+          tag_name: ${{ inputs.release_name || 'latest' }}
           files: "**/*.uf2"
