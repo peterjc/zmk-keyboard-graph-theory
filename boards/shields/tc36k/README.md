@@ -11,29 +11,28 @@ for background, although the final pin selection and trace routing changed).
 
 ![Partial Tutte-Coxeter Graph (26/30 vertices, 36/45 edges)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvS5QfAl7YotptMtpu0nG8XOHOsqG2vocUFF2sRgrn_QwAcUQNhDkctHt_42rQor3Bb5tbAW6FiOsYqv2craP086HMTuAqWk9U0A4yOeEsQkhyphenhyphenUxoayJWf5e-N3_Jg1TC1p9YAiVPTK02pEVCUu3hl72REIk5BAjXgZGoF7T-NWQ28iRirwFs6yzFzAe0/w200-h194/Screenshot%202025-05-28%20at%2014.59.35.png)
 
-This matrix shows the full 15×15 Tutte-Coxeter bipartite scanning matrix with the
-two unused rows and columns last (❌), and the further 9 keys this would allow (⭕)
-if using 30 GPIOs rather than just 26 for a 13×13 scanning matrix. The allocation
-of keys to matrix elements and scanning matrix rows and columns to GPIO pins was
-arbitrary and down to how easy it was to layout the PCB traces:
+This matrix shows the 13×13 partial Tutte-Coxeter bipartite scanning matrix
+in the physical column order (QAZ colunm first) with rows sorted to ensure Q
+is top left as the first matrix entry. If using the full matrix this would
+be 15x15 using 30 GPIOs and have another 9 keys making 45 in all.
+The allocation of keys to matrix elements and scanning matrix rows and columns
+to GPIO pins was arbitrary and down to how easy it was to layout the PCB traces:
 
-| GP | 11 | 10 | 3 | 4 | 7 | 26 | 27 | 28 | 15 | 21 | 19 | 20 | 16 | ❌ | ❌ |
-|---:|:--:|:--:|:-:|:-:|:-:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
-| 12 |  / |    |   |   |   |    |  F |    |    |    |    |    |    |    | ⭕ |
-| 8  |  P |  L |   |   |   |    |    |    |    |    |    |  A |    |    |    |
-| 9  |    |  . | , |   |   |    |    |    |    |    |    |    |    | ⭕ |    |
-| 1  |    |    | K | U |   |    |    |    |    |  W |    |    |    |    |    |
-| 6  |    |    |   | M | H |    |    |    |    |    |    |    |    |    | ⭕ |
-| 2  |    |  O |   |   | Y |  T |    |    |    |    |    |    |    |    |    |
-| 22 |    |    |   |   |   |  G |  V |    |    |    |    |    | L1 |    |    |
-| 0  |    |    | I |   |   |    |  R |  E |    |    |    |    |    |    |    |
-| 13 |    |    |   |   | N |    |    |  D | R2 |    |    |    |    |    |    |
-| 14 |  ; |    |   |   |   |    |    |    | R3 |  S |    |    |    |    |    |
-| 18 |    |    |   |   |   |  B |    |    |    |  X | L2 |    |    |    |    |
-| 17 |    |    |   |   |   |    |    |  C |    |    | L3 |  Z |    |    |    |
-| 5  |    |    |   | J |   |    |    |    |    |    |    |  Q | R1 |    |    |
-| ❌ |    |    |   |   |   |    |    |    | ⭕ |    |    |    | ⭕  | ⭕ |    |
-| ❌ |    |    |   |   |   |    |    |    |    |    | ⭕ |    |    | ⭕  | ⭕ |
+| GP | 20 | 21 | 28 | 27 | 26 | 19 | 16 | 15 | 7 | 4 | 3 | 10 | 11 |
+|---:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:-:|:-:|:-:|:--:|:--:|
+| 5  | Q  |    |    |    |    |    | R1 |    |   | J |   |    |    |
+| 8  | A  |    |    |    |    |    |    |    |   |   |   | L  | P  |
+| 17 | Z  |    | C  |    |    | L3 |    |    |   |   |   |    |    |
+| 1  |    | W  |    |    |    |    |    |    |   | U | K |    |    |
+| 14 |    | S  |    |    |    |    |    | R3 |   |   |   |    | ;  |
+| 18 |    | X  |    |    | B  | L2 |    |    |   |   |   |    |    |
+| 0  |    |    | E  | R  |    |    |    |    |   |   | I |    |    |
+| 13 |    |    | D  |    |    |    |    | R2 | N |   |   |    |    |
+| 12 |    |    |    | F  |    |    |    |    |   |   |   |    | /  |
+| 22 |    |    |    | V  | G  |    | L1 |    |   |   |   |    |    |
+| 2  |    |    |    |    | T  |    |    |    | Y |   |   | O  |    |
+| 6  |    |    |    |    |    |    |    |    | H | M |   |    |    |
+| 9  |    |    |    |    |    |    |    |    |   |   | , | .  |    |
 
 The keys here are labeled as per Qwerty, with L3, L2, L1, R1, R2, and R3 for the thumbs:
 
