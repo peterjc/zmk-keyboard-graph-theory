@@ -3,4 +3,18 @@ on: [push, pull_request, workflow_dispatch]
 
 jobs:
   build:
-    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@v0.3
+    runs-on: ubuntu-latest
+    steps:
+      - name: Compile
+        uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@v0.3
+      - name: Fetch
+        uses: actions/download-artifact@v4
+        if: github.ref == 'refs/heads/main' && always() && !cancelled()
+        with:
+          name: firmware
+      - name: Release
+        uses: softprops/action-gh-release@v2
+        if: github.ref == 'refs/heads/main' && always() && !cancelled()
+        with:
+          name: Latest ZMK firmware
+          files: "**/*.uf2"
