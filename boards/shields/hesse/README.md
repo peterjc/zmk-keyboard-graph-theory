@@ -20,22 +20,22 @@ traces:
 | GPIO| D8 | D7 | D1 | D2 | D6 | D9 | 1.07 | D15 | D18 | D19 | 1.01 | 1.02 |
 |:----|:--:|:--:|:--:|:--:|:--:|:--:|:----:|:---:|:---:|:---:|:----:|:----:|
 | D0  |  Q |  W |  E |  R |    |    |      |     |     |     |      |      |
-| D10 |  Z |    |    |    |  B | L1 |  R3  |     |     |     |      |      |
+| D10 |  Z |    |    |    |  B | L3 |  R1  |     |     |     |      |      |
 | D4  |  A |    |    |    |    |    |      |  H  |  U  |  ,  |      |      |
 | D3  |    |  S |    |    |  G |    |      |  Y  |     |     |   L  |      |
-| D16 |    |  X |    |    |    | L3 |      |     |  M  |     |      |   ;  |
+| D16 |    |  X |    |    |    | L1 |      |     |  M  |     |      |   ;  |
 | D14 |    |    |  C |    |    |    |  R2  |  N  |     |     |      |   /  |
 | D21 |    |    |  D |    |    | L2 |      |     |     |  I  |   O  |      |
-| D5  |    |    |    |  V |    |    |  R1  |     |  J  |     |   .  |      |
+| D5  |    |    |    |  V |    |    |  R3  |     |  J  |     |   .  |      |
 | D20 |    |    |    |  F |  T |    |      |     |     |  K  |      |   P  |
 
-The keys here are labeled as per Qwerty, with L1, L2, L3, R3, R2, and R1 for the thumbs:
+The keys here are labeled as per Qwerty, with L3, L2, L1, R1, R2, and R3 for the thumbs:
 
 | Q | W |  E |  R |  T |   |  Y |  U |  I | O | P |
 |:-:|:-:|:--:|:--:|:--:|:-:|:--:|:--:|:--:|:-:|:-:|
 | A | S |  D |  F |  G |   |  H |  J |  K | L | ; |
 | Z | X |  C |  V |  B |   |  N |  M |  , | . | / |
-|   |   | L1 | L2 | L3 |   | R3 | R2 | R1 |   |   |
+|   |   | L3 | L2 | L1 |   | R1 | R2 | R3 |   |   |
 
 See also the [ZMK TC36K firmware](../hesse/),
 [QMK TC36K firmware](https://github.com/peterjc/qmk_userspace/tree/main/keyboards/tutte_coxeter_36k),

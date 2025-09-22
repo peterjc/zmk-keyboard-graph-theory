@@ -25,23 +25,23 @@ arbitrary and down to how easy it was to layout the PCB traces:
 | 1  |    |    | K | I |   |    |    |    |    |  E |    |    |    |    |    |
 | 6  |    |    |   | M | H |    |    |    |    |    |    |    |    |    | ⭕ |
 | 2  |    |  U |   |   | Y |  T |    |    |    |    |    |    |    |    |    |
-| 22 |    |    |   |   |   |  G |  V |    |    |    |    |    | L3 |    |    |
+| 22 |    |    |   |   |   |  G |  V |    |    |    |    |    | L1 |    |    |
 | 0  |    |    | O |   |   |    |  W |  R |    |    |    |    |    |    |    |
 | 13 |    |    |   |   | N |    |    |  D | R2 |    |    |    |    |    |    |
-| 14 |  ; |    |   |   |   |    |    |    | R1 |  S |    |    |    |    |    |
+| 14 |  ; |    |   |   |   |    |    |    | R3 |  S |    |    |    |    |    |
 | 18 |    |    |   |   |   |  B |    |    |    |  X | L2 |    |    |    |    |
-| 17 |    |    |   |   |   |    |    |  C |    |    | L1 |  Z |    |    |    |
-| 5  |    |    |   | J |   |    |    |    |    |    |    |  Q | R3 |    |    |
+| 17 |    |    |   |   |   |    |    |  C |    |    | L3 |  Z |    |    |    |
+| 5  |    |    |   | J |   |    |    |    |    |    |    |  Q | R1 |    |    |
 | ❌ |    |    |   |   |   |    |    |    | ⭕ |    |    |    | ⭕  | ⭕ |    |
 | ❌ |    |    |   |   |   |    |    |    |    |    | ⭕ |    |    | ⭕  | ⭕ |
 
-The keys here are labeled as per Qwerty, with L1, L2, L3, R3, R2, and R1 for the thumbs:
+The keys here are labeled as per Qwerty, with L3, L2, L1, R1, R2, and R3 for the thumbs:
 
 | Q | W |  E |  R |  T |   |  Y |  U |  I | O | P |
 |:-:|:-:|:--:|:--:|:--:|:-:|:--:|:--:|:--:|:-:|:-:|
 | A | S |  D |  F |  G |   |  H |  J |  K | L | ; |
 | Z | X |  C |  V |  B |   |  N |  M |  , | . | / |
-|   |   | L1 | L2 | L3 |   | R3 | R2 | R1 |   |   |
+|   |   | L3 | L2 | L1 |   | R1 | R2 | R3 |   |   |
 
 See also the [QMK TC36K firmware](https://github.com/peterjc/qmk_userspace/tree/main/keyboards/tutte_coxeter_36k),
 the [Heawood42 keyboard](https://github.com/triliu/Heawood42) which was the first no-diode
