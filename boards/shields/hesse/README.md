@@ -42,3 +42,31 @@ See also the [ZMK TC36K firmware](../hesse/),
 the [Heawood42 keyboard](https://github.com/triliu/Heawood42) which was the first no-diode
 keyboard using graph theory (42 key split design), and the later 56-key monoblock
 [JESK56 keyboard](https://github.com/triliu/JESK56).
+
+As an example of the potential issues with girth 6, the Python script
+[roll-over.py](roll-over.py) enumerates the cycles of 6 edges where only
+four keys can be distinguished. I thought any with two or more on the left
+or right home-rows (`ASDF` or `JKL;`), or using both a left and a right
+thumb might be problematic. None *seemed* to be, touch wood.
+
+As an example, consider the `WEDOLS` chain:
+* Column GPIO `D7`
+* Qwerty key `W`
+* Row GPIO `D0`
+* Qwerty key `E`
+* Column GPIO `D1`
+* Qwerty key `D`
+* Row GPIO `D2`
+* Qwerty key `O`
+* Column GPIO `P1.01`
+* Qwerty key `L`
+* Row GPIO `D3`
+* Qwerty key `S`
+* Back to column GPIO `D7`
+
+I don't plan to use the block of four neighbouring keys `WE` above `SD`.
+I do use the left-hand home row `SD` and the top row `WE` as combos,
+and the vertical left hand combos `WS` and `ED`, but not together with
+the right hand vertical combo `OL`. So I don't expect to press any five
+of these at once (and get the sixth as a ghost keypress).
+
