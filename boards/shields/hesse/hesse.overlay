@@ -8,6 +8,22 @@
 #include <physical_layouts.dtsi>
 #include "hesse-layouts.dtsi"
 
+/* The user LED to the right of the USB port should be P0.15 */
+/ {
+    leds {
+      compatible = "gpio-leds";
+      status = "okay";
+      user_led: user_led {
+          gpios = <&gpio0 15 GPIO_ACTIVE_HIGH>;
+          label = "User LED";
+      };
+    };
+
+    // this alias is used in the C code
+    aliases {
+      user-led = &user_led;
+    };
+};
 
 /* The promicro aliases only cover D0 to D21, not the three extra pins in the middle
  *
