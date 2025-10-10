@@ -1,0 +1,11 @@
+file_format: "1"
+id: acid
+name: "Forager Acid"
+type: shield
+requires: [seeeduino_xiao_ble]
+features:
+  - keys
+  - studio
+siblings:
+  - acid_left
+  - acid_right

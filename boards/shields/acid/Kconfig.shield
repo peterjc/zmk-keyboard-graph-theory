@@ -1,0 +1,7 @@
+# Copyright (c) 2025 Peter J. A. Cock
+# SPDX-License-Identifier: MIT
+
+config SHIELD_ACID_LEFT
+    def_bool $(shields_list_contains,acid_left)
+config SHIELD_ACID_RIGHT
+    def_bool $(shields_list_contains,acid_right)

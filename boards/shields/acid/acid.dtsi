@@ -1,0 +1,67 @@
+#include <dt-bindings/zmk/matrix_transform.h>
+#include <physical_layouts.dtsi>
+#include "acid-layouts.dtsi"
+
+/ {
+    chosen {
+        zmk,kscan = &kscan0;
+        zmk,physical-layout = &default_layout;
+    };
+};
+
+/* By design, the Forager Acid pin assignment and thus wiring matrix is the
+ * same for the left and right halves, so can define the GPIOs once centrally:
+ * Columns: P0.10, P1.12 (D7), P1.13 (D8), P1.14 (D9), P0.09, P1.15 (D10)
+ * Rows: P0.05 (D5), P1.11 (D6), P0.28 (D2), P0.03 (D1), P0.02 (D0), P0.29 (D3), P0.04 (D4)
+ *
+ * Could use &xiao_d 7 instead of &gpio0 4 for most of the pins, but not the
+ * two NFC ones,
+ */
+
+/ {
+    kscan0: kscan0 {
+        compatible = "zmk,kscan-gpio-matrix";
+        diode-direction = "col2row";
+        wakeup-source;
+
+        col-gpios
+            = <&gpio0 10 GPIO_OPEN_SOURCE>
+            , <&gpio1 12 GPIO_OPEN_SOURCE>
+            , <&gpio1 13 GPIO_OPEN_SOURCE>
+            , <&gpio1 14 GPIO_OPEN_SOURCE>
+            , <&gpio0 9 GPIO_OPEN_SOURCE>
+            , <&gpio1 15 GPIO_OPEN_SOURCE>
+            ;
+
+        row-gpios
+            = <&gpio0 5 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&gpio1 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&gpio0 28 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&gpio0 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&gpio0 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&gpio0 29 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&gpio0 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            ;
+    };
+};
+
+/* The columns and row value here are the scaning matrix (GPIOs), not physical */
+/* The column number is doubled for the left/right, and col-offset 6 used on right */
+/ {
+    default_transform: keymap_transform_0 {
+        compatible = "zmk,matrix-transform";
+        columns = <12>;
+        rows = <7>;
+
+        map = <
+            RC(0,4) RC(2,3) RC(1,2) RC(0,1) RC(0,0)  RC(0,6) RC(0,7) RC(1,8) RC(2,9) RC(0,10)
+            RC(3,4) RC(3,3) RC(2,2) RC(1,1) RC(2,0)  RC(2,6) RC(1,7) RC(2,8) RC(3,9) RC(3,10)
+            RC(4,4) RC(6,3) RC(4,2) RC(6,1) RC(5,0)  RC(5,6) RC(6,7) RC(4,8) RC(6,9) RC(4,10)
+                                    RC(5,5) RC(6,5) RC(6,11) RC(5,11)
+        >;
+    };
+};
+
+&xiao_serial {
+    status = "disabled";
+};
