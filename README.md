@@ -9,6 +9,9 @@ They have simple minimal Qwerty layouts including ZKM Studio support to cover ba
 * [Gamma Omega Hesse](boards/shields/hesse), a Graph Theory based diode-free Bluetooth
   keyboard with 21 GPIO pins for 36 keys and 4-key roll-over using the Hesse Configuration
   Incidence Graph.
+* [Forager Acid](boards/shields/acid), a Graph Theory based diode-free Bluetooth split
+  keyboard with 13 GPIO pins for 17 (or 18) keys and 4-key roll-over per half using a
+  partial Heawood Graph.
 
 See also my [QMK keyboard firmware](https://github.com/peterjc/qmk_userspace).
 
