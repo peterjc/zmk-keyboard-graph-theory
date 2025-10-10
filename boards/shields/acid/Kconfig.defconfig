@@ -1,0 +1,19 @@
+if SHIELD_ACID_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "Acid"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+config ZMK_STUDIO
+    default y
+
+endif
+
+if SHIELD_ACID_LEFT || SHIELD_ACID_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif
