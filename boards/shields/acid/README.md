@@ -11,9 +11,6 @@ only 4-key roll-over. See this
 [blog post](https://astrobeano.blogspot.com/2025/05/topology-meets-custom-keyboard-circuit.html)
 for background.
 
-Pictoral representation of the full Heawood to Partial Heawood Graph:
-<img width="2173" height="525" alt="Partial-Heawood-horizontal" src="https://github.com/user-attachments/assets/7c3d99e9-6a09-42bd-a136-3f515deb7deb" />
-
 This matrix shows the full 7×6 Partial Heawood Graph bipartite matrix,
 mirrored left and right in the ZMK firmware as a 7x12 sparse scanning matrix.
 The physical keyboard columns (counting the thumb keys on each hand as columns)
@@ -42,5 +39,9 @@ optional bonus third sideways SMD switch to the PCB to fill out the matrix.
 
 See also the [Heawood42 keyboard](https://github.com/triliu/Heawood42) which was
 the first no-diode keyboard using graph theory (42 key split design using the full
-Heawood Graph), and the later 56-key monoblock
-[JESK56 keyboard](https://github.com/triliu/JESK56).
+Heawood Graph). Here is a pictoral representation of transforming the full Heawood
+Graph to the Partial Heawood Graph, used for silkscreen art on the PCB:
+
+<img width="2173" height="525" alt="Partial-Heawood-horizontal" src="https://github.com/user-attachments/assets/7c3d99e9-6a09-42bd-a136-3f515deb7deb" />
+
+The name is from "Forager Partial Heawood v1.0.0" --> "Forager pH 1.0" --> "Forager Acid".
