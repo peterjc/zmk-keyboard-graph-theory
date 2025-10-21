@@ -35,12 +35,14 @@ The keys here are labeled as per Qwerty, with L3, L2, L1, R1, R2, and R3 for the
 |   |   | L3 | L2 | L1 |   | R1 | R2 | R3 |   |   |
 
 The original Forager has only two thumb keys per hand, my "Acid" version adds an
-optional bonus third sideways SMD switch to the PCB to fill out the matrix.
+optional bonus third sideways SMD switch to the PCB to fill out the matrix (these
+are L3 and R3 in the above - not currently implemented in the firmware).
 
-See also the [Heawood42 keyboard](https://github.com/triliu/Heawood42) which was
-the first no-diode keyboard using graph theory (42 key split design using the full
-Heawood Graph). Here is a pictoral representation of transforming the full Heawood
-Graph to the Partial Heawood Graph, used for silkscreen art on the PCB:
+See also the [Heawood42 keyboard](https://github.com/triliu/Heawood42) which
+was the first no-diode keyboard using graph theory (42 key split design), and
+used the *full* Heawood Graph. Here is a pictoral representation transforming
+the full Heawood Graph to the Partial Heawood Graph, which is used for
+silkscreen art on the PCB:
 
 <img width="2173" height="525" alt="Partial-Heawood-horizontal" src="https://github.com/user-attachments/assets/7c3d99e9-6a09-42bd-a136-3f515deb7deb" />
 
