@@ -14,7 +14,7 @@ They have simple minimal Qwerty layouts including ZKM Studio support to cover ba
   partial Heawood Graph.
 
 See also my [QMK keyboard firmware](https://github.com/peterjc/qmk_userspace), and the
-following other ZMK keyboard firmware for other people's diode-free Graph Theory designs:
+following ZMK keyboard firmware for other people's diode-free Graph Theory designs:
 
 * [Heawood42](https://github.com/triliu/Heawood42/tree/main/zmk/heawood42), the *first*
   diode-free Graph Theory based keyboard. A Bluetooth split keyboard with 14 GPIO pins
