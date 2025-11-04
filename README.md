@@ -22,13 +22,54 @@ following ZMK keyboard firmware for other people's diode-free Graph Theory desig
 
 ## Usage
 
-If you had built one of my keyboard PCB designs you can download the [latest build
-of firmware for these keyboards](https://github.com/peterjc/zmk-keyboard-graph-theory/releases/tag/latest),
+If you had built one of my keyboard PCB designs you can download the [latest build of
+firmware for these keyboards](https://github.com/peterjc/zmk-keyboard-graph-theory/releases/tag/latest),
 using a default Qwerty layout with ZMK Studio enabled as a starting point.
 
 If you then wanted to customise the firmware, you would probably want to clone the
 [Unified ZMK Config Template](https://github.com/zmkfirmware/unified-zmk-config-template),
-and include a reference to the keyboard and this module in your `config/west.yml` file. 
+and include a reference to the keyboard and this module in your `config/west.yml` file:
+
+```yaml
+manifest:
+  defaults:
+    revision: v0.3
+  remotes:
+    - name: zmkfirmware
+      url-base: https://github.com/zmkfirmware
+    # *** Add the following two lines: ***  
+    - name: peterjc
+      url-base: https://github.com/peterjc
+    # *** Add the above two lines: ***
+  projects:
+    - name: zmk
+      remote: zmkfirmware
+      revision: v0.3
+      import: app/west.yml
+    # *** Add the following three lines: ***
+    - name: zmk-keyboard-graph-theory
+      remote: peterjc
+      revision: main
+    # *** Add the above three lines: ***
+  self:
+    path: config
+```
+
+Add your desired keymap using the appropriate naming (`tc36k`, `hesse`, or `acid`)
+which needs at least one file like `config/tc36k.keymap`, and add a matching entry to
+your `build.yaml` with the appropriate controller board (`rpi_pico` for the `tc36k`), eg:
+
+```yaml
+include:
+  - board: rpi_pico
+    shield: tc36k
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
+```
+
+Split keyboards get both left and right (and dongle) entries in `build.yaml`.
+If GitHub Actions are turned on, this should then build your new firmware.
+
 See my personal [ZMK Config](https://github.com/peterjc/zmk-config) as an example.
 
 ## More Info
