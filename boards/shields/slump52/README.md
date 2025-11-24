@@ -16,30 +16,30 @@ and the scannig rows sorted to ensure Escape is top left as the first matrix ent
 The allocation of keys to matrix elements and scanning matrix rows and columns
 to GPIO pins was arbitrary and down to how easy it was to layout the PCB traces:
 
-| GP |  28 | 26 | 22 | 21 |  8 |  7 |  6 |  5 |  4 |  3 |  2 |   1   |  O |
-|---:|:---:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:-----:|:--:|
-| 27 | Esc |  Q |  E |  T |    |    |    |    |    |    |    |       |    |
-| 20 |  A  |    |    |    | B  |  Y | U  |    |    |    |    |       |    |
-| 19 |  Z  |    |    |    |    |    |    | I  | P  |  7 |    |       |    |
-| 18 | Tab |    |    |    |    |    |    |    |    |    | 8  |   9   | x  |
-| 17 |     |  W |    |    | T1 |    |    | O  |    |    | 5  |       |    |
-| 16 |     |  S |    |    |    |  J |    |    | +  |    |    |   6   |    |
-| 15 |     |  X |    |    |    |    | K  |    |    |  4 |    |       | x  |
-| 14 |     |    | R  |    | T2 |    |    |    | -  |    |    |       | x  |
-| 13 |     |    | D  |    |    |  H |    |    |    |  1 | 2  |       |    |
-| 12 |     |    | C  |    |    |    | ,  | L  |    |    |    |   3   |    |
-| 11 |     |    |    |  G | T3 |    |    |    |    |  * |    | Enter |    |
-| 10 |     |    |    |  F |    |  N |    | .  |    |    |    |       | x  |
-|  9 |     |    |    |  V |    |    | M  |    | /  |    | 0  |       |    |
+| GP |  28 |  26 | 22 | 21 |  8 |  7 |  6 |  5 |  4 |  3 |  2 |  1 |   O   |
+|---:|:---:|:---:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:-----:|
+| 27 | Esc |  W  |  E |  T |    |    |    |    |    |    |    |    |       |
+| 20 |  Q  |     |    |    | B  |  Y |  U |    |    |    |    |    |       |
+| 19 |  A  |     |    |    |    |    |    |  I |  O |  P |    |    |       |
+| 18 |  Z  |     |    |    |    |    |    |    |    |    | 7  |  8 |   9   |
+| 17 |     |  S  |    |    | T1 |    |    |  K |    |    | 4  |    |       |
+| 16 |     |  X  |    |    |    |  H |    |    |  L |    |    |  5 |       |
+| 15 |     | Tab |    |    |    |    |  J |    |    | += |    |    |   6   |
+| 14 |     |     | R  |    | T2 |    |    |    |  . |    |    |    |   3   |
+| 13 |     |     | D  |    |    |  N |    |    |    |  - | 1  |    |       |
+| 12 |     |     | C  |    |    |    |  M |  , |    |    |    |  2 |       |
+| 11 |     |     |    |  G | T3 |    |    |    |    |  / |    |  0 |       |
+| 10 |     |     |    |  F |    |  ← |    |  ↓ |    |    |    |    | Enter |
+|  9 |     |     |    |  V |    |    |  ↑ |    |  → |    |  * |    |       |
 
 The keys here are labeled as per Qwerty, with T1, T2, and T3, for the thumbs,
 plus the cursors (not shown below):
 
-| Esc |  Q  | W | E | R |  T |    |  Y | U | I | O | P | + | 7 | 8 | 9     |
-|:---:|:---:|:-:|:-:|:-:|:--:|:--:|:--:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-----:|
-|     |  A  | S | D | F |  G |    |  H | J | K | L | - |   | 4 | 5 | 6     |
-|     |  Z  | X | C | V |  B |    |  N | M | , | . | / |   | 1 | 2 | 3     |
-|     | Tab |   |   |   | T1 | T2 | T3 |   |   |   |   |   | * | 0 | Enter |
+| Esc |  Q  | W | E | R |  T |    |  Y | U | I | O | P | += | 7 | 8 | 9     |
+|:---:|:---:|:-:|:-:|:-:|:--:|:--:|:--:|:-:|:-:|:-:|:-:|:--:|:-:|:-:|:-----:|
+|     |  A  | S | D | F |  G |    |  H | J | K | L | - |    | 4 | 5 | 6     |
+|     |  Z  | X | C | V |  B |    |  N | M | , | . | / |    | 1 | 2 | 3     |
+|     | Tab |   |   |   | T1 | T2 | T3 |   |   |   |   |    | * | 0 | Enter |
 
 See also the [QMK TC36K firmware](https://github.com/peterjc/qmk_userspace/tree/main/keyboards/tutte_coxeter_36k),
 the [Heawood42 keyboard](https://github.com/triliu/Heawood42) which was the first no-diode
