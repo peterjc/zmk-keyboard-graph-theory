@@ -29,8 +29,8 @@ to GPIO pins was arbitrary and down to how easy it was to layout the PCB traces:
 | 13 |     |     | C  |    |    |  N |    |    |    |  - | 1  |    |       |
 | 12 |     |     | V  |    |    |    |  M |  , |    |    |    |  2 |       |
 | 11 |     |     |    |  F | T3 |    |    |    |    |  / |    |  0 |       |
-| 10 |     |     |    |  G |    |  ← |    |  ↓ |    |    |    |    | Enter |
-|  9 |     |     |    |  B |    |    |  ↑ |    |  → |    |  * |    |       |
+| 10 |     |     |    |  G |    |  ← |    |  ↑ |    |    |    |    | Enter |
+|  9 |     |     |    |  B |    |    |  ↓ |    |  → |    |  * |    |       |
 
 The keys here are labeled as per Qwerty, with T1, T2, and T3, for the thumbs,
 plus the cursors (not shown below):
