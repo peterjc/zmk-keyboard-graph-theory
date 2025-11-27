@@ -1,0 +1,9 @@
+file_format: "1"
+id: slump52
+name: "Slump52"
+type: shield
+url: https://codeberg.org/peterjc/pico-keyboards/src/branch/main/slump52
+requires: [raspberrypi]
+features:
+  - keys
+  - studio
