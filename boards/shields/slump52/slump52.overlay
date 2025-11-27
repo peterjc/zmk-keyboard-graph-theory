@@ -1,0 +1,90 @@
+/*
+ * Copyright (c) 2020 The ZMK Contributors
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+#include <dt-bindings/zmk/matrix_transform.h>
+#include <physical_layouts.dtsi>
+#include "slump52-layouts.dtsi"
+
+/ {
+    kscan0: kscan0 {
+        compatible = "zmk,kscan-gpio-matrix";
+        diode-direction = "col2row";
+        wakeup-source;
+
+        col-gpios
+            = <&pico_header 28 GPIO_OPEN_SOURCE>
+            , <&pico_header 26 GPIO_OPEN_SOURCE>
+            , <&pico_header 22 GPIO_OPEN_SOURCE>
+            , <&pico_header 15 GPIO_OPEN_SOURCE>
+            , <&pico_header 8 GPIO_OPEN_SOURCE>
+            , <&pico_header 7 GPIO_OPEN_SOURCE>
+            , <&pico_header 6 GPIO_OPEN_SOURCE>
+            , <&pico_header 5 GPIO_OPEN_SOURCE>
+            , <&pico_header 4 GPIO_OPEN_SOURCE>
+            , <&pico_header 3 GPIO_OPEN_SOURCE>
+            , <&pico_header 2 GPIO_OPEN_SOURCE>
+            , <&pico_header 1 GPIO_OPEN_SOURCE>
+            , <&pico_header 0 GPIO_OPEN_SOURCE>
+            ;
+
+        row-gpios
+            = <&pico_header 27 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&pico_header 21 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&pico_header 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&pico_header 19 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&pico_header 18 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&pico_header 17 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&pico_header 16 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&pico_header 14 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&pico_header 13 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&pico_header 12 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&pico_header 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&pico_header 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&pico_header 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            ;
+    };
+};
+
+/*
+ * Same logical rows as used in the DTSI file:
+ *
+ * Esc 	Q 	W 	E 	R 	T 				Y 	U 	I 	O 	P 	+= 	7 	8 	9
+ * ---	A 	S 	D 	F 	G 				H 	J 	K 	L 	- 		4 	5 	6
+ * ---	Z 	X 	C 	V 	B 				N 	M 	, 	. 	/ 		1 	2 	3
+ * ---	Tab					T1	T2	T3	← 	↓ 	↑ 	→ 	* 		0		Enter
+ *
+ */
+
+/ {
+    default_transform: keymap_transform0 {
+        compatible = "zmk,matrix-transform";
+        columns = <13>;
+        rows = <13>;
+        map = <
+            RC(0,0) RC(1,0) RC(0,1) RC(0,2) RC(0,3)  RC(1,4)                          RC(1,5)  RC(1,6)  RC(2,7)  RC(2,8)  RC(2,9) RC(6,9) RC(3,10) RC(3,11) RC(3,12)
+                    RC(2,0) RC(4,1) RC(7,2) RC(10,3) RC(11,3)                         RC(5,5)  RC(6,6)  RC(4,7)  RC(5,8)  RC(8,9)         RC(4,10) RC(5,11) RC(6,12)
+                    RC(3,0) RC(5,1) RC(8,2) RC(8,2)  RC(12,3)                         RC(8,5)  RC(9,6)  RC(9,7)  RC(7,8)  RC(10,9)        RC(8,10) RC(9,11) RC(7,12)
+                    RC(6,1)                                 RC(4,4) RC(7,4) RC(10,4)  RC(11,5) RC(12,6) RC(11,7) RC(12,8) RC(12,10)       RC(10,11)         RC(11,12)
+        >;
+    };
+};
+
+/ {
+    physical_layout0: physical_layout_0 { // First physical layout, use different naming for other layouts
+        compatible = "zmk,physical-layout";
+        display-name = "Default Layout";
+        kscan = <&kscan0>; // Label of the kscan node, optional if all layouts use the same
+        transform = <&default_transform>; // Label of the matrix transform for this layout
+    };
+};
+
+/ {
+    chosen {
+        zmk,physical-layout = &physical_layout0;
+        // Other chosen items
+    };
+};
+
