@@ -38,8 +38,8 @@ plus the cursors (in a standard inverted-tee layout, not a row):
 | Esc |  Q  | W | E | R | T |    |    |    | Y | U | I | O | P | += | 7 | 8 | 9     |
 |:---:|:---:|:-:|:-:|:-:|:-:|:--:|:--:|:--:|:-:|:-:|:-:|:-:|:-:|:--:|:-:|:-:|:-----:|
 |     |  A  | S | D | F | G |    |    |    | H | J | K | L | - |    | 4 | 5 | 6     |
-|     |  Z  | X | C | V | B | T1 | T2 | T3 | N | M | , | . | / |    | 1 | 2 | 3     |
-|     | Tab |   |   |   |   |    |    |    | ← | ↓ | ↑ | → | * |    | 0 |   | Enter |
+|     |  Z  | X | C | V | B |    |    |    | N | M | , | . | / |    | 1 | 2 | 3     |
+|     | Tab |   |   |   |   | T1 | T2 | T3 | ← | ↓ | ↑ | → | * |    | 0 |   | Enter |
 
 This default layout replaces Qwerty semicolon/colon with hyphen/underscore (for
 use with the numpad as minus), adds an extra key below slash/question-mark (used
