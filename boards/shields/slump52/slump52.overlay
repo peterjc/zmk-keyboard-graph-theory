@@ -17,7 +17,7 @@
         col-gpios
             = <&pico_header 28 GPIO_OPEN_SOURCE>
             , <&pico_header 26 GPIO_OPEN_SOURCE>
-            , <&pico_header 22 GPIO_OPEN_SOURCE>
+            , <&pico_header 16 GPIO_OPEN_SOURCE>
             , <&pico_header 15 GPIO_OPEN_SOURCE>
             , <&pico_header 8 GPIO_OPEN_SOURCE>
             , <&pico_header 7 GPIO_OPEN_SOURCE>
@@ -32,12 +32,12 @@
 
         row-gpios
             = <&pico_header 27 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&pico_header 22 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             , <&pico_header 21 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             , <&pico_header 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             , <&pico_header 19 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             , <&pico_header 18 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             , <&pico_header 17 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&pico_header 16 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             , <&pico_header 14 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             , <&pico_header 13 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             , <&pico_header 12 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
