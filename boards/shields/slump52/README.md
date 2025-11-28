@@ -16,15 +16,15 @@ the scanning rows sorted to ensure Escape is top left as the first matrix entry.
 The allocation of keys to matrix elements and scanning matrix rows and columns
 to GPIO pins was arbitrary and down to how easy it was to layout the PCB traces:
 
-| GP |  28 |  26 | 22 | 21 |  8 |  7 |  6 |  5 |  4 |  3 |  2 |  1 |   O   |
+| GP |  28 |  26 | 16 | 15 |  8 |  7 |  6 |  5 |  4 |  3 |  2 |  1 |   O   |
 |---:|:---:|:---:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:-----:|
 | 27 | Esc |  W  |  E |  R |    |    |    |    |    |    |    |    |       |
-| 20 |  Q  |     |    |    | T  |  Y |  U |    |    |    |    |    |       |
-| 19 |  A  |     |    |    |    |    |    |  I |  O |  P |    |    |       |
-| 18 |  Z  |     |    |    |    |    |    |    |    |    | 7  |  8 |   9   |
-| 17 |     |  S  |    |    | T1 |    |    |  K |    |    | 4  |    |       |
-| 16 |     |  X  |    |    |    |  H |    |    |  L |    |    |  5 |       |
-| 15 |     | Tab |    |    |    |    |  J |    |    | += |    |    |   6   |
+| 22 |  Q  |     |    |    | T  |  Y |  U |    |    |    |    |    |       |
+| 21 |  A  |     |    |    |    |    |    |  I |  O |  P |    |    |       |
+| 20 |  Z  |     |    |    |    |    |    |    |    |    | 7  |  8 |   9   |
+| 19 |     |  S  |    |    | T1 |    |    |  K |    |    | 4  |    |       |
+| 18 |     |  X  |    |    |    |  H |    |    |  L |    |    |  5 |       |
+| 17 |     | Tab |    |    |    |    |  J |    |    | += |    |    |   6   |
 | 14 |     |     | D  |    | T2 |    |    |    |  . |    |    |    |   3   |
 | 13 |     |     | C  |    |    |  N |    |    |    |  - | 1  |    |       |
 | 12 |     |     | V  |    |    |    |  M |  , |    |    |    |  2 |       |
