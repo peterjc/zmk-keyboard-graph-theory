@@ -10,9 +10,9 @@ This is a *diode-free* design with a sparse 13 by 13 scanning matrix designed us
 for background.
 
 This matrix shows the 13×13 PG(2,3) bipartite scanning matrix in Paige-Wexler
-normal form, with the scanning column order roughly matching the physical
-columns (starting with Escape, A, Z, tab column first, finishing with the cursors),
-and the scanning rows sorted to ensure Escape is top left as the first matrix entry.
+normal form. The keys are assign so the scanning column order roughly matches
+the physical columns (starting with Escape, A, Z, tab as the first column), with
+the scanning rows sorted to ensure Escape is top left as the first matrix entry.
 The allocation of keys to matrix elements and scanning matrix rows and columns
 to GPIO pins was arbitrary and down to how easy it was to layout the PCB traces:
 
@@ -47,7 +47,7 @@ for division with the numpad) for multiplication, and places the equals-sign/plu
 key at the top of this column (but with plus by default and equals with shift).
 
 The suggested thumb keys are backspace, shift, and space. The keys labeled as
-tab (left) and `*` (right) could be used as a pinky shift instead (or when held).
+`Tab` (left) and `*` (right) could be used as a pinky shift instead (or when held).
 
 Most of the symbols can be used with shift and the numpad, but this and the
 remaining punctuation (semicolon, brackets, backslash, pipe, hash, tilde, etc)
