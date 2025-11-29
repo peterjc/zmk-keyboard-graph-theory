@@ -9,6 +9,23 @@
 #include "tc36k-layouts.dtsi"
 
 / {
+
+    leds {
+      compatible = "gpio-leds";
+      status = "okay";
+      user_led: user_led {
+          gpios = <&gpio0 25 GPIO_ACTIVE_HIGH>;
+          label = "User LED";
+      };
+    };
+
+    // this alias is used in the C code
+    aliases {
+      user-led = &user_led;
+    };
+};
+
+/ {
     kscan0: kscan0 {
         compatible = "zmk,kscan-gpio-matrix";
         diode-direction = "col2row";
