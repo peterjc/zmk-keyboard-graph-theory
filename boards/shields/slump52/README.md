@@ -53,9 +53,7 @@ Most of the symbols can be used with shift and the numpad, but this and the
 remaining punctuation (semicolon, brackets, backslash, pipe, hash, tilde, etc)
 can be placed on layers or combos when personalising the layout.
 
-The ZMK Studio unlock combo is Escape (top left) and Numpad 9 (top right):
-
-![Slump52 in ZMK Studio](https://private-user-images.githubusercontent.com/63959/520959351-25bf5275-5e88-483e-8d87-247e24b43555.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjQ2MTY3MDksIm5iZiI6MTc2NDYxNjQwOSwicGF0aCI6Ii82Mzk1OS81MjA5NTkzNTEtMjViZjUyNzUtNWU4OC00ODNlLThkODctMjQ3ZTI0YjQzNTU1LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTEyMDElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUxMjAxVDE5MTMyOVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWEzZGE1OGM3MjFlZWM4OTc3MDQxODZiYzlmY2E3MjFkODc2OGU0M2NiZjk5NzJhYzI2MTk0ZDA4ODI0NjQyMmUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0._3ZhYLY2de6tPNHXa-i1H61G-jdCb9BaVv-kVjIh39I)
+The ZMK Studio unlock combo is Escape (top left) and Numpad 9 (top right).
 
 See also the [QMK TC36K firmware](https://github.com/peterjc/qmk_userspace/tree/main/keyboards/tutte_coxeter_36k),
 the [Heawood42 keyboard](https://github.com/triliu/Heawood42) which was the first no-diode
