@@ -12,6 +12,9 @@ They have simple minimal Qwerty layouts including ZKM Studio support to cover ba
 * [Forager Acid](boards/shields/acid), a Graph Theory based diode-free Bluetooth split
   keyboard with 13 GPIO pins for 17 (or 18) keys and 4-key roll-over per half using a
   partial Heawood Graph.
+* [Slump52](boards/shields/slump52), a Graph Theory based diode-free keyboard with
+  26 GPIO pins for 52 keys and 4-key roll-over using the Incidence Graph of the
+  Projective Plane of order 3 PG(2,3).
 
 See also my [QMK keyboard firmware](https://github.com/peterjc/qmk_userspace), and the
 following ZMK keyboard firmware for other people's diode-free Graph Theory designs:
