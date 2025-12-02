@@ -55,7 +55,7 @@ can be placed on layers or combos when personalising the layout.
 
 The ZMK Studio unlock combo is Escape (top left) and Numpad 9 (top right).
 
-See also the [QMK TC36K firmware](https://github.com/peterjc/qmk_userspace/tree/main/keyboards/tutte_coxeter_36k),
+See also the [QMK Slump52 firmware](https://github.com/peterjc/qmk_userspace/tree/main/keyboards/slump52),
 the [Heawood42 keyboard](https://github.com/triliu/Heawood42) which was the first no-diode
 keyboard using graph theory (42 key split design), and the later 56-key monoblock
 [JESK56 keyboard](https://github.com/triliu/JESK56).
