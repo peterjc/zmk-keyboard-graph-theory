@@ -1,0 +1,138 @@
+parse_config:
+  zmk_additional_includes: ["zmk-helpers/include"]
+  zmk_keycode_map:
+    BACKSPACE: '⌫'
+    BSPC: '⌫'
+    DEL: '⌦'
+    AMPERSAND: '&'
+    AMPS: '&'
+    APOS: .
+    APOSTROPHE: <
+    ASTERISK: '*'
+    ASTRK: '*'
+    AT: '@'
+    AT_SIGN: '@'
+    BACKSLASH: {t: '\', s: '|'}
+    BSLH: \
+    CARET: ^
+    COLON: ':'
+    COMMA: {t: ',', s: '<'}
+    DLLR: $
+    DOLLAR: $
+    DOT: {t: '.', s: '>'}
+    DOUBLE_QUOTES: '"'
+    DQT: '"'
+    EQUAL: {t: '=', s: '+'}
+    EXCL: '!'
+    EXCLAMATION: '!'
+    FSLH: /
+    GRAVE: {t: '`', s: '~'}
+    GREATER_THAN: '>'
+    GT: '>'
+    HASH: '#'
+    LBKT: {t: '[', s: '{'}
+    LBRC: '{'
+    LEFT_BRACE: '{'
+    LEFT_BRACKET: '['
+    LEFT_PARENTHESIS: (
+    LESS_THAN: <
+    LPAR: (
+    LT: <
+    MINUS: {t: '-', s: '_'}
+    NON_US_BACKSLASH: \
+    NON_US_BSLH: '|'
+    NON_US_HASH: '#'
+    NUHS: '#'
+    PERCENT: '%'
+    PERIOD: .
+    PIPE: '|'
+    PIPE2: '|'
+    PLUS: +
+    POUND: '#'
+    PRCNT: '%'
+    QMARK: '?'
+    QUESTION: '?'
+    RBKT: {t: ']', s: '}'}
+    RBRC: '}'
+    RIGHT_BRACE: '}'
+    RIGHT_BRACKET: ']'
+    RIGHT_PARENTHESIS: )
+    RPAR: )
+    SEMI: {t: ';', s: ':'}
+    SEMICOLON:  {t: ';', s: ':'}
+    SINGLE_QUOTE:  {t: '''', s: '"'}
+    SLASH: {t: '/', s: '?'}
+    SLASH: {t: '/', s: '?'}
+    SQT: ''''
+    STAR: '*'
+    TILDE: '~'
+    TILDE2: '~'
+    UNDER: _
+    UNDERSCORE: _
+    LCTRL: ⌃
+    LALT: ⎇
+    LGUI: ⌘
+    LSHFT: ⇧
+    RCTRL: ⌃
+    RSHFT: ⇧
+    LEFT_CONTROL: ⌃
+    LEFT_ALT: ⎇
+    LEFT_GUI: ⌘
+    LEFT_SHFT: ⇧
+    RALT: ⎇
+    RGUI: ⌘
+    RSHFT: ⇧
+    RIGHT_CONTROL: ⌃
+    RIGHT_ALT: ⎇
+    RIGHT_GUI: ⌘
+    RIGHT_SHFT: ⇧
+    LEFT: ←
+    RIGHT: →
+    UP: ↑
+    DOWN: ↓
+    PG_UP: ⇞
+    PG_DN: ⇟
+    HOME: ↖
+    END: ↘
+    TAB: ↹
+    RETURN: '⏎'
+    ENTER: '⏎'
+    ESCAPE: '⎋'
+    C_REWIND: '⏮'
+    C_FAST_FORWARD: '⏭'
+    C_PAUSE: '⏯'
+    C_PLAY_PAUSE: '⏯'
+    C_MUTE: "VOL\nMUTE"
+    C_VOLUME_DOWN: "VOL\nDOWN"
+    C_VOLUME_UP: "VOL\nUP"
+    K_VOLUME_DOWN: "VOL\nDOWN"
+    K_VOLUME_UP: "VOL\nUP"
+    C_BRIGHTNESS_DEC: '☀↓'
+    C_BRIGHTNESS_INC: '☀↑'
+    LA(LEFT): ↞
+    LA(RIGHT): ↠
+    LG(LEFT): ⇤
+    LG(RIGHT): ⇥
+    'LS(LC(LG(LALT)))': 'HYPER'
+    'RS(RC(RG(RALT)))': 'HYPER'
+    'LC(LG(LALT))': 'MEH'
+    'RC(RG(RALT))': 'MEH'
+    'LG(Q)': '⌘Q'
+    'LG(W)': '⌘W'
+    'LG(GRAVE)': '⌘`'
+    'LG(Z)': '⌘Z'
+    'LG(X)': '⌘X'
+    'LG(C)': '⌘C'
+    'LG(V)': '⌘V'
+    'LC(TAB)': '⌃↹'
+    'LS(LC(TAB))': '⌃⇧↹'
+    'LS(SPACE)': '⇧⎵'
+    SPACE: ⎵
+    KP_DIVIDE: '/'
+    KP_MULTIPLY: '*'
+    KP_DOT: '.'
+    KP_EQUAL: '='
+    KP_PLUS: '+'
+    KP_MINUS: '-'
+  zmk_combos:
+    combo_studio_unlock: {'key': 'Studio Unlock', 'align': 'top', 'offset': 0.3, 'width': 50}
