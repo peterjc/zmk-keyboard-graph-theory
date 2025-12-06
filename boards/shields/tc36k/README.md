@@ -1,5 +1,7 @@
 # Gamma-Omega TC36K keyboard firmware
 
+![Default keymap for the Gamma Omega TC36K keyboard ZMK firmware](../../../keymap-drawer/tc36k.svg)
+
 This is firmware for a Raspberry Pi Pico PR2040 controller monoblock 36 key design
 (split 3x5_3 - three rows of five, and three thumb keys, for each hand): the
 [Gamma Omega TC36K keyboard](https://github.com/unspecworks/gamma-omega/tree/main/tc36k).
