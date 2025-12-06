@@ -1,0 +1,45 @@
+layout: {zmk_keyboard: tc36k}
+layers:
+  Base:
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - A
+  - S
+  - D
+  - F
+  - G
+  - H
+  - J
+  - K
+  - L
+  - {t: ;, s: ':'}
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - {t: ',', s: <}
+  - {t: ., s: '>'}
+  - {t: /, s: '?'}
+  - ⌘
+  - ↹
+  - ⌫
+  - ⇧
+  - ⎵
+  - RET
+combos:
+- p: [0, 9]
+  k: Studio Unlock
+  a: top
+  o: 0.3
+  w: 50.0
