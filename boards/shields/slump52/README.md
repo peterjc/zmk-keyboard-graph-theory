@@ -1,5 +1,7 @@
 # Slump52 keyboard firmware
 
+![Default keymap for the Slump52 keyboard ZMK firmware](../../../keymap-drawer/slump52.svg)
+
 This is firmware for a Raspberry Pi Pico PR2040 controller monoblock 52 key design
 (split 3x5 - three rows of five, with thumb keys, cursors, and numpad),
 [my curvy Slump52 keyboard](https://codeberg.org/peterjc/pico-keyboards/src/branch/main/slump52).
@@ -41,10 +43,11 @@ plus the cursors (in a standard inverted-tee layout, not a row):
 |     |  Z  | X | C | V | B |    |    |    | N | M | , | . | / |    | 1 | 2 | 3     |
 |     | Tab |   |   |   |   | T1 | T2 | T3 | ← | ↓ | ↑ | → | * |    | 0 |   | Enter |
 
-This default layout replaces Qwerty semicolon/colon with hyphen/underscore (for
-use with the numpad as minus), adds an extra key below slash/question-mark (used
-for division with the numpad) for multiplication, and places the equals-sign/plus
-key at the top of this column (but with plus by default and equals with shift).
+This minimal default layout is rendered as an image above. It replaces Qwerty
+semicolon/colon with hyphen/underscore (for use with the numpad as minus), adds an
+extra key below slash/question-mark (used for division with the numpad) for
+multiplication, and places the equals-sign/plus key at the top of this column
+(but with plus by default and equals with shift).
 
 The suggested thumb keys are backspace, shift, and space. The keys labeled as
 `Tab` (left) and `*` (right) could be used as a pinky shift instead (or when held).
