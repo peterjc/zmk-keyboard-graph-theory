@@ -39,7 +39,7 @@
         compatible = "zmk,combos";
 
         // Top left (Q) + top right (P) = &studio_unlock
-        combo_sys_reset {
+        combo_studio_unlock {
             timeout-ms = <100>;
             key-positions = <0 9>;
             bindings = <&studio_unlock>;

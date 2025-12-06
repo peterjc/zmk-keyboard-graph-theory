@@ -64,7 +64,7 @@
         compatible = "zmk,combos";
 
         // Top left (Escape) + top right (NumPad 9) = &studio_unlock
-        combo_sys_reset {
+        combo_studio_unlock {
             timeout-ms = <100>;
             key-positions = <0 14>;
             bindings = <&studio_unlock>;
