@@ -134,5 +134,7 @@ parse_config:
     KP_EQUAL: '='
     KP_PLUS: '+'
     KP_MINUS: '-'
+  raw_binding_map:
+    '&plus_equal': {'t': '+', 's': '='}
   zmk_combos:
     combo_studio_unlock: {'key': 'Studio Unlock', 'align': 'top', 'offset': 0.3, 'width': 50}
