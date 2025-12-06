@@ -1,5 +1,7 @@
 # Gamma-Omega Hesse keyboard firmware
 
+![Default keymap for the Gamma Omega Hesse keyboard ZMK firmware](../../../keymap-drawer/hesse.svg)
+
 This is firmware for a Bluetooth capable Nice!Nano v2 or Supermini nRF25840 (aka
 ProMicro52840) controller monoblock 36 key design (split 3x5_3 - three rows of five,
 and three thumb keys, for each hand): the
