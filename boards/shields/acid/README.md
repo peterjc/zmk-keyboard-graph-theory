@@ -1,5 +1,7 @@
 # Forager Acid (Partial Heawood) Firmware
 
+![Default keymap for the Forager Acid keyboard ZMK firmware](../../../keymap-drawer/acid.svg)
+
 This is firmware for a Bluetooth capable Seeed Studio Xiao nRF25840 (aka Xiao BLE)
 controller split 34 key design (split 3x5_2 - three rows of five, and two thumb
 keys, for each hand) - my alternative PCB for the [Forager keyboard](https://github.com/carrefinho/forager/pull/20).
