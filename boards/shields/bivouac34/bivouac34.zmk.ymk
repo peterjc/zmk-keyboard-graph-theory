@@ -1,0 +1,9 @@
+file_format: "1"
+id: bivouac34
+name: "Bivouac34"
+type: shield
+url: https://codeberg.org/peterjc/pico-keyboards/src/branch/main/bivouac34
+requires: [raspberrypi]
+features:
+  - keys
+  - studio

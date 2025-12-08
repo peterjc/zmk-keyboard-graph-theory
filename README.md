@@ -18,6 +18,8 @@ They have simple minimal Qwerty layouts including ZKM Studio support to cover ba
 * [Bivvy16D](boards/shields/bivvy16d), a Graph Theory based diode-free Bluetooth
   *or wired* split keyboard using 17 GPIO pins for 16 (or 15) keys and a 5-way directional
   button on each half, with 4-key roll-over per half (14KRO without the navigation button).
+* [Bivouac34](boards/shields/bivouac34), a Graph Theory based diode-free tented keyboard with
+  20 GPIO pins for 34 keys and 4-key roll-over using the unique but unnamed graph of this size.
 
 See also my [QMK keyboard firmware](https://github.com/peterjc/qmk_userspace), and the
 following ZMK keyboard firmware for other people's diode-free Graph Theory designs:
