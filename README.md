@@ -15,6 +15,8 @@ They have simple minimal Qwerty layouts including ZKM Studio support to cover ba
 * [Slump52](boards/shields/slump52), a Graph Theory based diode-free keyboard with
   26 GPIO pins for 52 keys and 4-key roll-over using the Incidence Graph of the
   Projective Plane of order 3 PG(2,3).
+* [Slump34t](boards/shields/slump34t), a Graph Theory based diode-free tented keyboard with
+  20 GPIO pins for 34 keys and 4-key roll-over using the unique but unnamed graph of this size.
 
 See also my [QMK keyboard firmware](https://github.com/peterjc/qmk_userspace), and the
 following ZMK keyboard firmware for other people's diode-free Graph Theory designs:
