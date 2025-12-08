@@ -1,0 +1,48 @@
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+
+
+/ {
+    keymap {
+        compatible = "zmk,keymap";
+
+        default_layer { // Layer 0
+            display-name = "Base";
+            bindings = <
+                &kp ESCAPE &kp Q &kp W &kp E &kp R &kp T                     &kp Y &kp U &kp I     &kp O   &kp P     &kp BKSP
+                           &kp A &kp S &kp D &kp F &kp G                     &kp H &kp J &kp K     &kp L   &kp SEMI
+                           &kp Z &kp X &kp C &kp V &kp B &kp LSHFT &kp SPACE &kp N &kp M &kp COMMA &kp DOT &kp SLASH
+            >;
+        };
+
+        // Empty layers for ZMK Studio:
+        extra1 {
+            status = "reserved";
+        };
+        extra2 {
+            status = "reserved";
+        };
+        extra3 {
+            status = "reserved";
+        };
+        extra4 {
+            status = "reserved";
+        };
+        extra5 {
+            status = "reserved";
+        };
+    };
+};
+
+/ {
+    combos {
+        compatible = "zmk,combos";
+
+        // Top left (Escape) + top right (Backspace) = &studio_unlock
+        combo_studio_unlock {
+            timeout-ms = <100>;
+            key-positions = <0 11>;
+            bindings = <&studio_unlock>;
+        };
+    };
+};
