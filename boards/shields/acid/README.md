@@ -1,5 +1,8 @@
 # Forager Acid (Partial Heawood) Firmware
 
+This is the default keymap which you would be expected to customise to your
+needs with ZMK Studio or otherwise:
+
 ![Default keymap for the Forager Acid keyboard ZMK firmware](../../../keymap-drawer/acid.svg)
 
 This is firmware for a Bluetooth capable Seeed Studio Xiao nRF25840 (aka Xiao BLE)
