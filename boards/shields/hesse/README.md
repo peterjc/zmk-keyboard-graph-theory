@@ -1,5 +1,8 @@
 # Gamma-Omega Hesse keyboard firmware
 
+This is the default keymap which you would be expected to customise to your
+needs with ZMK Studio or otherwise:
+
 ![Default keymap for the Gamma Omega Hesse keyboard ZMK firmware](../../../keymap-drawer/hesse.svg)
 
 This is firmware for a Bluetooth capable Nice!Nano v2 or Supermini nRF25840 (aka
