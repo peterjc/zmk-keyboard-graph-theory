@@ -26,6 +26,10 @@ include:
     shield: slump52
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
+  - board: rpi_pico
+    shield: slump34t
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
   - board: nice_nano_v2
     shield: hesse
     snippet: studio-rpc-usb-uart

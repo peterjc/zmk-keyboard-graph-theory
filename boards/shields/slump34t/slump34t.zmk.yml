@@ -1,0 +1,9 @@
+file_format: "1"
+id: slump34t
+name: "Slump34t"
+type: shield
+url: https://codeberg.org/peterjc/pico-keyboards/src/branch/main/slump34t
+requires: [raspberrypi]
+features:
+  - keys
+  - studio
