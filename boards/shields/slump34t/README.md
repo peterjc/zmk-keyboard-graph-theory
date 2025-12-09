@@ -4,7 +4,7 @@
 
 This is firmware for a Raspberry Pi PR2040 or RP2350 'Zero' controller tented
 monoblock 34 key design (split 3x5 - three rows of five, with one thumb key and
-other top corner key per hand), [my curvy Slump34t keyboard](https://codeberg.org/peterjc/pico-keyboards/src/branch/main/slump34t).
+one top corner key per hand), my [curvy Slump34t keyboard](https://codeberg.org/peterjc/pico-keyboards/src/branch/main/slump34t).
 This is a *diode-free* design with a sparse 10 by 10 scanning matrix designed using the
 [unique 20 vertex girth 6 graph of maximal 34 edges](https://houseofgraphs.org/graphs/55819)
 (using only 20 vertices or GPIO pins, with 34 edges or keys with 4KRO- see this
