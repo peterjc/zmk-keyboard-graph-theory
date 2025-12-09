@@ -45,7 +45,7 @@
             bindings = <
                 &kp GRAVE &kp EXCL  &kp AT   &kp HASH &kp DLLR &kp PRCNT            &kp PG_UP &kp HOME     &kp UP     &kp END  &kp SQT &kp DQT &trans &trans &trans
                           &kp ASTRK &kp LBRC &kp LBKT &kp LPAR &kp CARET            &kp PG_DN &kp LEFT     &kp DOWN   &kp RIGHT     &kp SEMI   &trans &trans &trans
-                          &kp BSLH  &kp RBRC &kp RBKT &kp RPAR &kp AMPS             &kp N     &kp LA(LEFT) &kp RETURN &kp LA(RIGHT) &kp COLON  &trans &trans &trans
+                          &kp BSLH  &kp RBRC &kp RBKT &kp RPAR &kp AMPS             &kp INS   &kp LA(LEFT) &kp RETURN &kp LA(RIGHT) &kp COLON  &trans &trans &trans
                           &trans &trans &trans &trans &trans &trans &trans &trans &kp NUHS &trans &trans
             >;
         };
