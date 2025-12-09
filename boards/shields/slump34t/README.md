@@ -1,5 +1,8 @@
 # Slump34t keyboard firmware
 
+This is the default keymap which you would be expected to customise to your needs
+with ZMK Studio or otherwise:
+
 ![Default keymap for the Slump34t keyboard ZMK firmware](../../../keymap-drawer/slump34t.svg)
 
 This is firmware for a Raspberry Pi PR2040 or RP2350 'Zero' controller tented
