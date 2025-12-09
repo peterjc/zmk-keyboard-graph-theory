@@ -1,5 +1,8 @@
 # Gamma-Omega TC36K keyboard firmware
 
+This is the default keymap which you would be expected to customise to your
+needs with ZMK Studio or otherwise:
+
 ![Default keymap for the Gamma Omega TC36K keyboard ZMK firmware](../../../keymap-drawer/tc36k.svg)
 
 This is firmware for a Raspberry Pi Pico PR2040 controller monoblock 36 key design
