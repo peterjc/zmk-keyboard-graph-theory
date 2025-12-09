@@ -18,18 +18,18 @@ rows sorted to ensure Escape is top left as the first matrix entry.
 The allocation of keys to matrix elements and scanning matrix rows and columns
 to GPIO pins was arbitrary and down to how easy it was to layout the PCB traces:
 
-| GP |  C0 | C1 | C2 | C3 |   C4  |  C5   | C6 | C7 | C8 |  C9  |
-|---:|:---:|:--:|:--:|:--:|:-----:|:-----:|:--:|:--:|:--:|:----:|
-| R0 | Esc |  W |  E |  R |       |       |    |    |    |      |
-| R1 |  Q  |    |    |    |   T   |       |    |    |  O |      |
-| R2 |  A  |    |    |    |       | Space |    |  I |    | BkSp |
-| R3 |  Z  |    |    |    |       |       |  U |    |    |      |
-| R4 |     |  S |    |    |   G   |       |  J |  K |    |      |
-| R5 |     |    |  D |    |       |   Y   |  M |    |  L |      |
-| R6 |     |    |    |  F |   B   |   H   |    |    |    |      |
-| R7 |     |    |  C |    | Shift |       |    |    |    |   P  |
-| R8 |     |  X |    |    |       |   N   |    |    |    |   ;  |
-| R9 |     |    |    |  V |       |       |    |  , |  . |   /  |
+| GP |  29 | 14 | 10 | 6 |   1   |   0   | 3 | 9 | 13 |  28  |
+|---:|:---:|:--:|:--:|:-:|:-----:|:-----:|:-:|:-:|:--:|:----:|
+| 11 | Esc |  W |  E | R |       |       |   |   |    |      |
+| 15 |  Q  |    |    |   |   T   |       |   |   |  O |      |
+| 26 |  A  |    |    |   |       | Space |   | I |    | BkSp |
+| 27 |  Z  |    |    |   |       |       | U |   |    |      |
+| 12 |     |  S |    |   |   G   |       | J | K |    |      |
+|  7 |     |    |  D |   |       |   Y   | M |   |  L |      |
+|  2 |     |    |    | F |   B   |   H   |   |   |    |      |
+|  8 |     |    |  C |   | Shift |       |   |   |    |   P  |
+|  5 |     |  X |    |   |       |   N   |   |   |    |   ;  |
+|  4 |     |    |    | V |       |       |   | , |  . |   /  |
 
 The keys here are labeled as per Qwerty, with T1, T2, and T3, for the thumbs,
 plus the cursors (in a standard inverted-tee layout, not a row):
