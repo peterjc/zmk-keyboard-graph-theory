@@ -1,5 +1,8 @@
 # Slump52 keyboard firmware
 
+This is the default keymap which you would be expected to customise to your
+needs with ZMK Studio or otherwise:
+
 ![Default keymap for the Slump52 keyboard ZMK firmware](../../../keymap-drawer/slump52.svg)
 
 This is firmware for a Raspberry Pi Pico PR2040 controller monoblock 52 key design
