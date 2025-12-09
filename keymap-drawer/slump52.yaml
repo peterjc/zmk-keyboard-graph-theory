@@ -45,7 +45,7 @@ layers:
   - ↹
   - BKSP
   - ⇧
-  - ⎵
+  - {t: ⎵, h: Symbols + Navigation}
   - ←
   - ↓
   - ↑
@@ -53,6 +53,59 @@ layers:
   - '*'
   - '0'
   - RET
+  Symbols + Navigation:
+  - {t: '`', s: '~'}
+  - '!'
+  - '@'
+  - '#'
+  - $
+  - '%'
+  - ⇞
+  - ↖
+  - ↑
+  - ↘
+  - ''''
+  - '"'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '*'
+  - '{'
+  - {t: '[', s: '{'}
+  - (
+  - ^
+  - ⇟
+  - ←
+  - ↓
+  - →
+  - {t: ;, s: ':'}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - \
+  - '}'
+  - {t: ']', s: '}'}
+  - )
+  - '&'
+  - N
+  - ↞
+  - ⏎
+  - ↠
+  - ':'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '#'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
 combos:
 - p: [0, 14]
   k: Studio Unlock
