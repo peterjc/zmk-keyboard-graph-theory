@@ -1,6 +1,7 @@
 manifest:
   defaults:
-    revision: v0.3
+    # This is currentyl ZMK pre-0.4, using Zephyr 4.1
+    revision: main
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
