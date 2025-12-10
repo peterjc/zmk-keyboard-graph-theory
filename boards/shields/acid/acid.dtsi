@@ -2,6 +2,11 @@
 #include <physical_layouts.dtsi>
 #include "acid-layouts.dtsi"
 
+/* We use the two NFC pins for columns 0 (P0.10) and 4 (P0.09) */
+&uicr {
+        nfct-pins-as-gpios;
+};
+
 / {
     chosen {
         zmk,kscan = &kscan0;
