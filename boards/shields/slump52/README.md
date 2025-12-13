@@ -12,7 +12,7 @@ This is a *diode-free* design with a sparse 13 by 13 scanning matrix designed us
 [Incidence graph of the projective plane of order 3, PG(2,3)](https://houseofgraphs.org/graphs/44089)
 (using only 26 vertices or GPIO pins, with 52 edges or keys - see this
 [blog post](https://astrobeano.blogspot.com/2025/05/topology-meets-custom-keyboard-circuit.html)
-for background.
+for background).
 
 This matrix shows the 13×13 PG(2,3) bipartite scanning matrix in Paige-Wexler
 normal form. The keys are assign so the scanning column order roughly matches
