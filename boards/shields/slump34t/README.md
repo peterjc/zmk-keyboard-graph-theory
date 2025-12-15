@@ -25,8 +25,8 @@ to GPIO pins was arbitrary and down to how easy it was to layout the PCB traces:
 |---:|:---:|:--:|:--:|:-:|:-----:|:-----:|:-:|:-:|:--:|:----:|
 | 11 | Esc |  W |  E | R |       |       |   |   |    |      |
 | 15 |  Q  |    |    |   |   T   |       |   |   |  O |      |
-| 26 |  A  |    |    |   |       | Space |   | I |    | BkSp |
-| 27 |  Z  |    |    |   |       |       | U |   |    |      |
+| 26 |  A  |    |    |   |       | Space |   | I |    |      |
+| 27 |  Z  |    |    |   |       |       | U |   |    | BkSp |
 | 12 |     |  S |    |   |   G   |       | J | K |    |      |
 |  7 |     |    |  D |   |       |   Y   | M |   |  L |      |
 |  2 |     |    |    | F |   B   |   H   |   |   |    |      |
