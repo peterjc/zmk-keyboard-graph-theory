@@ -350,6 +350,14 @@ path.combo {
 <tspan x="431" dy="-0.6em">Studio</tspan><tspan x="431" dy="1.2em">Unlock</tspan>
 </text>
 </g>
+<g class="combo combopos-1">
+<path d="M347,177 l-38,-38" class="combo"/>
+<path d="M347,177 l39,-38" class="combo"/>
+<path d="M347,177 l-82,42" class="combo"/>
+<path d="M347,177 l82,42" class="combo"/>
+<rect rx="6" ry="6" x="333" y="164" width="28" height="26" class="combo"/>
+<text x="347" y="177" class="combo tap"><tspan style="font-size: 64%">&amp;bootloader</tspan></text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 423)" class="layer-Symbols + Navigation">

@@ -112,3 +112,6 @@ combos:
   a: top
   o: 0.3
   w: 50.0
+- p: [5, 6, 32, 33]
+  k: '&bootloader'
+  l: [Base]
