@@ -76,5 +76,13 @@
             key-positions = <0 14>;
             bindings = <&studio_unlock>;
         };
+
+        // Inner corners (T, Y, B, N) = &bootloader
+        combo_bootloader {
+            timeout-ms = <300>;
+            key-positions = <5 6 32 33>;
+            bindings = <&bootloader>;
+            layers = <0>;
+        };
     };
 };
