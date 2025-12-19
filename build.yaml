@@ -23,7 +23,7 @@ include:
     shield: tc36k
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
-  - board: rpi_pico2
+  - board: rpi_pico2/rp2350a/m33
     shield: tc36k
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
@@ -31,7 +31,7 @@ include:
     shield: slump52
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
-  - board: rpi_pico2
+  - board: rpi_pico2/rp2350a/m33
     shield: slump52
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
