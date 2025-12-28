@@ -1,0 +1,94 @@
+/*
+ * Copyright (c) 2020 The ZMK Contributors
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+#include <dt-bindings/zmk/matrix_transform.h>
+#include <physical_layouts.dtsi>
+#include "bivvy16d-layouts.dtsi"
+
+/* By design, this is a reversible PCB so same wiring for left and right,
+ * so can define the GPIOs once centrally.
+ */
+
+/ {
+    kscan0: kscan0 {
+        compatible = "zmk,kscan-gpio-matrix";
+        diode-direction = "col2row";
+        wakeup-source;
+
+        col-gpios
+            = <&pico_header 1 GPIO_OPEN_SOURCE>
+            , <&pico_header 5 GPIO_OPEN_SOURCE>
+            , <&pico_header 10 GPIO_OPEN_SOURCE>
+            , <&pico_header 7 GPIO_OPEN_SOURCE>
+            , <&pico_header 4 GPIO_OPEN_SOURCE>
+            , <&pico_header 14 GPIO_OPEN_SOURCE>
+            , <&pico_header 26 GPIO_OPEN_SOURCE>
+            , <&pico_header 28 GPIO_OPEN_SOURCE>
+            ;
+
+        row-gpios
+            = <&pico_header 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&pico_header 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&pico_header 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&pico_header 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&pico_header 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&pico_header 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&pico_header 29 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&pico_header 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&pico_header 27 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            ;
+    };
+};
+
+/*
+ * Same logical rows as used in the DTSI file:
+ *
+ * Q 	W 	E 	R 	T 		Y 	U 	I 	O 	P
+ * A 	S 	D 	F 	G 		H 	J 	K 	L 	; 
+ * Z 	X 	C 	V 	B 		N 	M 	, 	. 	/ 
+ * ⬆️	⬇️	⬅️	➡️	⏺️		⏺️	⬅️	➡️	⬇️	⬆️
+ *   	  	  	  	⌫ 		␠ 	  	  	  	    
+ *
+ * The columns and row value here are the scaning matrix (GPIOs), not physical/logical!
+ * Scannig cols 0-7 on left, then 8-15 on the right with col-offset 8 used on right
+ */
+
+/ {
+    default_transform: keymap_transform0 {
+        compatible = "zmk,matrix-transform";
+        columns = <8>;
+        rows = <9>;
+        map = <
+            RC(0,0) RC(0,1) RC(3,3) RC(3,4) RC(5,6)   RC(5,14) RC(3,12) RC(3,11) RC(0,9)  RC(0,8)
+            RC(7,0) RC(1,1) RC(2,3) RC(4,3) RC(5,5)   RC(5,13) RC(4,11) RC(2,11) RC(1,9)  RC(7,8)
+            RC(7,7) RC(1,2) RC(2,2) RC(4,5) RC(6,7)   RC(8,15) RC(4,13) RC(2,10) RC(1,10) RC(7,15)
+            RC(8,1) RC(8,0) RC(8,6) RC(8,5) RC(8,3)   RC(8,11) RC(8,13) RC(8,14) RC(8,8)  RC(89)
+                                            RC(6,6)   RC(6,14)
+        >;
+    };
+};
+
+/ {
+    physical_layout0: physical_layout_0 { // First physical layout, use different naming for other layouts
+        compatible = "zmk,physical-layout";
+        display-name = "Default Layout";
+        kscan = <&kscan0>; // Label of the kscan node, optional if all layouts use the same
+        transform = <&default_transform>; // Label of the matrix transform for this layout
+    };
+};
+
+/ {
+    chosen {
+        zmk,physical-layout = &physical_layout0;
+        // Other chosen items
+    };
+
+    wired_split {
+        compatible = "zmk,wired-split";
+        device = <&pio0_uart0>;
+    };
+};
+
