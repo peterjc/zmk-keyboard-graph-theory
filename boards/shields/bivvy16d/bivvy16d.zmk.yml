@@ -1,0 +1,12 @@
+file_format: "1"
+id: bivvy16d
+name: "Bivvy16D"
+type: shield
+url: https://codeberg.org/peterjc/pico-keyboards/src/branch/main/bivvy16d
+requires: [raspberrypi]
+features:
+  - keys
+  - studio
+siblings:
+  - bivvy16d_left
+  - bivvy16d_right
