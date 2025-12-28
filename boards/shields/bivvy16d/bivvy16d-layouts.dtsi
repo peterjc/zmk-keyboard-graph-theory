@@ -1,12 +1,77 @@
 #include <physical_layouts.dtsi>
 
 / {
-    physical_layout0: physical_layout_0 {
-        compatible = "zmk,physical-layout";
-        display-name = "LAYOUT_L16_R16";
 
-        kscan = <&kscan0>;
-        transform = <&matrix_transform0>;
+
+    /*
+     * Logical rows as used in the DTSI file:
+     *
+     * Q 	W 	E 	R 	T 		Y 	U 	I 	O 	P
+     * A 	S 	D 	F 	G 		H 	J 	K 	L 	;
+     * Z 	X 	C 	V 	B 		N 	M 	, 	. 	/
+     * ⬆️	⬅️	⏺️	➡️	⬇️		⬆️	⬅️	⏺️	➡️	⬇️
+     *   	  	  	  	⌫ 		␠
+     *
+     * The RC(#, #) columns and row value below are the scaning matrix (GPIOs), not physical/logical!
+     * Scannig cols 0-7 on left, then 8-15 on the right with col-offset 8 used on right.
+     * The layout variants drop one or both of the thumb-keys listed at the end.
+     */
+
+    bivvy16d_L16_R16_transform: bivvy16d_L16_R16_transform {
+      compatible = "zmk,matrix-transform";
+      columns = <8>;
+      rows = <9>;
+      map = <
+        RC(0,0) RC(0,1) RC(3,3) RC(3,4) RC(5,6)   RC(5,14) RC(3,12) RC(3,11) RC(0,9)  RC(0,8)
+        RC(7,0) RC(1,1) RC(2,3) RC(4,3) RC(5,5)   RC(5,13) RC(4,11) RC(2,11) RC(1,9)  RC(7,8)
+        RC(7,7) RC(1,2) RC(2,2) RC(4,5) RC(6,7)   RC(8,15) RC(4,13) RC(2,10) RC(1,10) RC(7,15)
+        RC(8,0) RC(8,6) RC(8,3) RC(8,5) RC(8,1)   RC(8,9) RC(8,13) RC(8,11) RC(8,14)  RC(8,8)
+                                        RC(6,6)   RC(6,14)
+      >;
+    };
+
+    bivvy16d_L15_R16_transform: bivvy16d_L15_R16_transform {
+      compatible = "zmk,matrix-transform";
+      columns = <8>;
+      rows = <9>;
+      map = <
+        RC(0,0) RC(0,1) RC(3,3) RC(3,4) RC(5,6)   RC(5,14) RC(3,12) RC(3,11) RC(0,9)  RC(0,8)
+        RC(7,0) RC(1,1) RC(2,3) RC(4,3) RC(5,5)   RC(5,13) RC(4,11) RC(2,11) RC(1,9)  RC(7,8)
+        RC(7,7) RC(1,2) RC(2,2) RC(4,5) RC(6,7)   RC(8,15) RC(4,13) RC(2,10) RC(1,10) RC(7,15)
+        RC(8,0) RC(8,6) RC(8,3) RC(8,5) RC(8,1)   RC(8,9) RC(8,13) RC(8,11) RC(8,14)  RC(8,8)
+                                                  RC(6,14)
+      >;
+    };
+
+    bivvy16d_L16_R15_transform: bivvy16d_L16_R15_transform {
+      compatible = "zmk,matrix-transform";
+      columns = <8>;
+      rows = <9>;
+      map = <
+        RC(0,0) RC(0,1) RC(3,3) RC(3,4) RC(5,6)   RC(5,14) RC(3,12) RC(3,11) RC(0,9)  RC(0,8)
+        RC(7,0) RC(1,1) RC(2,3) RC(4,3) RC(5,5)   RC(5,13) RC(4,11) RC(2,11) RC(1,9)  RC(7,8)
+        RC(7,7) RC(1,2) RC(2,2) RC(4,5) RC(6,7)   RC(8,15) RC(4,13) RC(2,10) RC(1,10) RC(7,15)
+        RC(8,0) RC(8,6) RC(8,3) RC(8,5) RC(8,1)   RC(8,9) RC(8,13) RC(8,11) RC(8,14)  RC(8,8)
+                                        RC(6,6)
+      >;
+    };
+
+    bivvy16d_L16_R16_transform: bivvy16d_L15_R15_transform {
+      compatible = "zmk,matrix-transform";
+      columns = <8>;
+      rows = <9>;
+      map = <
+        RC(0,0) RC(0,1) RC(3,3) RC(3,4) RC(5,6)   RC(5,14) RC(3,12) RC(3,11) RC(0,9)  RC(0,8)
+        RC(7,0) RC(1,1) RC(2,3) RC(4,3) RC(5,5)   RC(5,13) RC(4,11) RC(2,11) RC(1,9)  RC(7,8)
+        RC(7,7) RC(1,2) RC(2,2) RC(4,5) RC(6,7)   RC(8,15) RC(4,13) RC(2,10) RC(1,10) RC(7,15)
+        RC(8,0) RC(8,6) RC(8,3) RC(8,5) RC(8,1)   RC(8,9) RC(8,13) RC(8,11) RC(8,14)  RC(8,8)
+      >;
+    };
+
+    bivvy16d_L16_R16_layout: bivvy16d_L16_R16_layout {
+        compatible = "zmk,physical-layout";
+        display-name = "Bivvy16D layout L16+R16";
+        transform = <&bivvy16d_L16_R16_transform>;
 
         keys  //                     w   h    x    y     rot    rx    ry
             = <&key_physical_attrs 100 100   32   37    1000    82    87>
@@ -54,12 +119,10 @@
             ;
     };
 
-    physical_layout1: physical_layout_1 {
+    bivvy16d_L15_R16_layout: bivvy16d_L15_R16_layout {
         compatible = "zmk,physical-layout";
-        display-name = "LAYOUT_L15_R16";
-
-        kscan = <&kscan1>;
-        transform = <&matrix_transform1>;
+        display-name = "Bivvy16D layout L15+R16";
+        transform = <&bivvy16d_L15_R16_transform>;
 
         keys  //                     w   h    x    y     rot    rx    ry
             = <&key_physical_attrs 100 100   32   37    1000    82    87>
@@ -106,12 +169,10 @@
             ;
     };
 
-    physical_layout2: physical_layout_2 {
+    bivvy16d_L16_R15_layout: bivvy16d_L16_R15_layout {
         compatible = "zmk,physical-layout";
-        display-name = "LAYOUT_L16_R15";
-
-        kscan = <&kscan2>;
-        transform = <&matrix_transform2>;
+        display-name = "Bivvy16D layout L16+R15";
+        transform = <&bivvy16d_L16_R15_transform>;
 
         keys  //                     w   h    x    y     rot    rx    ry
             = <&key_physical_attrs 100 100   32   37    1000    82    87>
@@ -158,12 +219,10 @@
             ;
     };
 
-    physical_layout3: physical_layout_3 {
+    bivvy16d_L15_R15_layout: bivvy16d_L15_R15_layout {
         compatible = "zmk,physical-layout";
-        display-name = "LAYOUT_L15_R15";
-
-        kscan = <&kscan3>;
-        transform = <&matrix_transform3>;
+        display-name = "Bivvy16D layout L15+R15";
+        transform = <&bivvy16d_L15_R15_transform>;
 
         keys  //                     w   h    x    y     rot    rx    ry
             = <&key_physical_attrs 100 100   32   37    1000    82    87>
@@ -207,5 +266,31 @@
             , <&key_physical_attrs  90  90 1115  415       0     0     0>
             , <&key_physical_attrs  90  90 1025  505       0     0     0>
             ;
+    };
+};
+
+/ {
+    position_map {
+        compatible = "zmk,physical-layout-position-map";
+
+        bivvy16d_L16_R16_layout {
+            physical-layout = <&bivvy16d_L16_R16_layout>;
+            positions = <40 41>;
+        };
+
+        bivvy16d_L15_R16_layout {
+            physical-layout = <&bivvy16d_L15_R16_layout>;
+            positions = <41>;
+        };
+
+        bivvy16d_L16_R15_layout {
+            physical-layout = <&bivvy16d_L16_R15_layout>;
+            positions = <41>;
+        };
+
+        bivvy16d_L15_R15_layout {
+            physical-layout = <&bivvy16d_L15_R15_layout>;
+            positions = <40 41>;
+        };
     };
 };
