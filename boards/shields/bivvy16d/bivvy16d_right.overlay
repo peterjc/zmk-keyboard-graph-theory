@@ -1,7 +1,20 @@
 #include "bivvy16d.dtsi"
 
-&default_transform {
+&bivvy16d_L16_R16_transform {
     col-offset = <8>;
 };
+
+&bivvy16d_L15_R16_transform {
+    col-offset = <8>;
+};
+
+&bivvy16d_L16_R15_transform {
+    col-offset = <8>;
+};
+
+&bivvy16d_L15_R15_transform {
+    col-offset = <8>;
+};
+
 
 /* The GPIO pins are the same, just layout mirrored */
