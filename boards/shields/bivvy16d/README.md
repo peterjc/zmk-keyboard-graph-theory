@@ -27,7 +27,7 @@ layout the PCB traces:
 | 15 |    |    |    |    |    | GH | TY |    |
 | 29 |    |    |    |    |    |    | ⌫␠ | BN |
 |  0 | A; |    |    |    |    |    |    | Z/ |
-| 27 | ⬇️ | ⬆️ |    | ⏺️ |    | ➡️ | ⬅️ |    |
+| 27 | ⬆️ | ⬅️ |    | ⏺️ |    | ➡️ | ⬇️ |    |
 
 Here is the matrix again, but for the NRF52840 SuperMini "Zero" controller (pads for this
 are on the other side of the PCB - these 17 GPIOs are co-located):
@@ -42,16 +42,16 @@ are on the other side of the PCB - these 17 GPIOs are co-located):
 | A1 |    |    |    |    |    | GH | TY |    |
 | A5 |    |    |    |    |    |    | ⌫␠ | BN |
 | TX | A; |    |    |    |    |    |    | Z/ |
-| A3 | ⬇️ | ⬆️ |    | ⏺️ |    | ➡️ | ⬅️ |    |
+| A3 | ⬆️ | ⬅️ |    | ⏺️ |    | ➡️ | ⬇️ |    |
 
 The keys here are labeled as per Qwerty, with ⌫ (backspace) and ␠ (space) on the
-thumbs, plus ⬆️/⬇️/⬅️/➡️/⏺️ as the directional button (for each half).
+thumbs, plus ⬆️/⬅️/⏺️/➡️/⬇️ as the directional button (for each half).
 
 | Q  | W  | E  | R  | T  |   | Y  | U  | I  | O  | P  |
 |:--:|:--:|:--:|:--:|:--:|:-:|:--:|:--:|:--:|:--:|:--:|
 | A  | S  | D  | F  | G  |   | H  | J  | K  | L  | -  |
 | Z  | X  | C  | V  | B  |   | N  | M  | ,  | .  | /  |
-| ⬆️ | ⬇️ | ⬅️ | ➡️ | ⏺️ |   | ⏺️ | ⬅️ | ➡️ | ⬇️ | ⬆️ |
+| ⬆️ | ⬅️ | ⏺️ | ➡️ | ⬇️ |   | ⬆️ | ⬅️ | ⏺️ | ➡️ | ⬇️ |
 |    |    |    |    | ⌫  |   | ␠  |    |    |    |    |
 
 This minimal default 32-key layout is rendered as an image above. The layout variants
