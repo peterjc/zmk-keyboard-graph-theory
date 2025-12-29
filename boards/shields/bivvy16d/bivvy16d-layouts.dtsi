@@ -19,7 +19,7 @@
 
     bivvy16d_L16_R16_transform: bivvy16d_L16_R16_transform {
       compatible = "zmk,matrix-transform";
-      columns = <8>;
+      columns = <16>;
       rows = <9>;
       map = <
         RC(0,0) RC(0,1) RC(3,3) RC(3,4) RC(5,6)   RC(5,14) RC(3,12) RC(3,11) RC(0,9)  RC(0,8)
@@ -32,7 +32,7 @@
 
     bivvy16d_L15_R16_transform: bivvy16d_L15_R16_transform {
       compatible = "zmk,matrix-transform";
-      columns = <8>;
+      columns = <16>;
       rows = <9>;
       map = <
         RC(0,0) RC(0,1) RC(3,3) RC(3,4) RC(5,6)   RC(5,14) RC(3,12) RC(3,11) RC(0,9)  RC(0,8)
@@ -45,7 +45,7 @@
 
     bivvy16d_L16_R15_transform: bivvy16d_L16_R15_transform {
       compatible = "zmk,matrix-transform";
-      columns = <8>;
+      columns = <16>;
       rows = <9>;
       map = <
         RC(0,0) RC(0,1) RC(3,3) RC(3,4) RC(5,6)   RC(5,14) RC(3,12) RC(3,11) RC(0,9)  RC(0,8)
@@ -58,7 +58,7 @@
 
     bivvy16d_L15_R15_transform: bivvy16d_L15_R15_transform {
       compatible = "zmk,matrix-transform";
-      columns = <8>;
+      columns = <16>;
       rows = <9>;
       map = <
         RC(0,0) RC(0,1) RC(3,3) RC(3,4) RC(5,6)   RC(5,14) RC(3,12) RC(3,11) RC(0,9)  RC(0,8)
