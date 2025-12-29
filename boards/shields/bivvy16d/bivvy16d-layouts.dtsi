@@ -56,7 +56,7 @@
       >;
     };
 
-    bivvy16d_L16_R16_transform: bivvy16d_L15_R15_transform {
+    bivvy16d_L15_R15_transform: bivvy16d_L15_R15_transform {
       compatible = "zmk,matrix-transform";
       columns = <8>;
       rows = <9>;
