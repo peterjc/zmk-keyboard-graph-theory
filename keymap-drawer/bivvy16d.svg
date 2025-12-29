@@ -253,23 +253,25 @@ path.combo {
 </g>
 <g transform="translate(95, 214)" class="key keypos-30">
 <rect rx="6" ry="6" x="-23" y="-23" width="46" height="46" class="key"/>
-<text x="0" y="0" class="key tap">↑</text>
+<text x="0" y="0" class="key tap">⇞</text>
 </g>
 <g transform="translate(45, 265)" class="key keypos-31">
 <rect rx="6" ry="6" x="-23" y="-23" width="46" height="46" class="key"/>
-<text x="0" y="0" class="key tap">←</text>
+<text x="0" y="0" class="key tap">↖</text>
 </g>
 <g transform="translate(95, 265)" class="key keypos-32">
 <rect rx="6" ry="6" x="-23" y="-23" width="46" height="46" class="key"/>
-<text x="0" y="0" class="key tap">⏎</text>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.6em">KP</tspan><tspan x="0" dy="1.2em">ENTER</tspan>
+</text>
 </g>
 <g transform="translate(146, 265)" class="key keypos-33">
 <rect rx="6" ry="6" x="-23" y="-23" width="46" height="46" class="key"/>
-<text x="0" y="0" class="key tap">→</text>
+<text x="0" y="0" class="key tap">↘</text>
 </g>
 <g transform="translate(95, 315)" class="key keypos-34">
 <rect rx="6" ry="6" x="-23" y="-23" width="46" height="46" class="key"/>
-<text x="0" y="0" class="key tap">↓</text>
+<text x="0" y="0" class="key tap">⇟</text>
 </g>
 <g transform="translate(599, 214)" class="key keypos-35">
 <rect rx="6" ry="6" x="-23" y="-23" width="46" height="46" class="key"/>
