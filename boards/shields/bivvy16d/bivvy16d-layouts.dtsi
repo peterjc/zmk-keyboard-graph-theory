@@ -70,7 +70,7 @@
 
     bivvy16d_L16_R16_layout: bivvy16d_L16_R16_layout {
         compatible = "zmk,physical-layout";
-        display-name = "Bivvy16D layout L16+R16";
+        display-name = "Bivvy16D L16+R16";
         transform = <&bivvy16d_L16_R16_transform>;
 
         keys  //                     w   h    x    y     rot    rx    ry
@@ -121,7 +121,7 @@
 
     bivvy16d_L15_R16_layout: bivvy16d_L15_R16_layout {
         compatible = "zmk,physical-layout";
-        display-name = "Bivvy16D layout L15+R16";
+        display-name = "Bivvy16D L15+R16";
         transform = <&bivvy16d_L15_R16_transform>;
 
         keys  //                     w   h    x    y     rot    rx    ry
@@ -171,7 +171,7 @@
 
     bivvy16d_L16_R15_layout: bivvy16d_L16_R15_layout {
         compatible = "zmk,physical-layout";
-        display-name = "Bivvy16D layout L16+R15";
+        display-name = "Bivvy16D L16+R15";
         transform = <&bivvy16d_L16_R15_transform>;
 
         keys  //                     w   h    x    y     rot    rx    ry
@@ -221,7 +221,7 @@
 
     bivvy16d_L15_R15_layout: bivvy16d_L15_R15_layout {
         compatible = "zmk,physical-layout";
-        display-name = "Bivvy16D layout L15+R15";
+        display-name = "Bivvy16D L15+R15";
         transform = <&bivvy16d_L15_R15_transform>;
 
         keys  //                     w   h    x    y     rot    rx    ry
