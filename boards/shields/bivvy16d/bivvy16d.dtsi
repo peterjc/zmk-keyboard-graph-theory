@@ -16,12 +16,13 @@
 
 &pinctrl {
     pio0_uart0_default: pio0_uart0_default {
-        group1 {
-            pinmux = <UART0_TX_P12>;        // TX on GPIO12
-        };
-        group2 {
-            pinmux = <UART0_RX_P13>;        // RX on GPIO13
+        rx_pins {
+            pinmux = <PIO0_P13>;
             input-enable;
+            bias-pull-up;
+        };
+        tx_pins {
+            pinmux = <PIO0_P12>;
         };
     };
 };
@@ -34,6 +35,7 @@
         compatible = "raspberrypi,pico-uart-pio";
         pinctrl-0 = <&pio0_uart0_default>;
         pinctrl-names = "default";
+        current-speed = <115200>;
     };
 };
 
