@@ -275,22 +275,22 @@
 
         bivvy16d_L16_R16_layout {
             physical-layout = <&bivvy16d_L16_R16_layout>;
-            positions = <40 41>;
+            positions = <24 25 40 41>;
         };
 
         bivvy16d_L15_R16_layout {
             physical-layout = <&bivvy16d_L15_R16_layout>;
-            positions = <41>;
+            positions = <24 25 41 40>;
         };
 
         bivvy16d_L16_R15_layout {
             physical-layout = <&bivvy16d_L16_R15_layout>;
-            positions = <41>;
+            positions = <24 25 40 41>;
         };
 
         bivvy16d_L15_R15_layout {
             physical-layout = <&bivvy16d_L15_R15_layout>;
-            positions = <40 41>;
+            positions = <24 25 40 41>;
         };
     };
 };
