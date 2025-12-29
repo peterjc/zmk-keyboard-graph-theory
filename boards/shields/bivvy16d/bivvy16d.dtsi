@@ -14,13 +14,25 @@
     status = "okay";
 };
 
+&pinctrl {
+    pio0_uart0_default: pio0_uart0_default {
+        group1 {
+            pinmux = <UART0_TX_P12>;        // TX on GPIO12
+        };
+        group2 {
+            pinmux = <UART0_RX_P13>;        // RX on GPIO13
+            input-enable;
+        };
+    };
+};
+
 &pio0 {
     status = "okay";
 
     pio0_uart0: serial {
         status = "okay";
         compatible = "raspberrypi,pico-uart-pio";
-        /* pinctrl-0 = <&pio0_uart0_default>; */
+        pinctrl-0 = <&pio0_uart0_default>;
         pinctrl-names = "default";
     };
 };
