@@ -8,16 +8,33 @@
 #include <physical_layouts.dtsi>
 #include "bivvy16d-layouts.dtsi"
 
-/* By design, this is a reversible PCB so same wiring for left and right,
- * so can define the GPIOs once centrally.
- */
+/* Define the TX/RX pins (GP12, GP13) for the wired link between left/right with RP2040 */
+&gpio0 {
+    status = "okay";
+};
+
+&pio0 {
+    status = "okay";
+
+    pio0_uart0: serial {
+        status = "okay";
+        compatible = "raspberrypi,pico-uart-pio";
+        pinctrl-0 = <&pio0_uart0_default>;
+        pinctrl-names = "default";
+    };
+};
 
 / {
     chosen {
         zmk,kscan = &kscan0;
         zmk,physical-layout = &bivvy16d_L16_R16_layout;
+        zmk,split-uart = &pio0_uart0;
         // Other chosen items
     };
+
+    /* By design, this is a reversible PCB so same wiring for left and right,
+     * so can define the GPIOs once centrally.
+     */
 
     kscan0: kscan0 {
         compatible = "zmk,kscan-gpio-matrix";
