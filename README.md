@@ -43,7 +43,7 @@ manifest:
     # *** Add the following two lines: ***  
     - name: peterjc
       url-base: https://github.com/peterjc
-    # *** Add the above two lines: ***
+    # *** Add the above two lines ***
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -53,7 +53,7 @@ manifest:
     - name: zmk-keyboard-graph-theory
       remote: peterjc
       revision: main
-    # *** Add the above three lines: ***
+    # *** Add the above three lines ***
   self:
     path: config
 ```
