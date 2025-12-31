@@ -1,0 +1,3 @@
+#include "bivvy16d.dtsi"
+
+/* The GPIO pins are the same, just layout mirrored */
