@@ -15,6 +15,9 @@ They have simple minimal Qwerty layouts including ZKM Studio support to cover ba
 * [Slump52](boards/shields/slump52), a Graph Theory based diode-free keyboard with
   26 GPIO pins for 52 keys and 4-key roll-over using the Incidence Graph of the
   Projective Plane of order 3 PG(2,3).
+* [Bivvy16D](boards/shields/bivvy16d), a Graph Theory based diode-free Bluetooth
+  *or wired* split keyboard using 17 GPIO pins for 16 (or 15) keys and a 5-way directional
+  button on each half, with 4-key roll-over per half (14KRO without the navigation button).
 
 See also my [QMK keyboard firmware](https://github.com/peterjc/qmk_userspace), and the
 following ZMK keyboard firmware for other people's diode-free Graph Theory designs:
