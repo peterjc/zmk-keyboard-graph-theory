@@ -1,0 +1,7 @@
+# Copyright (c) 2025 Peter J. A. Cock
+# SPDX-License-Identifier: MIT
+
+config SHIELD_BIVVY16D_LEFT
+    def_bool $(shields_list_contains,bivvy16d_left)
+config SHIELD_BIVVY16D_RIGHT
+    def_bool $(shields_list_contains,bivvy16d_right)
