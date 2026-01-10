@@ -1,0 +1,73 @@
+/*
+ * Copyright (c) 2025-2025 Peter J. A. Cock
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+#include <dt-bindings/zmk/matrix_transform.h>
+#include <zephyr/dt-bindings/pinctrl/rpi-pico-rp2040-pinctrl.h>
+#include <physical_layouts.dtsi>
+#include "bivvy16d-layouts.dtsi"
+
+/* Define split Bluetooth using NoLogoTech NRF52840 "Zero" */
+
+/ {
+    chosen {
+        zmk,kscan = &kscan0;
+        zmk,physical-layout = &bivvy16d_L16_R16_layout;
+        // Other chosen items
+    };
+
+    /* By design, this is a reversible PCB so same wiring for left and right,
+     * so can define the GPIOs once centrally. Cols are:
+     * - RX aka P1.10
+     * - D5 aka P1.13
+     * - D13 aka P0.13
+     * - D10 aka P1.02
+     * - D4 aka P1.15
+     * - A0 aka P0.04
+     * - A2 aka P0.30
+     * - A4 aka P0.31
+     *
+     * Rows are:
+     * - D2 aka P1.11
+     * - D6 aka P1.14
+     * - D11 aka P1.01
+     * - D3 aka P1.12
+     * - D12 aka P1.08
+     * - A1 aka P0.05
+     * - A5 aka P0.02
+     * - TX aka P1.03
+     * - A3 aka P0.29 
+     */
+
+    kscan0: kscan0 {
+        compatible = "zmk,kscan-gpio-matrix";
+        diode-direction = "col2row";
+        wakeup-source;
+
+        col-gpios
+            = <&gpio1 10 GPIO_OPEN_SOURCE>
+            , <&gpio1 13 GPIO_OPEN_SOURCE>
+            , <&gpio0 13 GPIO_OPEN_SOURCE>
+            , <&gpio1 2 GPIO_OPEN_SOURCE>
+            , <&gpio1 15 GPIO_OPEN_SOURCE>
+            , <&gpio0 4 GPIO_OPEN_SOURCE>
+            , <&gpio0 30 GPIO_OPEN_SOURCE>
+            , <&gpio0 31 GPIO_OPEN_SOURCE>
+            ;
+
+        row-gpios
+            = <&gpio1 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&gpio1 14 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&gpio1 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&gpio1 12 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&gpio1 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&gpio0 5 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&gpio0 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&gpio1 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&gpio0 29 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            ;
+    };
+};
+
