@@ -302,11 +302,11 @@ path.combo {
 <text x="0" y="0" class="key tap">⎵</text>
 </g>
 <g class="combo combopos-0">
-<path d="M349,12 h-297 a6.0,6.0 0 0 0 -6.0,6.0 v19" class="combo"/>
-<path d="M349,12 h297 a6.0,6.0 0 0 1 6.0,6.0 v19" class="combo"/>
-<rect rx="6" ry="6" x="324" y="-1" width="50" height="26" class="combo"/>
-<text x="349" y="12" class="combo tap">
-<tspan x="349" dy="-0.6em">Studio</tspan><tspan x="349" dy="1.2em">Unlock</tspan>
+<path d="M162,12 h-110 a6.0,6.0 0 0 0 -6.0,6.0 v19" class="combo"/>
+<path d="M162,12 h110 a6.0,6.0 0 0 1 6.0,6.0 v93" class="combo"/>
+<rect rx="6" ry="6" x="137" y="-1" width="50" height="26" class="combo"/>
+<text x="162" y="12" class="combo tap">
+<tspan x="162" dy="-0.6em">Studio</tspan><tspan x="162" dy="1.2em">Unlock</tspan>
 </text>
 </g>
 </g>
