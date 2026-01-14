@@ -11,8 +11,8 @@ keys, for each hand) - my alternative PCB for the [Forager keyboard](https://git
 This is a *diode-free* design with a sparse 7 by 6 scanning matrix designed using the
 [Partial Heawood Graph](https://houseofgraphs.org/graphs/54325) (using all 13 GPIOs).
 This is a bipartite graph with 7 (scanning rows) plus 6 (scanning columns) giving 13
-vertices, and 18 edges (keys). The graph is girth 6, meaning sadly the keyboard has
-only 4-key roll-over. See this
+vertices, and 18 edges (up to 18 keys). The graph is girth 6, meaning sadly the keyboard
+has only 4-key roll-over. See this
 [blog post](https://astrobeano.blogspot.com/2025/05/topology-meets-custom-keyboard-circuit.html)
 for background.
 
@@ -39,9 +39,10 @@ The keys here are labeled as per Qwerty, with L3, L2, L1, R1, R2, and R3 for the
 | Z | X |  C |  V |  B |   |  N |  M |  , | . | / |
 |   |   | L3 | L2 | L1 |   | R1 | R2 | R3 |   |   |
 
-The original Forager has only two thumb keys per hand, my "Acid" version adds an
+The original Forager has only two thumb keys per hand, my "Acid" version added an
 optional bonus third sideways SMD switch to the PCB to fill out the matrix (these
-are L3 and R3 in the above - not currently implemented in the firmware).
+were L3 and R3 in the above), but it was impractical and is not implemented in the
+firmware.
 
 See also the [Heawood42 keyboard](https://github.com/triliu/Heawood42) which
 was the first no-diode keyboard using graph theory (42 key split design), and
