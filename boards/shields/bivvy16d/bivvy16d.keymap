@@ -39,10 +39,10 @@
     combos {
         compatible = "zmk,combos";
 
-        // Top left (Q) + top right (P) = &studio_unlock
+        // Top left (Q) + top right on left hand (T) = &studio_unlock
         combo_studio_unlock {
             timeout-ms = <100>;
-            key-positions = <0 9>;
+            key-positions = <0 4>;
             bindings = <&studio_unlock>;
         };
     };
