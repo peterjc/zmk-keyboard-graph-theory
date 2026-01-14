@@ -10,8 +10,8 @@ They have simple minimal Qwerty layouts including ZKM Studio support to cover ba
   keyboard with 21 GPIO pins for 36 keys and 4-key roll-over using the Hesse Configuration
   Incidence Graph.
 * [Forager Acid](boards/shields/acid), a Graph Theory based diode-free Bluetooth split
-  keyboard with 13 GPIO pins for 17 (or 18) keys and 4-key roll-over per half using a
-  partial Heawood Graph.
+  keyboard with 13 GPIO pins for 17 keys and 4-key roll-over per half using a partial
+  Heawood Graph.
 * [Slump52](boards/shields/slump52), a Graph Theory based diode-free keyboard with
   26 GPIO pins for 52 keys and 4-key roll-over using the Incidence Graph of the
   Projective Plane of order 3 PG(2,3).
