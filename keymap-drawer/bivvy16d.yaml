@@ -44,7 +44,7 @@ layers:
   - ⌫
   - ⎵
 combos:
-- p: [0, 9]
+- p: [0, 4]
   k: Studio Unlock
   a: top
   o: 0.3
