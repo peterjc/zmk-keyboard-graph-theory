@@ -60,7 +60,8 @@ This minimal default 32-key layout is rendered as an image above. The layout var
 drop either or both of the central thumbs (most splayed, backspace and space in the
 default layout) which are listed last above - in favour of a single 1.75u wide thumb key.
 
-The ZMK Studio unlock combo is Q (top left) and T (top right of left half).
+The ZMK Studio unlock combo is Q (top left) and T (top right of left half), which is
+possible even if communication with the right half is not working.
 
 See also the [QMK Bivvy16D firmware](https://github.com/peterjc/qmk_userspace/tree/main/keyboards/bivvy16d),
 the [Heawood42 keyboard](https://github.com/triliu/Heawood42) which was the first no-diode
