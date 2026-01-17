@@ -27,6 +27,15 @@ include:
     shield: tester_rpi_pico
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
+  # Raspberry Pi Zero tester:
+  - board: rpi_pico
+    shield: tester_rpi_zero
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
+  - board: rpi_pico2/rp2350a/m33
+    shield: tester_rpi_zero
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
   # Gamma Omega TC36K:
   - board: rpi_pico
     shield: tc36k
