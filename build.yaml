@@ -18,6 +18,15 @@
 #     artifact-name: corne_left_with_studio
 #
 include:
+  # Raspberry Pi Pico tester:
+  - board: rpi_pico
+    shield: tester_rpi_pico
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
+  - board: rpi_pico2/rp2350a/m33
+    shield: tester_rpi_pico
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
   # Gamma Omega TC36K:
   - board: rpi_pico
     shield: tc36k
