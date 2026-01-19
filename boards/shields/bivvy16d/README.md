@@ -34,17 +34,17 @@ layout the PCB traces:
 Here is the matrix again, but for the NRF52840 SuperMini "Zero" controller (pads for this
 are on the other side of the PCB - these 17 GPIOs are co-located):
 
-| GP | RX |  5 | 13 | 10 |  4 | A0 | A2 | A4 |
-|---:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
-|  2 | QP | WO |    |    |    |    |    |    |
-|  6 |    | SL | X. |    |    |    |    |    |
-| 11 |    |    | C, | DK |    |    |    |    |
-|  3 |    |    |    | EI | RU |    |    |    |
-| 12 |    |    |    |    | FJ | VM |    |    |
-| A1 |    |    |    |    |    | GH | TY |    |
-| A5 |    |    |    |    |    |    | ⌫␠ | BN |
-| TX | A; |    |    |    |    |    |    | Z/ |
-| A3 | ⬆️ | ⬅️ |    | ⏺️ |    | ➡️ | ⬇️ |    |
+|  GP | RX | D5 | D13 | D10 | D4 | A0 | A2 | A4 |
+|----:|:--:|:--:|:---:|:---:|:--:|:--:|:--:|:--:|
+|  D2 | QP | WO |     |     |    |    |    |    |
+|  D6 |    | SL | X.  |     |    |    |    |    |
+| D11 |    |    | C,  | DK  |    |    |    |    |
+|  D3 |    |    |     | EI  | RU |    |    |    |
+| D12 |    |    |     |     | FJ | VM |    |    |
+|  A1 |    |    |     |     |    | GH | TY |    |
+|  A5 |    |    |     |     |    |    | ⌫␠ | BN |
+|  TX | A; |    |     |     |    |    |    | Z/ |
+|  A3 | ⬆️ | ⬅️ |     | ⏺️  |    | ➡️ | ⬇️ |    |
 
 The keys here are labeled as per Qwerty, with ⌫ (backspace) and ␠ (space) on the
 thumbs, plus ⬆️/⬅️/⏺️/➡️/⬇️ as the directional button (for each half).
