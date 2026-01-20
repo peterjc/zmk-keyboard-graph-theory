@@ -54,7 +54,7 @@ thumbs, plus ⬆️/⬅️/⏺️/➡️/⬇️ as the directional button (for e
 |:--:|:--:|:--:|:--:|:--:|:-:|:--:|:--:|:--:|:--:|:--:|
 | A  | S  | D  | F  | G  |   | H  | J  | K  | L  | -  |
 | Z  | X  | C  | V  | B  |   | N  | M  | ,  | .  | /  |
-| ⬆️ | ⬅️ | ⏺️ | ➡️ | ⬇️ |   | ⬆️ | ⬅️ | ⏺️ | ➡️ | ⬇️ |
+| ⬇️ | ⬅️ | ⏺️ | ➡️ | ⬆️ |   | ⬆️ | ⬅️ | ⏺️ | ➡️ | ⬇️ |
 |    |    |    |    | ⌫  |   | ␠  |    |    |    |    |
 
 This minimal default 32-key layout is rendered as an image above. The layout variants
