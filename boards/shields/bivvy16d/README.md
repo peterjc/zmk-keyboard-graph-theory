@@ -14,7 +14,7 @@ Graph Theory to avoid ghosting. See this
 for background and this
 [blog post](https://astrobeano.blogspot.com/2025/12/5-way-switch-in-diode-free-graph-theory.html)
 for the specifics of this keyboard's wiring. I recorded the graph as
-[https://houseofgraphs.org/graphs/56121](House of Graphs #56121).
+[House of Graphs #56121](https://houseofgraphs.org/graphs/56121).
 
 This matrix shows the 9×8 bipartite scanning matrix for either half, with the Raspberry Pi
 "Zero" controller GPIO pins. The pin allocation was arbitrary and down to how easy it was to
