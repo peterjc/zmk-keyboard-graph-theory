@@ -30,7 +30,7 @@ layout the PCB traces:
 | 15 |    |    |    |    |    | GH | TY |    |
 | 29 |    |    |    |    |    |    | ⌫␠ | BN |
 |  0 | A; |    |    |    |    |    |    | Z/ |
-| 27 | ⬆️ | ⬅️ |    | ⏺️ |    | ➡️ | ⬇️ |    |
+| 27 | ⬇️ | ⬅️ |    | ⏺️ |    | ➡️ | ⬆️ |    |
 
 Here is the matrix again, but for the NRF52840 SuperMini "Zero" controller (pads for this
 are on the other side of the PCB - these 17 GPIOs are co-located):
@@ -45,7 +45,7 @@ are on the other side of the PCB - these 17 GPIOs are co-located):
 | A1 |    |    |    |    |    | GH | TY |    |
 | A5 |    |    |    |    |    |    | ⌫␠ | BN |
 | TX | A; |    |    |    |    |    |    | Z/ |
-| A3 | ⬆️ | ⬅️ |    | ⏺️ |    | ➡️ | ⬇️ |    |
+| A3 | ⬇️ | ⬅️ |    | ⏺️ |    | ➡️ | ⬆️ |    |
 
 The keys here are labeled as per Qwerty, with ⌫ (backspace) and ␠ (space) on the
 thumbs, plus ⬆️/⬅️/⏺️/➡️/⬇️ as the directional button (for each half).
