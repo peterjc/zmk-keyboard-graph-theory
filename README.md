@@ -4,21 +4,19 @@ A ZMK module holding a collection of keyboard firmware for my keyboard PCB desig
 These use Graph Theory based sparse scanning matrices to avoid ghosting, rather than diodes.
 They have simple minimal Qwerty layouts including ZKM Studio support to cover basic usage:
 
-* [Gamma Omega TC36K](boards/shields/tc36k), a Graph Theory based diode-free keyboard with
+* [Gamma Omega TC36K](boards/shields/tc36k), using a Raspberry Pi Pico controller with
   26 GPIO pins for 36 keys and 6-key roll-over using a partial Tutte-Coxeter Graph.
-* [Gamma Omega Hesse](boards/shields/hesse), a Graph Theory based diode-free Bluetooth
-  keyboard with 21 GPIO pins for 36 keys and 4-key roll-over using the Hesse Configuration
-  Incidence Graph.
-* [Forager Acid](boards/shields/acid), a Graph Theory based diode-free Bluetooth split
-  keyboard with 13 GPIO pins for 17 keys and 4-key roll-over per half using a partial
-  Heawood Graph.
-* [Slump52](boards/shields/slump52), a Graph Theory based diode-free keyboard with
+* [Gamma Omega Hesse](boards/shields/hesse), using a Nice!Nano v2 (or clone) controller with
+  21 GPIO pins for 36 keys and 4-key roll-over using the Hesse Configuration Incidence Graph.
+* [Forager Acid](boards/shields/acid), a Bluetooth split keyboard using a Seeed Xiao NRF52840
+  controller with 13 GPIO pins for 17 keys and 4-key roll-over per half using a partial Heawood Graph.
+* [Slump52](boards/shields/slump52), using a Raspberry Pi Pico controller with
   26 GPIO pins for 52 keys and 4-key roll-over using the Incidence Graph of the
   Projective Plane of order 3 PG(2,3).
-* [Bivvy16D](boards/shields/bivvy16d), a Graph Theory based diode-free Bluetooth
-  *or wired* split keyboard using 17 GPIO pins for 16 (or 15) keys and a 5-way directional
-  button on each half, with 4-key roll-over per half (14KRO without the navigation button).
-* [Bivouac34](boards/shields/bivouac34), a Graph Theory based diode-free tented keyboard with
+* [Bivvy16D](boards/shields/bivvy16d), a Bluetooth *or wired* split keyboard using
+  17 GPIO pins for 16 (or 15) keys and a 5-way directional button on each half,
+  with 4-key roll-over per half (14KRO without the navigation button).
+* [Bivouac34](boards/shields/bivouac34), using a Wareshare RP2040-Zero controller with
   20 GPIO pins for 34 keys and 4-key roll-over using the unique but unnamed graph of this size.
 
 See also my [QMK keyboard firmware](https://github.com/peterjc/qmk_userspace), and the
