@@ -1,6 +1,7 @@
 # ZMK Firmware for Graph Theory based keyboards
 
-A ZMK module holding a collection of keyboard firmware for my keyboard PCB designs.
+A ZMK module holding a collection of keyboard firmware for [my keyboard (or alternative
+keyboard PCB) designs](https://codeberg.org/peterjc/pico-keyboards).
 These use Graph Theory based sparse scanning matrices to avoid ghosting, rather than diodes.
 They have simple minimal Qwerty layouts including ZKM Studio support to cover basic usage:
 
