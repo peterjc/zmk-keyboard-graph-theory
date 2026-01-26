@@ -18,24 +18,59 @@
 #     artifact-name: corne_left_with_studio
 #
 include:
-  # Unibody:
+  # Raspberry Pi Pico tester:
+  - board: rpi_pico
+    shield: tester_rpi_pico
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
+  - board: rpi_pico2/rp2350a/m33
+    shield: tester_rpi_pico
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
+
+  # Raspberry Pi Zero tester:
+  - board: rpi_pico
+    shield: tester_rpi_zero
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
+  - board: rpi_pico2/rp2350a/m33
+    shield: tester_rpi_zero
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
+
+  # Gamma Omega TC36K:
   - board: rpi_pico
     shield: tc36k
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
+  - board: rpi_pico2/rp2350a/m33
+    shield: tc36k
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
+
+  # Slump52:
   - board: rpi_pico
     shield: slump52
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
+  - board: rpi_pico2/rp2350a/m33
+    shield: slump52
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
+
+  # Bivouac34
   - board: rpi_pico
     shield: bivouac34
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
+
+  # Gamma Omega Hesse:
   - board: nice_nano@2.0.0
     shield: hesse
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
-  # Acid (split):
+
+  # Forager Acid (split):
   - board: xiao_ble
     shield: acid_left
     snippet: studio-rpc-usb-uart
@@ -44,7 +79,8 @@ include:
     shield: acid_right
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
-  # Bivvy16D (split): 
+
+  # Bivvy16D (split):
   - board: rpi_pico
     shield: bivvy16d_left
     snippet: studio-rpc-usb-uart
