@@ -136,3 +136,4 @@ parse_config:
     '&plus_equal': {'t': '+', 's': '='}
   zmk_combos:
     combo_studio_unlock: {'key': 'Studio Unlock', 'align': 'top', 'offset': 0.3, 'width': 50}
+    combo_bootloader: {'key': 'Boot loader', 'width': 50}
