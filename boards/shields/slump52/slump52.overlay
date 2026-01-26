@@ -15,19 +15,19 @@
         wakeup-source;
 
         col-gpios
-            = <&pico_header 28 GPIO_OPEN_SOURCE>
-            , <&pico_header 26 GPIO_OPEN_SOURCE>
-            , <&pico_header 16 GPIO_OPEN_SOURCE>
-            , <&pico_header 15 GPIO_OPEN_SOURCE>
-            , <&pico_header 8 GPIO_OPEN_SOURCE>
-            , <&pico_header 7 GPIO_OPEN_SOURCE>
-            , <&pico_header 6 GPIO_OPEN_SOURCE>
-            , <&pico_header 5 GPIO_OPEN_SOURCE>
-            , <&pico_header 4 GPIO_OPEN_SOURCE>
-            , <&pico_header 3 GPIO_OPEN_SOURCE>
-            , <&pico_header 2 GPIO_OPEN_SOURCE>
-            , <&pico_header 1 GPIO_OPEN_SOURCE>
-            , <&pico_header 0 GPIO_OPEN_SOURCE>
+            = <&pico_header 28 GPIO_OPEN_DRAIN>
+            , <&pico_header 26 GPIO_OPEN_DRAIN>
+            , <&pico_header 16 GPIO_OPEN_DRAIN>
+            , <&pico_header 15 GPIO_OPEN_DRAIN>
+            , <&pico_header 8 GPIO_OPEN_DRAIN>
+            , <&pico_header 7 GPIO_OPEN_DRAIN>
+            , <&pico_header 6 GPIO_OPEN_DRAIN>
+            , <&pico_header 5 GPIO_OPEN_DRAIN>
+            , <&pico_header 4 GPIO_OPEN_DRAIN>
+            , <&pico_header 3 GPIO_OPEN_DRAIN>
+            , <&pico_header 2 GPIO_OPEN_DRAIN>
+            , <&pico_header 1 GPIO_OPEN_DRAIN>
+            , <&pico_header 0 GPIO_OPEN_DRAIN>
             ;
 
         row-gpios
