@@ -11,39 +11,39 @@
 / {
     kscan0: kscan0 {
         compatible = "zmk,kscan-gpio-matrix";
-        diode-direction = "col2row";
+        diode-direction = "row2col";
         wakeup-source;
 
         col-gpios
-            = <&pico_header 28 GPIO_OPEN_SOURCE>
-            , <&pico_header 26 GPIO_OPEN_SOURCE>
-            , <&pico_header 16 GPIO_OPEN_SOURCE>
-            , <&pico_header 15 GPIO_OPEN_SOURCE>
-            , <&pico_header 8 GPIO_OPEN_SOURCE>
-            , <&pico_header 7 GPIO_OPEN_SOURCE>
-            , <&pico_header 6 GPIO_OPEN_SOURCE>
-            , <&pico_header 5 GPIO_OPEN_SOURCE>
-            , <&pico_header 4 GPIO_OPEN_SOURCE>
-            , <&pico_header 3 GPIO_OPEN_SOURCE>
-            , <&pico_header 2 GPIO_OPEN_SOURCE>
-            , <&pico_header 1 GPIO_OPEN_SOURCE>
-            , <&pico_header 0 GPIO_OPEN_SOURCE>
+            = <&pico_header 28 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            , <&pico_header 26 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            , <&pico_header 16 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            , <&pico_header 15 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            , <&pico_header 8 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            , <&pico_header 7 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            , <&pico_header 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            , <&pico_header 5 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            , <&pico_header 4 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            , <&pico_header 3 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            , <&pico_header 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            , <&pico_header 1 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            , <&pico_header 0 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
             ;
 
         row-gpios
-            = <&pico_header 27 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&pico_header 22 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&pico_header 21 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&pico_header 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&pico_header 19 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&pico_header 18 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&pico_header 17 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&pico_header 14 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&pico_header 13 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&pico_header 12 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&pico_header 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&pico_header 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&pico_header 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            = <&pico_header 27 GPIO_ACTIVE_LOW>
+            , <&pico_header 22 GPIO_ACTIVE_LOW>
+            , <&pico_header 21 GPIO_ACTIVE_LOW>
+            , <&pico_header 20 GPIO_ACTIVE_LOW>
+            , <&pico_header 19 GPIO_ACTIVE_LOW>
+            , <&pico_header 18 GPIO_ACTIVE_LOW>
+            , <&pico_header 17 GPIO_ACTIVE_LOW>
+            , <&pico_header 14 GPIO_ACTIVE_LOW>
+            , <&pico_header 13 GPIO_ACTIVE_LOW>
+            , <&pico_header 12 GPIO_ACTIVE_LOW>
+            , <&pico_header 11 GPIO_ACTIVE_LOW>
+            , <&pico_header 10 GPIO_ACTIVE_LOW>
+            , <&pico_header 9 GPIO_ACTIVE_LOW>
             ;
     };
 };
@@ -87,4 +87,3 @@
         // Other chosen items
     };
 };
-
