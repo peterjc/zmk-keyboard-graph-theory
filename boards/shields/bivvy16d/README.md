@@ -13,7 +13,8 @@ Graph Theory to avoid ghosting. See this
 [blog post](https://astrobeano.blogspot.com/2025/05/topology-meets-custom-keyboard-circuit.html)
 for background and this
 [blog post](https://astrobeano.blogspot.com/2025/12/5-way-switch-in-diode-free-graph-theory.html)
-for the specifics of this keyboard's wiring.
+for the specifics of this keyboard's wiring. I recorded the graph as
+[House of Graphs #56121](https://houseofgraphs.org/graphs/56121).
 
 This matrix shows the 9×8 bipartite scanning matrix for either half, with the Raspberry Pi
 "Zero" controller GPIO pins. The pin allocation was arbitrary and down to how easy it was to
@@ -29,7 +30,7 @@ layout the PCB traces:
 | 15 |    |    |    |    |    | GH | TY |    |
 | 29 |    |    |    |    |    |    | ⌫␠ | BN |
 |  0 | A; |    |    |    |    |    |    | Z/ |
-| 27 | ⬆️ | ⬅️ |    | ⏺️ |    | ➡️ | ⬇️ |    |
+| 27 | ⬇️ | ⬅️ |    | ⏺️ |    | ➡️ | ⬆️ |    |
 
 Here is the matrix again, but for the NRF52840 SuperMini "Zero" controller (pads for this
 are on the other side of the PCB - these 17 GPIOs are co-located):
@@ -44,7 +45,7 @@ are on the other side of the PCB - these 17 GPIOs are co-located):
 | A1 |    |    |    |    |    | GH | TY |    |
 | A5 |    |    |    |    |    |    | ⌫␠ | BN |
 | TX | A; |    |    |    |    |    |    | Z/ |
-| A3 | ⬆️ | ⬅️ |    | ⏺️ |    | ➡️ | ⬇️ |    |
+| A3 | ⬇️ | ⬅️ |    | ⏺️ |    | ➡️ | ⬆️ |    |
 
 The keys here are labeled as per Qwerty, with ⌫ (backspace) and ␠ (space) on the
 thumbs, plus ⬆️/⬅️/⏺️/➡️/⬇️ as the directional button (for each half).
@@ -53,7 +54,7 @@ thumbs, plus ⬆️/⬅️/⏺️/➡️/⬇️ as the directional button (for e
 |:--:|:--:|:--:|:--:|:--:|:-:|:--:|:--:|:--:|:--:|:--:|
 | A  | S  | D  | F  | G  |   | H  | J  | K  | L  | -  |
 | Z  | X  | C  | V  | B  |   | N  | M  | ,  | .  | /  |
-| ⬆️ | ⬅️ | ⏺️ | ➡️ | ⬇️ |   | ⬆️ | ⬅️ | ⏺️ | ➡️ | ⬇️ |
+| ⬇️ | ⬅️ | ⏺️ | ➡️ | ⬆️ |   | ⬆️ | ⬅️ | ⏺️ | ➡️ | ⬇️ |
 |    |    |    |    | ⌫  |   | ␠  |    |    |    |    |
 
 This minimal default 32-key layout is rendered as an image above. The layout variants

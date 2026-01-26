@@ -1,6 +1,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
+
 / {
     keymap {
         compatible = "zmk,keymap";
@@ -8,11 +9,10 @@
         default_layer { // Layer 0
             display-name = "Base";
             bindings = <
-                &kp Q     &kp W    &kp E        &kp R   &kp T       &kp Y     &kp U    &kp I     &kp O     &kp P
-                &kp A     &kp S    &kp D        &kp F   &kp G       &kp H     &kp J    &kp K     &kp L     &kp SEMI
-                &kp Z     &kp X    &kp C        &kp V   &kp B       &kp N     &kp M    &kp COMMA &kp DOT   &kp SLASH
-                &kp PG_DN &kp HOME &kp KP_ENTER &kp END &kp PG_UP   &kp UP    &kp LEFT &kp ENTER &kp RIGHT &kp DOWN
-                                                        &kp BSPC    &kp SPACE
+                &kp Q &kp W &kp E &kp R &kp T                      &kp Y &kp U &kp I     &kp O   &kp P
+                &kp A &kp S &kp D &kp F &kp G                      &kp H &kp J &kp K     &kp L   &kp SEMI
+                &kp Z &kp X &kp C &kp V                                  &kp M &kp COMMA &kp DOT &kp SLASH
+                            &kp B &kp BSPC &kp LSHFT &kp RSHFT &kp SPACE &kp N
             >;
         };
 
@@ -32,14 +32,14 @@
         extra5 {
             status = "reserved";
         };
-    };
+     };
 };
 
 / {
     combos {
         compatible = "zmk,combos";
 
-        // Top left (Q) + top right on left hand (T) = &studio_unlock
+        // Top left (Q) + top right (T) on left half = &studio_unlock
         combo_studio_unlock {
             timeout-ms = <100>;
             key-positions = <0 4>;

@@ -1,4 +1,4 @@
-layout: {zmk_keyboard: bivvy16d}
+layout: {zmk_keyboard: bivouac34}
 layers:
   Base:
   - Q
@@ -25,24 +25,16 @@ layers:
   - X
   - C
   - V
-  - B
-  - N
   - M
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - ⇟
-  - ↖
-  - KP ENTER
-  - ↘
-  - ⇞
-  - ↑
-  - ←
-  - ⏎
-  - →
-  - ↓
+  - B
   - ⌫
+  - ⇧
+  - ⇧
   - ⎵
+  - N
 combos:
 - p: [0, 4]
   k: Studio Unlock

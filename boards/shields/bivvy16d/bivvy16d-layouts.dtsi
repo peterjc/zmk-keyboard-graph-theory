@@ -3,13 +3,25 @@
 / {
 
 
-    /*
+    /* Physical layout close to this:
+     *
+     * ┌───┬───┬───┬───┐                   ┌───┬───┬───┬───┐
+     * │ Q │ W │ E │ R ├───┐           ┌───┤ U │ I │ O │ P │
+     * ├───┼───┼───┼───┤ T │           │ Y ├───┼───┼───┼───┤
+     * │ A │ S │ D │ F ├───┤           ├───┤ J │ K │ L │ ; │
+     * ├───┼───┼───┼───┤ G │           │ H ├───┼───┼───┼───┤
+     * │ Z │ X │ C │ V ├───┘           └───┤ M │ , │ . │ / │
+     * └───┴───┴───┴───┘                   └───┴───┴───┴───┘
+     *                 ┌───┬───┐  ┌───┬───┐
+     *      (5-way)    │ B │BkS│  │SPC│ N │     (5-way)
+     *                 └───┴───┘  └───┴───┘
+     *
      * Logical rows as used in the DTSI file:
      *
      * Q 	W 	E 	R 	T 		Y 	U 	I 	O 	P
      * A 	S 	D 	F 	G 		H 	J 	K 	L 	;
      * Z 	X 	C 	V 	B 		N 	M 	, 	. 	/
-     * ⬆️	⬅️	⏺️	➡️	⬇️		⬆️	⬅️	⏺️	➡️	⬇️
+     * ⬇️	⬅️	⏺️	➡️	⬆️		⬆️	⬅️	⏺️	➡️	⬇️
      *   	  	  	  	⌫ 		␠
      *
      * The RC(#, #) columns and row value below are the scaning matrix (GPIOs), not physical/logical!
@@ -104,11 +116,11 @@
             , <&key_physical_attrs 100 100  928  190 (-1800)   978   240>
             , <&key_physical_attrs 100 100 1038  202 (-1000)  1088   252>
             , <&key_physical_attrs 100 100 1145  265       0     0     0>
-            , <&key_physical_attrs  90  90  125  325       0     0     0>
+            , <&key_physical_attrs  90  90  125  505       0     0     0>
             , <&key_physical_attrs  90  90   35  415       0     0     0>
             , <&key_physical_attrs  90  90  125  415       0     0     0>
             , <&key_physical_attrs  90  90  215  415       0     0     0>
-            , <&key_physical_attrs  90  90  125  505       0     0     0>
+            , <&key_physical_attrs  90  90  125  325       0     0     0>
             , <&key_physical_attrs  90  90 1025  325       0     0     0>
             , <&key_physical_attrs  90  90  935  415       0     0     0>
             , <&key_physical_attrs  90  90 1025  415       0     0     0>
@@ -155,11 +167,11 @@
             , <&key_physical_attrs 100 100  928  190 (-1800)   978   240>
             , <&key_physical_attrs 100 100 1038  202 (-1000)  1088   252>
             , <&key_physical_attrs 100 100 1145  265       0     0     0>
-            , <&key_physical_attrs  90  90  125  325       0     0     0>
+            , <&key_physical_attrs  90  90  125  505       0     0     0>
             , <&key_physical_attrs  90  90   35  415       0     0     0>
             , <&key_physical_attrs  90  90  125  415       0     0     0>
             , <&key_physical_attrs  90  90  215  415       0     0     0>
-            , <&key_physical_attrs  90  90  125  505       0     0     0>
+            , <&key_physical_attrs  90  90  125  325       0     0     0>
             , <&key_physical_attrs  90  90 1025  325       0     0     0>
             , <&key_physical_attrs  90  90  935  415       0     0     0>
             , <&key_physical_attrs  90  90 1025  415       0     0     0>
@@ -205,11 +217,11 @@
             , <&key_physical_attrs 100 100  928  190 (-1800)   978   240>
             , <&key_physical_attrs 100 100 1038  202 (-1000)  1088   252>
             , <&key_physical_attrs 100 100 1145  265       0     0     0>
-            , <&key_physical_attrs  90  90  125  325       0     0     0>
+            , <&key_physical_attrs  90  90  125  505       0     0     0>
             , <&key_physical_attrs  90  90   35  415       0     0     0>
             , <&key_physical_attrs  90  90  125  415       0     0     0>
             , <&key_physical_attrs  90  90  215  415       0     0     0>
-            , <&key_physical_attrs  90  90  125  505       0     0     0>
+            , <&key_physical_attrs  90  90  125  325       0     0     0>
             , <&key_physical_attrs  90  90 1025  325       0     0     0>
             , <&key_physical_attrs  90  90  935  415       0     0     0>
             , <&key_physical_attrs  90  90 1025  415       0     0     0>
@@ -255,11 +267,11 @@
             , <&key_physical_attrs 100 100  928  190 (-1800)   978   240>
             , <&key_physical_attrs 100 100 1038  202 (-1000)  1088   252>
             , <&key_physical_attrs 100 100 1145  265       0     0     0>
-            , <&key_physical_attrs  90  90  125  325       0     0     0>
+            , <&key_physical_attrs  90  90  125  505       0     0     0>
             , <&key_physical_attrs  90  90   35  415       0     0     0>
             , <&key_physical_attrs  90  90  125  415       0     0     0>
             , <&key_physical_attrs  90  90  215  415       0     0     0>
-            , <&key_physical_attrs  90  90  125  505       0     0     0>
+            , <&key_physical_attrs  90  90  125  325       0     0     0>
             , <&key_physical_attrs  90  90 1025  325       0     0     0>
             , <&key_physical_attrs  90  90  935  415       0     0     0>
             , <&key_physical_attrs  90  90 1025  415       0     0     0>
