@@ -61,9 +61,10 @@ manifest:
     path: config
 ```
 
-Add your desired keymap using the appropriate naming (`tc36k`, `hesse`, or `acid`)
-which needs at least one file like `config/tc36k.keymap`, and add a matching entry to
-your `build.yaml` with the appropriate controller board (`rpi_pico` for the `tc36k`), eg:
+Add your desired keymap using the appropriate naming (`tc36k`, `hesse`, `acid`, `slump52`,
+`bivvy16d`, `bivouac34`, etc) which needs at least one file like `config/tc36k.keymap`, and
+add a matching entry to your `build.yaml` with the appropriate controller board (like
+`rpi_pico` for the `tc36k`), eg:
 
 ```yaml
 include:
