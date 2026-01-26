@@ -66,9 +66,9 @@ layers:
   - ↘
   - ''''
   - '"'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - F7
+  - F8
+  - F9
   - '*'
   - '{'
   - {t: '[', s: '{'}
@@ -79,9 +79,9 @@ layers:
   - ↓
   - →
   - {t: ;, s: ':'}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - F4
+  - F6
+  - F6
   - \
   - '}'
   - {t: ']', s: '}'}
@@ -92,9 +92,9 @@ layers:
   - ⏎
   - ↠
   - ':'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - F1
+  - F2
+  - F3
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -104,7 +104,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '#'
-  - {t: ▽, type: trans}
+  - F10
   - {t: ▽, type: trans}
 combos:
 - p: [0, 14]
@@ -113,5 +113,6 @@ combos:
   o: 0.3
   w: 50.0
 - p: [5, 6, 32, 33]
-  k: '&bootloader'
+  k: Boot loader
   l: [Base]
+  w: 50.0
