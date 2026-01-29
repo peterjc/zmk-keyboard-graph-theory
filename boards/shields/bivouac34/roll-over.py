@@ -29,7 +29,7 @@ layout_keys = """
 """  # with thumbs renamed as 1 to 6
 pretty_chars = {
     "DOT": ".",
-    "COMMA": ".",
+    "COMMA": ",",
     "SLASH": "/",
     "SEMI": ";",
     "LGUI": "⌘",
