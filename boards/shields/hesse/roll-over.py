@@ -28,7 +28,7 @@ layout_keys = """
 """  # from ZMK hesse.keymap
 pretty_chars = {
     "DOT": ".",
-    "COMMA": ".",
+    "COMMA": ",",
     "SLASH": "/",
     "SEMI": ";",
     "LGUI": "⌘",
