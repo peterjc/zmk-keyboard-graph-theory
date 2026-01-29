@@ -23,7 +23,7 @@ layout_keys = """
 """  # 34-key only, ignoring bonus thumb keys
 pretty_chars = {
     "DOT": ".",
-    "COMMA": ".",
+    "COMMA": ",",
     "SLASH": "/",
     "SEMI": ";",
 }  # see keymap_drawer.config.yaml
