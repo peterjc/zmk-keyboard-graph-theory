@@ -21,23 +21,23 @@ mirrored left and right in the ZMK firmware as a 7x12 sparse scanning matrix.
 The physical keyboard columns (counting the thumb keys on each hand as columns)
 are mapped to the scanning columns, but the scanning rows are arbitary.
 
-| GPIO| P0.10 | D7 | D8 | D9 | P0.09 | D10 | D10 | P0.09 | D9 | D8 | D7 | P0.10 |
-|:----|:-----:|:--:|:--:|:--:|:-----:|:---:|:---:|:-----:|:--:|:--:|:--:|:-----:|
-| D5  |   Q   |    |    |  R |   T   |     |     |   Y   |  U |    |    |   P   |
-| D6  |       |    |  E |  F |       |     |     |       |  J |  I |    |       |
-| D2  |       |  W |  D |    |   G   |     |     |   H   |    |  K |  O |       |
-| D1  |   A   |  S |    |    |       |     |     |       |    |    |  L |   ;   |
-| D0  |   Z   |    |  C |    |       | L3  |  R3 |       |    |  , |    |   /   |
-| D3  |       |    |    |    |   B   | L2  |  R2 |   N   |    |    |    |       |
-| D4  |       |  X |    |  V |       | L1  |  R1 |       |  M |    |  . |       |
+| GPIO| P0.10 | D7 | D8 | D9 | P0.09 | D10  | D10  | P0.09 | D9 | D8 | D7 | P0.10 |
+|:----|:-----:|:--:|:--:|:--:|:-----:|:----:|:----:|:-----:|:--:|:--:|:--:|:-----:|
+| D5  |   Q   |    |    |  R |   T   |      |      |   Y   |  U |    |    |   P   |
+| D6  |       |    |  E |  F |       |      |      |       |  J |  I |    |       |
+| D2  |       |  W |  D |    |   G   |      |      |   H   |    |  K |  O |       |
+| D1  |   A   |  S |    |    |       |      |      |       |    |    |  L |   ;   |
+| D0  |   Z   |    |  C |    |       | ~L3~ | ~R3~ |       |    |  , |    |   /   |
+| D3  |       |    |    |    |   B   |  L2  |  R2  |   N   |    |    |    |       |
+| D4  |       |  X |    |  V |       |  L1  |  R1  |       |  M |    |  . |       |
 
 The keys here are labeled as per Qwerty, with L3, L2, L1, R1, R2, and R3 for the thumbs:
 
-| Q | W |  E |  R |  T |   |  Y |  U |  I | O | P |
-|:-:|:-:|:--:|:--:|:--:|:-:|:--:|:--:|:--:|:-:|:-:|
-| A | S |  D |  F |  G |   |  H |  J |  K | L | ; |
-| Z | X |  C |  V |  B |   |  N |  M |  , | . | / |
-|   |   | L3 | L2 | L1 |   | R1 | R2 | R3 |   |   |
+| Q | W |  E   |  R |  T |   |  Y |  U |  I   | O | P |
+|:-:|:-:|:----:|:--:|:--:|:-:|:--:|:--:|:----:|:-:|:-:|
+| A | S |  D   |  F |  G |   |  H |  J |  K   | L | ; |
+| Z | X |  C   |  V |  B |   |  N |  M |  ,   | . | / |
+|   |   | ~L3~ | L2 | L1 |   | R1 | R2 | ~R3~ |   |   |
 
 The original Forager has only two thumb keys per hand, my "Acid" version added an
 optional bonus third sideways SMD switch to the PCB to fill out the matrix (these
