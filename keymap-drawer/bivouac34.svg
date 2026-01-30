@@ -276,12 +276,12 @@ path.combo {
 </text>
 </g>
 <g class="combo combopos-1">
-<path d="M321,220 l-35,-73" class="combo"/>
-<path d="M321,220 l35,-73" class="combo"/>
-<path d="M321,220 l-38,73" class="combo"/>
-<path d="M321,220 l38,73" class="combo"/>
-<rect rx="6" ry="6" x="296" y="207" width="50" height="26" class="combo"/>
-<text x="321" y="220" class="combo tap">
+<path d="M321,204 l-34,-58" class="combo"/>
+<path d="M321,204 l34,-58" class="combo"/>
+<path d="M321,204 l-79,62" class="combo"/>
+<path d="M321,204 l79,62" class="combo"/>
+<rect rx="6" ry="6" x="296" y="191" width="50" height="26" class="combo"/>
+<text x="321" y="204" class="combo tap">
 <tspan x="321" dy="-0.6em">Boot</tspan><tspan x="321" dy="1.2em">loader</tspan>
 </text>
 </g>

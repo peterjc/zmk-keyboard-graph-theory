@@ -41,7 +41,7 @@ combos:
   a: top
   o: 0.3
   w: 50.0
-- p: [4, 5, 30, 31]
+- p: [4, 5, 29, 32]
   k: Boot loader
   l: [Base]
   w: 50.0
