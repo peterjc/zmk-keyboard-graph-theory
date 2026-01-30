@@ -45,5 +45,13 @@
             key-positions = <0 4>;
             bindings = <&studio_unlock>;
         };
+
+        // Inner corners (T, Y, most splayed thumbs) = &bootloader
+        combo_bootloader {
+            timeout-ms = <300>;
+            key-positions = <4 5 30 31>;
+            bindings = <&bootloader>;
+            layers = <0>;
+        };
     };
 };
