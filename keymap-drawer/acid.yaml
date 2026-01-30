@@ -140,3 +140,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
+combos:
+- p: [0, 4]
+  k: Studio Unlock
+  l: [base]
+  a: top
+  o: 0.3
+  w: 50.0
