@@ -134,6 +134,9 @@ parse_config:
     KP_MINUS: '-'
   raw_binding_map:
     '&plus_equal': {'t': '+', 's': '='}
+    '&studio_unlock': {'t': 'Studio Unlock'}
+    '&bootloader': {'t': 'Boot loader'}
+    '&caps_word': {'t': 'Caps Word'}
   zmk_combos:
     combo_studio_unlock: {'key': 'Studio Unlock', 'align': 'top', 'offset': 0.3, 'width': 50}
     combo_bootloader: {'key': 'Boot loader', 'width': 50}
