@@ -3,37 +3,37 @@ layers:
   base:
   - Q
   - W
-  - F
-  - P
-  - B
-  - J
-  - L
-  - U
+  - E
+  - R
+  - T
   - Y
-  - {t: ;, h: Sft+;, s: ':'}
-  - A
-  - {t: R, h: ⌃}
-  - {t: S, h: ⎇}
-  - {t: T, h: ⌘}
-  - G
-  - M
-  - {t: N, h: ⌘}
-  - {t: E, h: ⎇}
-  - {t: I, h: ⌃}
+  - U
+  - I
   - O
+  - P
+  - A
+  - {t: S, h: ⌃}
+  - {t: D, h: ⎇}
+  - {t: F, h: ⌘}
+  - G
+  - H
+  - {t: J, h: ⌘}
+  - {t: K, h: ⎇}
+  - {t: L, h: ⌃}
+  - {t: ;, h: Sft+;, s: ':'}
   - Z
   - X
   - C
-  - D
   - V
-  - K
-  - H
+  - B
+  - N
+  - M
   - {t: ',', h: 'Sft+,', s: <}
   - {t: ., h: Sft+., s: '>'}
   - {t: /, h: Sft+/}
   - {t: ⌫, h: sym, s: Alt+⌫}
-  - {t: ⇧, h: sticky, s: '&caps_word'}
-  - {t: ⇧, h: sticky, s: '&caps_word'}
+  - {t: ⇧, h: sticky, s: Caps Word}
+  - {t: ⇧, h: sticky, s: Caps Word}
   - {t: ⎵, h: nav}
   nav:
   - {t: ▽, type: trans}
@@ -116,7 +116,7 @@ layers:
   - {t: ▽, type: trans}
   - BRI DN
   - BRI UP
-  - '&studio_unlock'
+  - Studio Unlock
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -126,7 +126,7 @@ layers:
   - {t: ▽, type: trans}
   - VOL DN
   - VOL UP
-  - '&bootloader'
+  - Boot loader
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -135,7 +135,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&bootloader'
+  - Boot loader
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
