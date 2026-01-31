@@ -9,11 +9,11 @@ from scipy import sparse
 rows = 8 + 1  # 8 for the core graph, plus 1 for the nav button
 cols = 16
 layout_string = """
-            RC(0,0) RC(1,1) RC(2,2) RC(0,3) RC(1,4)           RC(5,11) RC(6,12) RC(7,13) RC(0,14) RC(1,15)
-            RC(5,0) RC(6,1) RC(7,2) RC(3,3) RC(4,4)           RC(6,11) RC(7,12) RC(0,13) RC(1,14) RC(2,15)
-            RC(2,5) RC(5,5) RC(3,6) RC(6,6)                            RC(3,9)  RC(4,9)  RC(4,10) RC(5,10)
-                                    RC(8,13) RC(8,9) RC(8,15) RC(8,10) RC(8,12)
-                                    RC(4,7) RC(7,7)           RC(2,8)  RC(3,8)
+            RC(0,0) RC(1,1) RC(2,2) RC(3,3) RC(4,4)          RC(2,11) RC(3,12) RC(4,13) RC(0,14) RC(1,15)
+            RC(1,0) RC(2,1) RC(3,2) RC(4,3) RC(5,4)          RC(5,11) RC(6,12) RC(7,13) RC(5,14) RC(6,15)
+            RC(5,5) RC(6,5) RC(6,6) RC(7,6)                           RC(0,9)  RC(3,9)  RC(1,10) RC(4,10)
+                                    RC(8,8) RC(8,4) RC(8,15) RC(8,14) RC(8,2)
+                                    RC(7,7) RC(0,7)          RC(2,8)  RC(7,8)
 """  # from ZMK bivouac34-layouts.dtsi
 
 layout_keys = """
@@ -88,13 +88,19 @@ print(
 print("Problem cycles of up to six keys;")
 for cycle in nx.chordless_cycles(G, 6):
     classes = [G.nodes[_]["bipartite"] for _ in cycle]
-    if len(classes) == 4:
-        assert classes == [1, 0, 1, 0]
+    if len(classes) == 4 and classes == [1, 0, 1, 0]:
         keys = {
             pretty_matrix[cycle[1], cycle[0] - rows],
             pretty_matrix[cycle[1], cycle[2] - rows],
             pretty_matrix[cycle[3], cycle[2] - rows],
             pretty_matrix[cycle[3], cycle[0] - rows],
+        }
+    elif len(classes) == 4 and classes == [0, 1, 0, 1]:
+        keys = {
+            pretty_matrix[cycle[0], cycle[3] - rows],
+            pretty_matrix[cycle[0], cycle[1] - rows],
+            pretty_matrix[cycle[2], cycle[1] - rows],
+            pretty_matrix[cycle[2], cycle[3] - rows],
         }
     else:
         assert classes == [1, 0, 1, 0, 1, 0], classes  # col, row, ...
