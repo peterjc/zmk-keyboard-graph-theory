@@ -12,7 +12,7 @@ layout_string = """
             RC(0,0) RC(1,1) RC(2,2) RC(3,3) RC(4,4)          RC(2,11) RC(3,12) RC(4,13) RC(0,14) RC(1,15)
             RC(1,0) RC(2,1) RC(3,2) RC(4,3) RC(5,4)          RC(5,11) RC(6,12) RC(7,13) RC(5,14) RC(6,15)
             RC(5,5) RC(6,5) RC(6,6) RC(7,6)                           RC(0,9)  RC(3,9)  RC(1,10) RC(4,10)
-                                    RC(8,6) RC(8,0) RC(8,3) RC(8,14)  RC(8,8)
+                                    RC(8,5) RC(8,3) RC(8,0) RC(8,13)  RC(8,11)
                                     RC(7,7) RC(0,7)          RC(2,8)  RC(7,8)
 """  # from ZMK bivouac34-layouts.dtsi
 
