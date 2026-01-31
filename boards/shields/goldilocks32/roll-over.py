@@ -1,19 +1,19 @@
 #!/usr/bin/env python3
-"""Analysis of 4 and 6-key roll-over in Hesse Configuration Incidence Graph keyboard."""
+"""Analysis of 4 or 6-key roll-over in Hesse Configuration Incidence Graph keyboard."""
 
 import numpy as np
 import networkx as nx
 from networkx.algorithms import bipartite
 from scipy import sparse
 
-rows = 8  # 8 for the core graph
-cols = 16 + 1  # 16 for the core graph, plus 1 for the nav button
+rows = 8 + 1  # 8 for the core graph, plus 1 for the nav button
+cols = 16
 layout_string = """
-            RC(0,0) RC(0,1) RC(1,2) RC(1,3) RC(0,4)         RC(2,12) RC(4,13) RC(5,14) RC(5,15) RC(3,16)
-            RC(3,0) RC(2,1) RC(2,2) RC(4,3) RC(5,4)         RC(6,12) RC(7,13) RC(7,14) RC(6,15) RC(6,16)
-            RC(1,5) RC(3,5) RC(0,6) RC(4,6)                          RC(4,10) RC(6,10) RC(2,11) RC(6,11)
-                                    RC(6,8) RC(7,8) RC(2,8) RC(4,8)  RC(3,8)
-                                    RC(1,7) RC(5,7)         RC(3,9)  RC(7,9)
+            RC(0,0) RC(1,1) RC(2,2) RC(0,3) RC(1,4)           RC(5,11) RC(6,12) RC(7,13) RC(0,14) RC(1,15)
+            RC(5,0) RC(6,1) RC(7,2) RC(3,3) RC(4,4)           RC(6,11) RC(7,12) RC(0,13) RC(1,14) RC(2,15)
+            RC(2,5) RC(5,5) RC(3,6) RC(6,6)                            RC(3,9)  RC(4,9)  RC(4,10) RC(5,10)
+                                    RC(8,13) RC(8,9) RC(8,15) RC(8,10) RC(8,12)
+                                    RC(4,7) RC(7,7)           RC(2,8)  RC(3,8)
 """  # from ZMK bivouac34-layouts.dtsi
 
 layout_keys = """
