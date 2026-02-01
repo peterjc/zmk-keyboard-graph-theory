@@ -9,25 +9,25 @@ from scipy import sparse
 rows = 8 + 1  # 8 for the core graph, plus 1 for the nav button
 cols = 16
 layout_string = """
-            RC(0,0) RC(1,1) RC(2,2) RC(3,3) RC(4,4)          RC(2,11) RC(3,12) RC(4,13) RC(0,14) RC(1,15)
-            RC(1,0) RC(2,1) RC(3,2) RC(4,3) RC(5,4)          RC(5,11) RC(6,12) RC(7,13) RC(5,14) RC(6,15)
-            RC(5,5) RC(6,5) RC(6,6) RC(7,6)                           RC(0,9)  RC(3,9)  RC(1,10) RC(4,10)
-                                    RC(8,5) RC(8,3) RC(8,0) RC(8,13)  RC(8,11)
-                                    RC(7,7) RC(0,7)          RC(2,8)  RC(7,8)
+            RC(0,0) RC(1,1) RC(2,2) RC(3,3)  RC(4,4)          RC(2,11) RC(3,12) RC(4,13) RC(0,14) RC(1,15)
+            RC(1,0) RC(2,1) RC(3,2) RC(4,3)  RC(5,4)          RC(5,11) RC(6,12) RC(7,13) RC(5,14) RC(6,15)
+            RC(5,5) RC(6,5) RC(6,6) RC(7,6)                            RC(0,9)  RC(3,9)  RC(1,10) RC(4,10)
+            RC(8,5) RC(8,3) RC(8,0) RC(8,13) RC(8,11)
+                                    RC(7,7)  RC(0,7)          RC(2,8)  RC(7,8)
 """  # from ZMK bivouac34-layouts.dtsi
 
 layout_keys = """
                 &kp Q &kp W &kp E &kp R  &kp T                  &kp Y &kp U &kp I     &kp O   &kp P
                 &kp A &kp S &kp D &kp F  &kp G                  &kp H &kp J &kp K     &kp L   &kp SEMI
                 &kp Z &kp X &kp C &kp V                               &kp M &kp COMMA &kp DOT &kp SLASH
-                                  &kp UP &kp LEFT &kp ENTER &kp RIGHT &kp DOWN
+                &kp UP &kp LEFT &kp ENTER &kp RIGHT &kp DOWN
                                   &kp B  &kp BSPC           &kp SPACE &kp N
 """  # from ZMK bivouac34.keymap
 layout_keys = """
                 &kp Q &kp W &kp E &kp R  &kp T                  &kp Y &kp U &kp I     &kp O   &kp P
                 &kp A &kp S &kp D &kp F  &kp G                  &kp H &kp J &kp K     &kp L   &kp SEMI
                 &kp Z &kp X &kp C &kp V                               &kp M &kp COMMA &kp DOT &kp SLASH
-                                  &kp UP &kp LEFT &kp ENTER &kp RIGHT &kp DOWN
+                &kp UP &kp LEFT &kp ENTER &kp RIGHT &kp DOWN
                                   &kp 1  &kp 2                  &kp 3 &kp 4
 """  # with thumbs renamed as 1 to 4
 pretty_chars = {
