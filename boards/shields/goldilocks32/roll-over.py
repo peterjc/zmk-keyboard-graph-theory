@@ -9,11 +9,11 @@ from scipy import sparse
 rows = 8 + 1  # 8 for the core graph, plus 1 for the nav button
 cols = 16
 layout_string = """
-            RC(0,0) RC(0,1)  RC(0,2) RC(0,3) RC(5,4)          RC(4,11) RC(2,12) RC(4,13) RC(2,14) RC(1,15)
-            RC(7,0) RC(1,1)  RC(3,2) RC(5,3) RC(6,4)          RC(5,11) RC(5,12) RC(7,13) RC(7,14) RC(4,15)
-            RC(6,5) RC(7,5)  RC(1,6) RC(6,6)                           RC(2,9)  RC(3,9)  RC(3,10) RC(4,10)
+            RC(0,0) RC(0,1)  RC(0,2) RC(0,3)  RC(4,4)          RC(6,11) RC(5,12) RC(6,13) RC(5,14) RC(2,15)
+            RC(1,0) RC(2,1)  RC(3,2) RC(4,3)  RC(7,4)          RC(4,11) RC(4,12) RC(1,13) RC(1,14) RC(6,15)
+            RC(7,5) RC(1,5)  RC(2,6) RC(7,6)                            RC(5,9)  RC(3,9)  RC(6,10) RC(3,10)
             RC(8,0) RC(8,10) RC(8,8) RC(8,11) RC(8,5)
-                                     RC(3,7) RC(6,7)          RC(1,8)  RC(2,8)
+                                     RC(3,7)  RC(7,7)          RC(5,8)  RC(2,8)
 """  # from ZMK bivouac34-layouts.dtsi
 
 layout_keys = """
