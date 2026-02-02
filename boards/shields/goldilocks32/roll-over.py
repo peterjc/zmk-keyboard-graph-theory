@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
-"""Analysis of 4 or 6-key roll-over in Hesse Configuration Incidence Graph keyboard."""
+"""Analysis of 4 or 6-key roll-over in Hesse Configuration Incidence Graph keyboard.
+
+Graph logged as https://houseofgraphs.org/graphs/56260
+"""
 
 import numpy as np
 import networkx as nx
@@ -11,7 +14,7 @@ cols = 16
 layout_string = """
             RC(0,0) RC(0,1)  RC(0,2) RC(0,3)  RC(4,4)          RC(6,11) RC(5,12) RC(6,13) RC(5,14) RC(2,15)
             RC(1,0) RC(2,1)  RC(3,2) RC(4,3)  RC(7,4)          RC(4,11) RC(4,12) RC(1,13) RC(1,14) RC(6,15)
-            RC(7,5) RC(1,5)  RC(2,6) RC(7,6)                            RC(5,9)  RC(3,9)  RC(6,10) RC(3,10)
+            RC(7,5) RC(1,5)  RC(2,6) RC(7,6)                            RC(5,9)  RC(3,9)  RC(3,10) RC(6,10)
             RC(8,0) RC(8,10) RC(8,8) RC(8,11) RC(8,5)
                                      RC(3,7)  RC(7,7)          RC(5,8)  RC(2,8)
 """  # from ZMK bivouac34-layouts.dtsi
@@ -71,6 +74,14 @@ def parse_zmk_map(rc_layout, keys_layout, rows, cols):
 pretty_matrix = parse_zmk_map(layout_string, layout_keys, rows, cols)
 bipartite_matrix = pretty_matrix.astype(np.bool)
 G = bipartite.from_biadjacency_matrix(sparse.csc_array(bipartite_matrix))
+
+import tempfile
+
+print("As a graph6 string:")
+with tempfile.NamedTemporaryFile(delete=False) as f:
+    nx.write_graph6(G, f.name, header=False)
+    _ = f.seek(0)
+    print(f.read().decode())
 
 print(bipartite_matrix.astype(int))
 print("Markdown matrix")
