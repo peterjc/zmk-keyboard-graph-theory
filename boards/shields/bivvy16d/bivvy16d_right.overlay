@@ -1,4 +1,8 @@
-#include "bivvy16d.dtsi"
+/* The GPIO pins are the same, just layout mirrored */
+
+#include <dt-bindings/zmk/matrix_transform.h>
+#include <physical_layouts.dtsi>
+#include "bivvy16d-layouts.dtsi"
 
 &bivvy16d_L16_R16_transform {
     col-offset = <8>;
@@ -16,5 +20,3 @@
     col-offset = <8>;
 };
 
-
-/* The GPIO pins are the same, just layout mirrored */
