@@ -6,7 +6,6 @@
 
 #include <dt-bindings/zmk/matrix_transform.h>
 #include <physical_layouts.dtsi>
-#include "bivvy16d-layouts.dtsi"
 
 /* Define the TX/RX pins (GP12, GP13) for the wired link between left/right with RP2040 */
 #include <dt-bindings/pinctrl/rpi-pico-rp2040-pinctrl.h>
