@@ -18,6 +18,13 @@
 #     artifact-name: corne_left_with_studio
 #
 include:
+  # Settings reset firmwares:
+  - board: nice_nano@2.0.0
+    shield: settings_reset
+  - board: rpi_pico
+    shield: settings_reset
+  - board: xiao_ble
+    shield: settings_reset
   # Gamma Omega TC36K:
   - board: rpi_pico
     shield: tc36k
