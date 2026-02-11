@@ -14,7 +14,7 @@ This is a *diode-free* design with a sparse 10 by 10 scanning matrix designed us
 [blog post](https://astrobeano.blogspot.com/2025/05/topology-meets-custom-keyboard-circuit.html)
 for background.
 
-[This matrix shows the 10×10 sparse bipartite scanning matrix. The keys are assigned so the
+This matrix shows the 10×10 sparse bipartite scanning matrix. The keys are assigned so the
 scanning column order matches the physical columns (starting with Q, A, and Z as the first
 column), with the scanning rows sorted to ensure Q is top left as the first matrix entry.
 The allocation of keys to matrix elements and scanning matrix rows and columns
