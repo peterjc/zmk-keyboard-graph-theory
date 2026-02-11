@@ -20,18 +20,18 @@ column), with the scanning rows sorted to ensure Q is top left as the first matr
 The allocation of keys to matrix elements and scanning matrix rows and columns
 to GPIO pins was arbitrary and down to how easy it was to layout the PCB traces:
 
-| GP |  29 | 14 | 10 | 6 |   1   |   0   | 3 | 9 | 13 | 28 |
-|---:|:---:|:--:|:--:|:-:|:-----:|:-----:|:-:|:-:|:--:|:--:|
-| 10 |  Q  |  W |  E | R |       |       |   |   |    |    |
-| 14 |  A  |    |    |   |   T   |       |   | I |  O |    |
-|  0 |  Z  |    |    |   |       |   Y   | U |   |    |    |
-|  4 |     |  S |    |   |   G   |       | J |   |    |    |
-| 11 |     |    |  D |   | BkSp  |   H   |   |   |    |    |
-| 15 |     |    |    | F |       |       | M | K |    |    |
-|  5 |     |    |    | V |       | Space |   |   |  L |    |
-|  3 |     |    |    | B | LShft |       |   |   |    |  P |
-|  7 |     |  X |    |   |       | RShft |   | , |    |  ; |
-|  6 |     |    |  C |   |       |       | N |   |  . |  / |
+| GP | 2 | 9 | 13 | 26 |  28   |   29  | 27 | 12 | 8 | 1 |
+|---:|:-:|:-:|:--:|:--:|:-----:|:-----:|:--:|:--:|:-:|:-:|
+| 10 | Q | W |  E |  R |       |       |    |    |   |   |
+| 14 | A |   |    |    |   T   |       |    |  I | O |   |
+|  0 | Z |   |    |    |       |   Y   |  U |    |   |   |
+|  4 |   | S |    |    |   G   |       |  J |    |   |   |
+| 11 |   |   |  D |    | BkSp  |   H   |    |    |   |   |
+| 15 |   |   |    |  F |       |       |  M |  K |   |   |
+|  5 |   |   |    |  V |       | Space |    |    | L |   |
+|  3 |   |   |    |  B | LShft |       |    |    |   | P |
+|  7 |   | X |    |    |       | RShft |    |  , |   | ; |
+|  6 |   |   |  C |    |       |       |  N |    | . | / |
 
 The keys here are labeled as per Qwerty, with B, backspace, left shift,
 right shift, space and N for the thumbs.
