@@ -7,16 +7,16 @@ with ZMK Studio or otherwise:
 
 This is firmware for a Raspberry Pi PR2040 (or potentially RP2350) 'Zero' controller
 tented monoblock 34 key design, my [Bivouac34 keyboard](https://codeberg.org/peterjc/pico-keyboards/src/branch/main/bivouac34).
+
 This is a *diode-free* design with a sparse 10 by 10 scanning matrix designed using the
 [unique 20 vertex girth 6 graph of maximal 34 edges](https://houseofgraphs.org/graphs/55819)
-(using only 20 vertices or GPIO pins, with 34 edges or keys with 4KRO- see this
+(using only 20 vertices or GPIO pins, with 34 edges or keys with 4KRO - see this
 [blog post](https://astrobeano.blogspot.com/2025/05/topology-meets-custom-keyboard-circuit.html)
 for background.
 
-This matrix shows the 10×10 sparse bipartite scanning matrix in Paige-Wexler
-normal form. The keys are assign so the scanning column order matches the physical
-columns (starting with Q, A, and Z as the first column), with the scanning
-rows sorted to ensure Q is top left as the first matrix entry.
+[This matrix shows the 10×10 sparse bipartite scanning matrix. The keys are assigned so the
+scanning column order matches the physical columns (starting with Q, A, and Z as the first
+column), with the scanning rows sorted to ensure Q is top left as the first matrix entry.
 The allocation of keys to matrix elements and scanning matrix rows and columns
 to GPIO pins was arbitrary and down to how easy it was to layout the PCB traces:
 
@@ -44,7 +44,7 @@ right shift, space and N for the thumbs.
 
 This minimal default layout is rendered as an image above.
 
-The ZMK Studio unlock combo is Q (top left) and T (top right of left half).
+The ZMK Studio unlock combo is Q (top left) and T (top right of left half).](https://astrobeano.blogspot.com/2025/05/topology-meets-custom-keyboard-circuit.html)
 
 See also the [QMK Slump34t firmware](https://github.com/peterjc/qmk_userspace/tree/main/keyboards/slump34t),
 the [Heawood42 keyboard](https://github.com/triliu/Heawood42) which was the first no-diode
