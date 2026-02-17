@@ -87,7 +87,7 @@ my `main` branch here), there have been breaking changes including the board nam
 (which are now all defined as ZMK variants of the underlying versioned Zephyr
 boards) and details like how to use the Xiao's NFC pads as GPIOs.
 If you want to track `main` then you should use the new board names of
-`xiao_ble//ZMK`, `nice_nano@2.0.0//ZMK`, or `rpi_pico//ZMK` in your `build.yaml`
+`xiao_ble//zmk`, `nice_nano@2.0.0//zmk`, or `rpi_pico//zmk` in your `build.yaml`
 file. It would also be wise to join the ZMK Discord and subscribe to the
 [ZMK blog](https://zmk.dev/blog) and [ZMK Mastodon](https://fosstodon.org/@zmk).
 
