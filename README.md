@@ -56,7 +56,7 @@ manifest:
     # *** Add the following three lines: ***
     - name: zmk-keyboard-graph-theory
       remote: peterjc
-      revision: main
+      revision: v0.3
     # *** Add the above three lines ***
   self:
     path: config
@@ -77,6 +77,19 @@ include:
 
 Split keyboards get both left and right (and dongle) entries in `build.yaml`.
 If GitHub Actions are turned on, this should then build your new firmware.
+
+Note the explicit pin to ZMK v0.3 (and my [v0.3 branch](https://github.com/peterjc/zmk-keyboard-graph-theory/tree/v0.3)).
+With this you should use the older ZMK specific board names of
+`seeeduino_xiao_ble`, `nice_nano_v2`, or `rpi_pico` in your `build.yaml` file.
+
+In the forthcoming ZMK v0.4 (currently the `main` branch of ZMK, and targeted by
+my `main` branch here), there have been breaking changes including the board names
+(which are now all defined as ZMK variants of the underlying versioned Zephyr
+boards) and details like how to use the Xiao's NFC pads as GPIOs.
+If you want to track `main` then you should use the new board names of
+`xiao_ble//ZMK`, `nice_nano@2.0.0//ZMK`, or `rpi_pico//ZMK` in your `build.yaml`
+file. It would also be wise to join the ZMK Discord and subscribe to the
+[ZMK blog](https://zmk.dev/blog) and [ZMK Mastodon](https://fosstodon.org/@zmk).
 
 See my personal [ZMK Config](https://github.com/peterjc/zmk-config) as an example.
 
