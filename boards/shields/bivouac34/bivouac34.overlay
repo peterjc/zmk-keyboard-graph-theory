@@ -29,16 +29,16 @@
             ;
 
         row-gpios
-            = <&gpio0 10 GPIO_OPEN_DRAIN>
-            , <&gpio0 14 GPIO_OPEN_DRAIN>
-            , <&gpio0 0 GPIO_OPEN_DRAIN>
-            , <&gpio0 4 GPIO_OPEN_DRAIN>
-            , <&gpio0 11 GPIO_OPEN_DRAIN>
-            , <&gpio0 15 GPIO_OPEN_DRAIN>
-            , <&gpio0 5 GPIO_OPEN_DRAIN>
-            , <&gpio0 3 GPIO_OPEN_DRAIN>
-            , <&gpio0 7 GPIO_OPEN_DRAIN>
-            , <&gpio0 6 GPIO_OPEN_DRAIN>
+            = <&gpio0 10 (GPIO_ACTIVE_LOW | GPIO_OPEN_DRAIN)>
+            , <&gpio0 14 (GPIO_ACTIVE_LOW | GPIO_OPEN_DRAIN)>
+            , <&gpio0 0 (GPIO_ACTIVE_LOW | GPIO_OPEN_DRAIN)>
+            , <&gpio0 4 (GPIO_ACTIVE_LOW | GPIO_OPEN_DRAIN)>
+            , <&gpio0 11 (GPIO_ACTIVE_LOW | GPIO_OPEN_DRAIN)>
+            , <&gpio0 15 (GPIO_ACTIVE_LOW | GPIO_OPEN_DRAIN)>
+            , <&gpio0 5 (GPIO_ACTIVE_LOW | GPIO_OPEN_DRAIN)>
+            , <&gpio0 3 (GPIO_ACTIVE_LOW | GPIO_OPEN_DRAIN)>
+            , <&gpio0 7 (GPIO_ACTIVE_LOW | GPIO_OPEN_DRAIN)>
+            , <&gpio0 6 (GPIO_ACTIVE_LOW | GPIO_OPEN_DRAIN)>
             ;
     };
 };
