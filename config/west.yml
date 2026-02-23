@@ -3,13 +3,14 @@ manifest:
     # This is currently ZMK pre-0.4, using Zephyr 4.1
     revision: main
   remotes:
-    - name: zmkfirmware
-      url-base: https://github.com/zmkfirmware
+    - name: peterjc
+      url-base: https://github.com/peterjc
     # Additional modules containing boards/shields/custom code can be listed here as well
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
   projects:
     - name: zmk
-      remote: zmkfirmware
+      remote: peterjc
+      revision: rp2350_kscan_wait
       import: app/west.yml
   self:
     path: config
