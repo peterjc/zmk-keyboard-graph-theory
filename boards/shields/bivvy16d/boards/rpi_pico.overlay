@@ -56,26 +56,26 @@
         wakeup-source;
 
         col-gpios
-            = <&gpio0 1 GPIO_OPEN_SOURCE>
-            , <&gpio0 5 GPIO_OPEN_SOURCE>
-            , <&gpio0 10 GPIO_OPEN_SOURCE>
-            , <&gpio0 7 GPIO_OPEN_SOURCE>
-            , <&gpio0 4 GPIO_OPEN_SOURCE>
-            , <&gpio0 14 GPIO_OPEN_SOURCE>
-            , <&gpio0 26 GPIO_OPEN_SOURCE>
-            , <&gpio0 28 GPIO_OPEN_SOURCE>
+            = <&gpio0 1 (GPIO_ACTIVE_LOW | GPIO_OPEN_DRAIN)>
+            , <&gpio0 5 (GPIO_ACTIVE_LOW | GPIO_OPEN_DRAIN)>
+            , <&gpio0 10 (GPIO_ACTIVE_LOW | GPIO_OPEN_DRAIN)>
+            , <&gpio0 7 (GPIO_ACTIVE_LOW | GPIO_OPEN_DRAIN)>
+            , <&gpio0 4 (GPIO_ACTIVE_LOW | GPIO_OPEN_DRAIN)>
+            , <&gpio0 14 (GPIO_ACTIVE_LOW | GPIO_OPEN_DRAIN)>
+            , <&gpio0 26 (GPIO_ACTIVE_LOW | GPIO_OPEN_DRAIN)>
+            , <&gpio0 28 (GPIO_ACTIVE_LOW | GPIO_OPEN_DRAIN)>
             ;
 
         row-gpios
-            = <&gpio0 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&gpio0 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&gpio0 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&gpio0 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&gpio0 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&gpio0 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&gpio0 29 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&gpio0 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&gpio0 27 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            = <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            , <&gpio0 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            , <&gpio0 8 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            , <&gpio0 3 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            , <&gpio0 9 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            , <&gpio0 15 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            , <&gpio0 29 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            , <&gpio0 0 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            , <&gpio0 27 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
             ;
     };
 };
