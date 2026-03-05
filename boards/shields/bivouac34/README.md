@@ -3,7 +3,7 @@
 This is the default keymap which you would be expected to customise to your needs
 with ZMK Studio or otherwise:
 
-![Default keymap for the Slump34t keyboard ZMK firmware](../../../keymap-drawer/bivouac34.svg)
+![Default keymap for the Bivouac34 keyboard ZMK firmware](../../../keymap-drawer/bivouac34.svg)
 
 This is firmware for a Raspberry Pi PR2040 (or potentially RP2350) 'Zero' controller
 tented monoblock 34 key design, my [Bivouac34 keyboard](https://codeberg.org/peterjc/pico-keyboards/src/branch/main/bivouac34).
