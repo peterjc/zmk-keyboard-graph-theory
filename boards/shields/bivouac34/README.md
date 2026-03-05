@@ -44,7 +44,7 @@ right shift, space and N for the thumbs.
 
 This minimal default layout is rendered as an image above.
 
-The ZMK Studio unlock combo is Q (top left) and T (top right of left half).](https://astrobeano.blogspot.com/2025/05/topology-meets-custom-keyboard-circuit.html)
+The ZMK Studio unlock combo is Q (top left) and T (top right of left half).
 
 See also the [QMK Slump34t firmware](https://github.com/peterjc/qmk_userspace/tree/main/keyboards/slump34t),
 the [Heawood42 keyboard](https://github.com/triliu/Heawood42) which was the first no-diode
