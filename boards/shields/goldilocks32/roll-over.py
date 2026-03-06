@@ -12,27 +12,27 @@ from scipy import sparse
 rows = 8 + 1  # 8 for the core graph, plus 1 for the nav button
 cols = 16
 layout_string = """
-            RC(0,0) RC(0,1)  RC(0,2) RC(0,3)  RC(4,4)          RC(6,11) RC(5,12) RC(6,13) RC(5,14) RC(2,15)
-            RC(1,0) RC(2,1)  RC(3,2) RC(4,3)  RC(7,4)          RC(4,11) RC(4,12) RC(1,13) RC(1,14) RC(6,15)
-            RC(7,5) RC(1,5)  RC(2,6) RC(7,6)                            RC(5,9)  RC(3,9)  RC(3,10) RC(6,10)
-            RC(8,12) RC(8,6) RC(8,13) RC(8,7) RC(8,3)
-                                     RC(3,7)  RC(7,7)          RC(5,8)  RC(2,8)
-"""  # from ZMK bivouac34-layouts.dtsi
+            RC(0,0) RC(0,1) RC(0,2) RC(0,3) RC(4,4)          RC(6,11) RC(5,12) RC(6,13) RC(5,14) RC(2,15)
+            RC(1,0) RC(2,1) RC(3,2) RC(4,3) RC(7,4)          RC(4,11) RC(4,12) RC(1,13) RC(1,14) RC(6,15)
+            RC(7,5) RC(1,5) RC(2,6) RC(7,6) RC(3,7)          RC(2,8)  RC(5,9)  RC(3,9)  RC(3,10) RC(6,10)
+                                    RC(8,3) RC(8,6) RC(8,13) RC(8,7)  RC(8,12)
+                                            RC(7,7)          RC(5,8)
+"""  # from ZMK goldilocks32-layouts.dtsi
 
 layout_keys = """
-                &kp Q &kp W &kp E &kp R  &kp T                  &kp Y &kp U &kp I     &kp O   &kp P
-                &kp A &kp S &kp D &kp F  &kp G                  &kp H &kp J &kp K     &kp L   &kp SEMI
-                &kp Z &kp X &kp C &kp V                               &kp M &kp COMMA &kp DOT &kp SLASH
-                &kp UP &kp LEFT &kp ENTER &kp RIGHT &kp DOWN
-                                  &kp B  &kp BSPC           &kp SPACE &kp N
-"""  # from ZMK bivouac34.keymap
+                &kp Q  &kp W  &kp E  &kp R  &kp T       &kp Y &kp U &kp I     &kp O   &kp P
+                &kp A  &kp S  &kp D  &kp F  &kp G       &kp H &kp J &kp K     &kp L   &kp SEMI
+                &kp Z  &kp X  &kp C  &kp V  &kp B       &kp N &kp M &kp COMMA &kp DOT &kp SLASH
+                              &kp UP &kp LEFT &kp ENTER &kp RIGHT &kp DOWN
+                                            &kp BSPC    &kp SPACE
+"""  # from ZMK goldilocks32.keymap
 layout_keys = """
-                &kp Q &kp W &kp E &kp R  &kp T                  &kp Y &kp U &kp I     &kp O   &kp P
-                &kp A &kp S &kp D &kp F  &kp G                  &kp H &kp J &kp K     &kp L   &kp SEMI
-                &kp Z &kp X &kp C &kp V                               &kp M &kp COMMA &kp DOT &kp SLASH
-                &kp UP &kp LEFT &kp ENTER &kp RIGHT &kp DOWN
-                                  &kp 1  &kp 2                  &kp 3 &kp 4
-"""  # with thumbs renamed as 1 to 4
+                &kp Q  &kp W  &kp E  &kp R  &kp T       &kp Y &kp U &kp I     &kp O   &kp P
+                &kp A  &kp S  &kp D  &kp F  &kp G       &kp H &kp J &kp K     &kp L   &kp SEMI
+                &kp Z  &kp X  &kp C  &kp V  &kp B       &kp N &kp M &kp COMMA &kp DOT &kp SLASH
+                              &kp UP &kp LEFT &kp ENTER &kp RIGHT &kp DOWN
+                                            &kp 1       &kp 2
+"""  # with thumbs renamed as 1 and 2
 pretty_chars = {
     "DOT": ".",
     "COMMA": ",",
