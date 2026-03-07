@@ -26,7 +26,7 @@
             , <&gpio0 5 (GPIO_ACTIVE_LOW | GPIO_OPEN_DRAIN)>
             , <&gpio0 4 (GPIO_ACTIVE_LOW | GPIO_OPEN_DRAIN)>
             , <&gpio0 14 (GPIO_ACTIVE_LOW | GPIO_OPEN_DRAIN)>
-            , <&gpio0 29 (GPIO_ACTIVE_LOW | GPIO_OPEN_DRAIN)>
+            , <&gpio0 27 (GPIO_ACTIVE_LOW | GPIO_OPEN_DRAIN)>
             , <&gpio0 3 (GPIO_ACTIVE_LOW | GPIO_OPEN_DRAIN)>
             , <&gpio0 13 (GPIO_ACTIVE_LOW | GPIO_OPEN_DRAIN)>
             , <&gpio0 9 (GPIO_ACTIVE_LOW | GPIO_OPEN_DRAIN)>

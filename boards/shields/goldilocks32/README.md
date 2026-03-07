@@ -24,7 +24,7 @@ column), with the scanning rows sorted to ensure Q is top left as the first matr
 The allocation of keys to matrix elements and scanning matrix rows and columns
 to GPIO pins was arbitrary and down to how easy it was to layout the PCB traces:
 
-| GP | 28 | 22 | 15 |  7 |  2 | 26 | 12 |   5  |   4   | 14 | 29 |  3 | 13 |  9 | 20 | 29 |
+| GP | 28 | 22 | 15 |  7 |  2 | 26 | 12 |   5  |   4   | 14 | 27 |  3 | 13 |  9 | 20 | 29 |
 |---:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:----:|:-----:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
 | 21 |  Q |  W |  E |  R |    |    |    |      |       |    |    |    |    |    |    |    |
 | 11 |  A |    |    |    |    |  X |    |      |       |    |    |    |    |  K |  L |    |
