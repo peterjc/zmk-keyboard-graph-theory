@@ -1,0 +1,9 @@
+file_format: "1"
+id: goldilocks32
+name: "Goldilocks32"
+type: shield
+url: https://codeberg.org/peterjc/pico-keyboards/src/branch/main/goldilocks32
+requires: [raspberrypi]
+features:
+  - keys
+  - studio
