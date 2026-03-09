@@ -36,7 +36,7 @@ to GPIO pins was arbitrary and down to how easy it was to layout the PCB traces:
 |  8 |    |    |    |    |  G |  Z |  V | BkSp |       |    |    |    |    |    |    |    |
 |  6 |    |    |    | ⬇️ |    |    | ⬅️ |  ➡️  |       |    |    |    | ⬆️ | ⏺️ |    |    |
 
-Note (aside from the bottom row for the naviation button) there are four entries for each
+Note (aside from the bottom row for the navigation button) there are four entries for each
 row, and two for each column.
 The keys here are labeled as per Qwerty, with B, backspace, space and N for the thumbs,
 and up/down/left/right/push as ⬆️/⬇️/⬅️/➡️/⏺️ for the navigation button.
