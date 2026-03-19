@@ -1,0 +1,50 @@
+layout: {zmk_keyboard: goldilocks32}
+layers:
+  Base:
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - A
+  - S
+  - D
+  - F
+  - G
+  - H
+  - J
+  - K
+  - L
+  - {t: ;, s: ':'}
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - {t: ',', s: <}
+  - {t: ., s: '>'}
+  - {t: /, s: '?'}
+  - ↑
+  - ←
+  - ⏎
+  - →
+  - ↓
+  - ⌫
+  - ⎵
+combos:
+- p: [0, 4]
+  k: Studio Unlock
+  a: top
+  o: 0.3
+  w: 50.0
+- p: [4, 5, 24, 25]
+  k: Boot loader
+  l: [Base]
+  w: 50.0
