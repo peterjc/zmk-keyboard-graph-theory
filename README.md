@@ -19,6 +19,9 @@ They have simple minimal Qwerty layouts including ZKM Studio support to cover ba
   with 4-key roll-over per half (14KRO without the navigation button).
 * [Bivouac34](boards/shields/bivouac34), using a Wareshare RP2040-Zero controller with
   20 GPIO pins for 34 keys and 4-key roll-over using the unique but unnamed graph of this size.
+* [Goldilocks32](boards/shields/goldilocks32), using an PR2040 'Pro Micro' controller with
+  25 GPIO pins for 32 (or 30) keys and a 5-way directional button (6KRO without the
+  navigation button).
 
 See also my [QMK keyboard firmware](https://github.com/peterjc/qmk_userspace), and the
 following ZMK keyboard firmware for other people's diode-free Graph Theory designs:
