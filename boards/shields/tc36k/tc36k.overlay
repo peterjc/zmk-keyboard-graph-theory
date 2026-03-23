@@ -5,8 +5,28 @@
  */
 
 #include <dt-bindings/zmk/matrix_transform.h>
+#include <dt-bindings/zmk/hid_indicators.h>
 #include <physical_layouts.dtsi>
 #include "tc36k-layouts.dtsi"
+
+/ {
+    leds {
+        compatible = "gpio-leds";
+
+        hid_led: hid_led {
+            gpios = <&gpio0 25 GPIO_ACTIVE_HIGH>;
+        };
+    };
+
+    indicators {
+        compatible = "zmk,indicator-leds";
+
+        hid_indicator: hid_indicator {
+            indicator = <(HID_INDICATOR_NUM_LOCK | HID_INDICATOR_CAPS_LOCK | HID_INDICATOR_SCROLL_LOCK | HID_INDICATOR_COMPOSE | HID_INDICATOR_KANA)>;
+            leds = <&hid_led>;
+        };
+    };
+};
 
 / {
     kscan0: kscan0 {
