@@ -1,0 +1,6 @@
+file_format: "1"
+id: tester_esp32s3_dev
+name: Test ESP32S3 Dev
+type: shield
+url: https://zmk.dev/docs/troubleshooting/hardware-issues
+requires: [esp32s3_devkitc]

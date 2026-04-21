@@ -1,0 +1,99 @@
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+
+#define GPIO_MACRO(name, pin) \
+/ { \
+    macros { \
+        name: name { \
+            compatible = "zmk,behavior-macro"; \
+            wait-ms = <5>; \
+            tap-ms = <5>; \
+            #binding-cells = <0>; \
+            bindings = <&kp G &kp P &kp I &kp O &kp SPACE>, pin, <&kp ENTER>; \
+        }; \
+    }; \
+};
+
+GPIO_MACRO(pin0, <&kp N0>)
+GPIO_MACRO(pin1, <&kp N1>)
+GPIO_MACRO(pin2, <&kp N2>)
+GPIO_MACRO(pin3, <&kp N3>)
+GPIO_MACRO(pin4, <&kp N4>)
+GPIO_MACRO(pin5, <&kp N5>)
+GPIO_MACRO(pin6, <&kp N6>)
+GPIO_MACRO(pin7, <&kp N7>)
+GPIO_MACRO(pin8, <&kp N8>)
+GPIO_MACRO(pin9, <&kp N9>)
+GPIO_MACRO(pin10, <&kp N1 &kp N0>)
+GPIO_MACRO(pin11, <&kp N1 &kp N1>)
+GPIO_MACRO(pin12, <&kp N1 &kp N2>)
+GPIO_MACRO(pin13, <&kp N1 &kp N3>)
+GPIO_MACRO(pin14, <&kp N1 &kp N4>)
+GPIO_MACRO(pin15, <&kp N1 &kp N5>)
+GPIO_MACRO(pin16, <&kp N1 &kp N6>)
+GPIO_MACRO(pin17, <&kp N1 &kp N7>)
+GPIO_MACRO(pin18, <&kp N1 &kp N8>)
+GPIO_MACRO(pin19, <&kp N1 &kp N9>)
+GPIO_MACRO(pin20, <&kp N2 &kp N0>)
+GPIO_MACRO(pin21, <&kp N2 &kp N1>)
+// GPIO 22 to 34 are not exposed as pins
+GPIO_MACRO(pin35, <&kp N3 &kp N3>)
+GPIO_MACRO(pin36, <&kp N3 &kp N6>)
+GPIO_MACRO(pin37, <&kp N3 &kp N7>)
+GPIO_MACRO(pin38, <&kp N3 &kp N8>)
+GPIO_MACRO(pin39, <&kp N3 &kp N9>)
+GPIO_MACRO(pin40, <&kp N4 &kp N0>)
+GPIO_MACRO(pin41, <&kp N4 &kp N1>)
+GPIO_MACRO(pin42, <&kp N4 &kp N2>)
+GPIO_MACRO(pin43, <&kp N4 &kp N3>)
+GPIO_MACRO(pin44, <&kp N4 &kp N4>)
+GPIO_MACRO(pin45, <&kp N4 &kp N5>)
+GPIO_MACRO(pin46, <&kp N4 &kp N6>)
+GPIO_MACRO(pin47, <&kp N4 &kp N7>)
+GPIO_MACRO(pin48, <&kp N4 &kp N8>)
+
+/ {
+    keymap {
+        compatible = "zmk,keymap";
+
+        default_layer {
+            // listing top left to bottom left, then bottom right to top right:
+            bindings = <&pin4
+                        &pin5
+                        &pin6
+                        &pin7
+                        &pin15
+                        &pin16
+                        &pin17
+                        &pin18
+                        &pin8
+                        &pin3
+                        &pin46
+                        &pin9
+                        &pin10
+                        &pin11
+                        &pin12
+                        &pin13
+                        &pin14
+                        &pin19
+                        &pin20
+                        &pin21
+                        &pin47
+                        &pin48
+                        &pin45
+                        &pin0
+                        &pin35
+                        &pin36
+                        &pin37
+                        &pin38
+                        &pin39
+                        &pin40
+                        &pin41
+                        &pin42
+                        &pin2
+                        &pin1
+                        &pin44
+                        &pin43>;
+        };
+    };
+};
