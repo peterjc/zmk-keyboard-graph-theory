@@ -1,0 +1,5 @@
+layout: {zmk_keyboard: tester_esp32s3_devkitc}
+layers:
+  default: ['&pin4', '&pin5', '&pin6', '&pin7', '&pin15', '&pin16', '&pin17', '&pin18', '&pin8', '&pin3', '&pin46', '&pin9', '&pin10', '&pin11', '&pin12', '&pin13',
+    '&pin14', '&pin19', '&pin20', '&pin21', '&pin47', '&pin48', '&pin45', '&pin0', '&pin35', '&pin36', '&pin37', '&pin38', '&pin39', '&pin40', '&pin41', '&pin42',
+    '&pin2', '&pin1', '&pin44', '&pin43']
