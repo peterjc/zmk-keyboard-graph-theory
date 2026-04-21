@@ -1,5 +1,5 @@
 #include <dt-bindings/zmk/matrix_transform.h>
-#include "tester_rpi_pico-layouts.dtsi"
+#include "tester_esp32s3_devkitc-layouts.dtsi"
 
 &physical_layout0 {
     transform = <&transform0>;
