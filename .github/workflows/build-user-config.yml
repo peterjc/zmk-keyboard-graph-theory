@@ -53,7 +53,7 @@ jobs:
     runs-on: ubuntu-latest
     if: needs.matrix.outputs.has_valid_build_matrix == 'true'
     container:
-      image: zmkfirmware/zmk-build-arm:stable
+      image: zmkfirmware/zmk-build-xtensa-espressif_esp32s2:stable
     needs: matrix
     name: Build
     strategy:
