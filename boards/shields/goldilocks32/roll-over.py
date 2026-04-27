@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Analysis of 4 or 6-key roll-over in Hesse Configuration Incidence Graph keyboard.
+"""Analysis of 4 or 6-key roll-over in Goldilocks32 Graph keyboard.
 
 Graph logged as https://houseofgraphs.org/graphs/56260
 """
