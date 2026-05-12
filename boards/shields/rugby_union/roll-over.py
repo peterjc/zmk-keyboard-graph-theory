@@ -10,11 +10,11 @@ from networkx.algorithms import bipartite
 from scipy import sparse
 
 rows = 15  # logical rather than physical, only r1 to r7 and r10 on RHS
-cols = 10  # logical rather than physical, only c2 to c3 on RHS
+cols = 10  # logical and physical, c0 to c4 on LHS, c5 to c9 on RHS
 layout_string = """
-            RC(0,0)  RC(0,1)  RC(8,2)  RC(8,9)  RC(14,7)         RC(2,2)  RC(1,3) RC(1,4) RC(2,5) RC(3,6)
-            RC(11,0) RC(12,1) RC(9,4)  RC(9,9)  RC(13,8)         RC(3,2)  RC(4,3) RC(6,4) RC(5,5) RC(4,6)
-            RC(14,0) RC(13,1) RC(11,6) RC(12,9) RC(10,5)         RC(10,8) RC(7,3) RC(5,7) RC(6,7) RC(7,8)
+            RC(0,0) RC(0,1) RC(1,2) RC(2,3) RC(3,4)     RC(5,5)  RC(8,6)  RC(6,7)  RC(9,8)  RC(7,9)
+            RC(4,0) RC(1,1) RC(2,2) RC(3,3) RC(4,4)     RC(10,5) RC(10,6) RC(11,7) RC(12,8) RC(13,9)
+            RC(5,0) RC(6,1) RC(7,2) RC(8,3) RC(9,4)     RC(14,5) RC(11,6) RC(12,7) RC(13,8) RC(14,9)
 """  # from ZMK rugby-union-layouts.dtsi
 
 layout_keys = """
