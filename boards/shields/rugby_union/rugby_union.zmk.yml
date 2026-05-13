@@ -1,0 +1,9 @@
+file_format: "1"
+id: rugby_union
+name: "Rugby Union"
+type: shield
+url: https://codeberg.org/peterjc/pico-keyboards/src/branch/main/rugby_union
+requires: [raspberrypi]
+features:
+  - keys
+  - studio
