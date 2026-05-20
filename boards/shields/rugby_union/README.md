@@ -10,7 +10,7 @@ tented monoblock 30 key design, my [Rugby Union keyboard](https://codeberg.org/p
 
 This is a *diode-free* design with a sparse 10 by 15 scanning matrix designed using this
 [25 vertex girth 10 graph with 30 edges](https://houseofgraphs.org/graphs/45469).
-(using 25 vertices or GPIO pins, with 30 edges or keys with 8KRO - see this
+That translates using 25 GPIO pins for 30 keys with 8KRO - see this
 [blog post](https://astrobeano.blogspot.com/2025/05/topology-meets-custom-keyboard-circuit.html)
 for background.
 
