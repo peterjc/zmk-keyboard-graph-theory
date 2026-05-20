@@ -12,20 +12,6 @@
 #define MEH LS(LC(LALT))
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        // Top left (Q) + top right on left hand (T) = &studio_unlock
-        combo_studio_unlock {
-            timeout-ms = <100>;
-            key-positions = <0 4>;
-            bindings = <&studio_unlock>;
-            layers = <BASE>;
-        };
-    };
-};
-
-/ {
     behaviors {
         as: auto_shift {
             compatible = "zmk,behavior-hold-tap";
@@ -146,4 +132,26 @@
 &sk {
     release-after-ms = <500>;
     quick-release;
+};
+
+
+/ {
+    combos {
+        compatible = "zmk,combos";
+
+        // Top left (Q) + top right on left hand (T) = &studio_unlock
+        combo_studio_unlock {
+            timeout-ms = <100>;
+            key-positions = <0 4>;
+            bindings = <&studio_unlock>;
+        };
+
+        // Inner corners (T, Y, B, N) = &bootloader
+        combo_bootloader {
+            timeout-ms = <300>;
+            key-positions = <4 5 24 25>;
+            bindings = <&bootloader>;
+            layers = <0>;
+        };
+    };
 };
