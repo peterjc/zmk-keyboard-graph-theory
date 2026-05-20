@@ -14,7 +14,7 @@ They have simple minimal Qwerty layouts including ZKM Studio support to cover ba
 * [Slump52](boards/shields/slump52), using a Raspberry Pi Pico controller with
   26 GPIO pins for 52 keys and 4-key roll-over using the Incidence Graph of the
   Projective Plane of order 3 PG(2,3).
-* [Bivvy16D](boards/shields/bivvy16d), a Bluetooth *or wired* split keyboard using
+* [Bivvy16D](boards/shields/bivvy16d), a *wired* split keyboard using
   17 GPIO pins for 16 (or 15) keys and a 5-way directional button on each half,
   with 4-key roll-over per half (14KRO without the navigation button).
 * [Bivouac34](boards/shields/bivouac34), using a Wareshare RP2040-Zero controller with
