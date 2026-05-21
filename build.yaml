@@ -52,17 +52,24 @@ include:
     shield: hesse
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
-  # Acid (split):
+  # Acid (Bluetooth split):
   - board: xiao_ble//zmk
     shield: acid_left
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
   - board: xiao_ble//zmk
     shield: acid_right
-  # Bivvy16D (split, RP2040-Zero):
+  # Bivvy16D (wired split, RP2040-Zero):
   - board: rpi_pico//zmk
     shield: bivvy16d_left
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
   - board: rpi_pico//zmk
     shield: bivvy16d_right
+  # Rugby Union (Bluetooth split, Supermini NRF52840):
+  - board: nice_nano@2.0.0//zmk
+    shield: rugby_league_left
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
+  - board: nice_nano@2.0.0//zmk
+    shield: rugby_league_right
