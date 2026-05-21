@@ -2,7 +2,7 @@
 #include <physical_layouts.dtsi>
 #include "rugby_league-layouts.dtsi"
 
-&default_transform {
+&matrix_transform30 {
     row-offset = <1>;
 };
 
