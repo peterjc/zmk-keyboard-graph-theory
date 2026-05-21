@@ -1,0 +1,7 @@
+# Copyright (c) 2026 Peter J. A. Cock
+# SPDX-License-Identifier: MIT
+
+config SHIELD_RUGBY_LEAGUE_LEFT
+    def_bool $(shields_list_contains,rugby_league_left)
+config SHIELD_RUGBY_LEAGUE_RIGHT
+    def_bool $(shields_list_contains,rugby_league_right)

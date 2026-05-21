@@ -1,0 +1,35 @@
+#include <dt-bindings/zmk/matrix_transform.h>
+#include <physical_layouts.dtsi>
+#include "rugby_league-layouts.dtsi"
+
+&default_transform {
+    col-offset = <0>;
+};
+
+/* The GPIO pins are the same left and right, but in different order */
+/ {
+    kscan0: kscan0 {
+        compatible = "zmk,kscan-gpio-direct";
+        wakeup-source;
+        input-gpios
+            /* Left hand top row, pinky to inner column */
+            = <&gpio1 12 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            , <&gpio1 15 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            , <&gpio0 4 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            , <&gpio1 11 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            , <&gpio0 29 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            /* Left hand home row, pinky to inner column */
+            , <&gpio1 13 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            , <&gpio1 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            , <&gpio0 5 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            , <&gpio1 10 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            , <&gpio1 3 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            /* Left hand bottom row, pinky to thumb (in place of inner column) */
+            , <&gpio1 14 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            , <&gpio1 1 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            , <&gpio0 30 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            , <&gpio0 31 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            , <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            ;
+    };
+};
