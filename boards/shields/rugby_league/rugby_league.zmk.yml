@@ -1,0 +1,11 @@
+file_format: "1"
+id: acid
+name: "Rugby League"
+type: shield
+requires: [nice_nano_v2]
+features:
+  - keys
+  - studio
+siblings:
+  - rugby_league_left
+  - rugby_league_right
