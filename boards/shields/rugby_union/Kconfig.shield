@@ -2,4 +2,4 @@
 # SPDX-License-Identifier: MIT
 
 config SHIELD_RUGBY_UNION
-    def_bool $(shields_list_contains,rubgy_union)
+    def_bool $(shields_list_contains,rugby_union)
