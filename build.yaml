@@ -66,10 +66,10 @@ include:
     cmake-args: -DCONFIG_ZMK_STUDIO=y
   - board: rpi_pico//zmk
     shield: bivvy16d_right
-  # Rugby Union (Bluetooth split, Supermini NRF52840):
+  # Rugby Union: Fly Half (Bluetooth split, Supermini NRF52840):
   - board: nice_nano@2.0.0//zmk
-    shield: rugby_league_left
+    shield: fly_half_left
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
   - board: nice_nano@2.0.0//zmk
-    shield: rugby_league_right
+    shield: fly_half_right
