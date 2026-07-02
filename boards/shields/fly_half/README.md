@@ -1,12 +1,12 @@
-# Rugby League keyboard firmware
+# Rugby Union "Fly Half" keyboard firmware
 
 This is the default keymap which you would be expected to customise to your needs
 with ZMK Studio or otherwise:
 
-![Default keymap for the Rugby League keyboard ZMK firmware](../../../keymap-drawer/rugby_league.svg)
+![Default keymap for the Rugby Union "Fly Half" keyboard ZMK firmware](../../../keymap-drawer/fly_half.svg)
 
 This is firmware for using my direct-wired (one GPIO per key) Bluetooth wireless 30 key
-[Rugby League keyboard](https://codeberg.org/peterjc/pico-keyboards/src/branch/main/rugby_league)
+[Rugby Union "Fly Half" keyboard](https://codeberg.org/peterjc/pico-keyboards/src/branch/main/fly_half)
 if built with two Super Mini NRF52840 "Zero" controllers.
 
 This matrix shows the 2×15 scanning matrix. The two rows are the left and right
@@ -27,4 +27,3 @@ The keys here are labeled as per Qwerty, with B and N for the thumbs,
 This minimal default layout is rendered as an image above.
 
 The ZMK Studio unlock combo is Q (top left) and T (top right of left half).
-

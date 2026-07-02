@@ -1,7 +1,7 @@
-if SHIELD_RUGBY_LEAGUE_LEFT
+if SHIELD_FLY_HALF_LEFT
 
 config ZMK_KEYBOARD_NAME
-    default "Rugby League"
+    default "Fly Half"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
@@ -11,7 +11,7 @@ config ZMK_STUDIO
 
 endif
 
-if SHIELD_RUGBY_LEAGUE_LEFT || SHIELD_RUGBY_LEAGUE_RIGHT
+if SHIELD_FLY_HALF_LEFT || SHIELD_FLY_HAFL_RIGHT
 
 config ZMK_SPLIT
     default y
