@@ -8,8 +8,8 @@
 
 /* The GPIO pins are the same left and right, but in different order */
 / {
-    kscan0: kscan0 {
-        compatible = "zmk,kscan-gpio-direct";
+    matrix: matrix {
+        compatible = "zmk,input-gpio-matrix";
         wakeup-source;
         input-gpios
             /* Left hand top row, pinky to inner column */

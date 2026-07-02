@@ -80,7 +80,7 @@
 
 / {
     chosen {
-        zmk,kscan = &kscan0;
+        zmk,matrix-input = &matrix;
         zmk,physical-layout = &physical_layout30;
     };
 };
