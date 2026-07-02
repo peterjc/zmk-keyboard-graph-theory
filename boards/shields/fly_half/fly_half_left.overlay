@@ -13,23 +13,23 @@
         wakeup-source;
         input-gpios
             /* Left hand top row, pinky to inner column */
-            = <&gpio1 12 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-            , <&gpio1 15 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-            , <&gpio0 4 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-            , <&gpio1 11 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-            , <&gpio0 29 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-            /* Left hand home row, pinky to inner column */
-            , <&gpio1 13 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-            , <&gpio1 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-            , <&gpio0 5 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-            , <&gpio1 10 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-            , <&gpio1 3 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-            /* Left hand bottom row, pinky to thumb (in place of inner column) */
-            , <&gpio1 14 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-            , <&gpio1 1 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-            , <&gpio0 30 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-            , <&gpio0 31 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            = <&gpio0 1 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
             , <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            , <&gpio0 9 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            , <&gpio0 0 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            , <&gpio0 12 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            /* Left hand home row, pinky to inner column */
+            , <&gpio0 3 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            , <&gpio0 5 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            , <&gpio0 10 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            , <&gpio0 23 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            , <&gpio0 24 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            /* Left hand bottom row, pinky to thumb (in place of inner column) */
+            , <&gpio0 4 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            , <&gpio0 8 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            , <&gpio0 11 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            , <&gpio0 13 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            , <&gpio0 14 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
             ;
     };
 };
