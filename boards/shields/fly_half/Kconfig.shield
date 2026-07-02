@@ -1,0 +1,7 @@
+# Copyright (c) 2026 Peter J. A. Cock
+# SPDX-License-Identifier: MIT
+
+config SHIELD_FLY_HALF_LEFT
+    def_bool $(shields_list_contains,fly_half_left)
+config SHIELD_FLY_HALF_RIGHT
+    def_bool $(shields_list_contains,fly_half_right)

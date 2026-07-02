@@ -27,8 +27,8 @@ They have simple minimal Qwerty layouts including ZKM Studio support to cover ba
 
 Bonus direct wired design (one GPIO per key) capable of full NKRO with no diodes:
 
- * [Rugby League](boards/shields/rugby_league), a Bluetooth split keyboard using a pair
-   of Super Mini NRF52840 "Zero" controllers for 30 keys.
+ * [Fly Half](boards/shields/fly_half), a Bluetooth split version of my Rugby Union
+   keyboard using a pair of Super Mini NRF52840 "Zero" controllers for 30 keys.
 
 See also my [QMK keyboard firmware](https://github.com/peterjc/qmk_userspace), and the
 following ZMK keyboard firmware for other people's diode-free Graph Theory designs:

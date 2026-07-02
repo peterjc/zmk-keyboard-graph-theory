@@ -1,6 +1,6 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 #include <physical_layouts.dtsi>
-#include "rugby_league-layouts.dtsi"
+#include "fly_half-layouts.dtsi"
 
 &matrix_transform30 {
     col-offset = <0>;

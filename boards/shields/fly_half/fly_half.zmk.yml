@@ -1,11 +1,11 @@
 file_format: "1"
 id: acid
-name: "Rugby League"
+name: "Rugby Union: Fly Half"
 type: shield
 requires: [nice_nano_v2]
 features:
   - keys
   - studio
 siblings:
-  - rugby_league_left
-  - rugby_league_right
+  - fly_half_left
+  - fly_half_right
