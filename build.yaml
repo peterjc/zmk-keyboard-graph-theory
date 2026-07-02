@@ -67,9 +67,9 @@ include:
   - board: rpi_pico//zmk
     shield: bivvy16d_right
   # Rugby Union: Fly Half (Bluetooth split, ESP32-H2 Super Mini):
-  - board: esp32h2_mini_h2
+  - board: esp32h2_supermini
     shield: fly_half_left
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
-  - board: esp32h2_mini_h2
+  - board: esp32h2_supermini
     shield: fly_half_right
