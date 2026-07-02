@@ -9,7 +9,7 @@
 /* The GPIO pins are the same left and right, but in different order */
 / {
     matrix: matrix {
-        compatible = "zmk,input-gpio-matrix";
+        compatible = "zmk,input-gpio-direct";
         wakeup-source;
         input-gpios
             /* Right hand top row, pinky to inner column */
