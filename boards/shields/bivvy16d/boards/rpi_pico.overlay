@@ -40,7 +40,7 @@
 
 / {
     chosen {
-        zmk,kscan = &kscan0;
+        zmk,matrix-input = &matrix;
         zmk,physical-layout = &bivvy16d_L16_R16_layout;
         zmk,split-uart = &uart0;
         // Other chosen items
@@ -50,8 +50,8 @@
      * so can define the GPIOs once centrally.
      */
 
-    kscan0: kscan0 {
-        compatible = "zmk,kscan-gpio-matrix";
+    matrix: matrix {
+        compatible = "zmk,input-gpio-matrix";
         diode-direction = "col2row";
         wakeup-source;
 

@@ -9,8 +9,8 @@
 #include "bivouac34-layouts.dtsi"
 
 / {
-    kscan0: kscan0 {
-        compatible = "zmk,kscan-gpio-matrix";
+    matrix: matrix {
+        compatible = "zmk,input-gpio-matrix";
         diode-direction = "col2row";
         wakeup-source;
 
