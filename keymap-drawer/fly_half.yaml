@@ -1,4 +1,4 @@
-layout: {zmk_keyboard: rugby_league}
+layout: {zmk_keyboard: fly_half}
 layers:
   Base:
   - Q
