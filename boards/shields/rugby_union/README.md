@@ -51,6 +51,7 @@ This minimal default layout is rendered as an image above.
 The ZMK Studio unlock combo is Q (top left) and T (top right of left half).
 
 See also the [QMK Rugby Union firmware](https://github.com/peterjc/qmk_userspace/tree/main/keyboards/rugby_union),
+[RMK Rugby Union firmware](https://github.com/peterjc/rmk-pico-keyboards/tree/main/Rugby_Union_RP2040),
 the [Heawood42 keyboard](https://github.com/triliu/Heawood42) which was the first no-diode
 keyboard using graph theory (42 key split design), and the later 56-key monoblock
 [JESK56 keyboard](https://github.com/triliu/JESK56).
