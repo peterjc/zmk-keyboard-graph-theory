@@ -24,8 +24,8 @@
      * ⬇️	⬅️	⏺️	➡️	⬆️		⬆️	⬅️	⏺️	➡️	⬇️
      *   	  	  	  	⌫ 		␠
      *
-     * The RC(#, #) columns and row value below are the scaning matrix (GPIOs), not physical/logical!
-     * Scannig cols 0-7 on left, then 8-15 on the right with col-offset 8 used on right.
+     * The RC(#, #) columns and row value below are the scanning matrix (GPIOs), not physical/logical!
+     * Scanning cols 0-7 on left, then 8-15 on the right with col-offset 8 used on right.
      * The layout variants drop one or both of the thumb-keys listed at the end.
      */
 

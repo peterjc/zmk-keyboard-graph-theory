@@ -19,7 +19,7 @@
      * A        S       D       F       G          H       J       K       L       ;
      * Z        X       C       V       B          N       M       ,       .       /
      *
-     * The RC(#, #) columns and row value below are the scaning matrix (GPIOs),
+     * The RC(#, #) columns and row value below are the scanning matrix (GPIOs),
      * scanning rows are not physical! Scanning cols 0-4 on left, then 5-9 on the right.
      */
 

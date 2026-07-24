@@ -22,8 +22,8 @@
      *   	  	  	⬆️	⬅️	⏺️	➡️	⬇️
      *   	  	  	  	⌫ 	   	␠
      *
-     * The RC(#, #) columns and row value below are the scaning matrix (GPIOs), not physical/logical!
-     * Scaning cols 0-7 on left, then 8-15 on the right with row 8 just for the 5-way nav.
+     * The RC(#, #) columns and row value below are the scanning matrix (GPIOs), not physical/logical!
+     * Scanning cols 0-7 on left, then 8-15 on the right with row 8 just for the 5-way nav.
      * The layout variant drops the thumb-keys listed at the end.
      */
 
