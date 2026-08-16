@@ -1,0 +1,9 @@
+file_format: "1"
+id: curved_conversion
+name: "Curved Conversion"
+type: shield
+url: https://codeberg.org/peterjc/pico-keyboards/src/branch/main/curved_conversion
+requires: [raspberrypi]
+features:
+  - keys
+  - studio
