@@ -24,6 +24,8 @@ They have simple minimal Qwerty layouts including ZKM Studio support to cover ba
   navigation button).
 * [Rugby Union](boards/shields/rugby_union), using an PR2040 'Pro Micro' controller with
   25 GPIO pins for 30 keys (8KRO).
+* [Wee Bit Warped](boards/shields/warped30), again an PR2040 'Pro Micro' controller with
+  25 GPIO pins for 30 keys (8KRO).
 
 Bonus direct wired design (one GPIO per key) capable of full NKRO with no diodes:
 

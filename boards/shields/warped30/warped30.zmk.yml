@@ -1,0 +1,9 @@
+file_format: "1"
+id: warped30
+name: "Wee Bit Warped"
+type: shield
+url: https://codeberg.org/peterjc/pico-keyboards/src/branch/main/warped30
+requires: [raspberrypi]
+features:
+  - keys
+  - studio

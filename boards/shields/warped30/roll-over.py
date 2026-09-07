@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Analysis of 8-key roll-over in Rugby Union (15-a-side) keyboard.
+"""Analysis of 8-key roll-over in Wee Bit Warped (30 key) keyboard.
 
 Graph logged as https://houseofgraphs.org/graphs/54569
 """
@@ -15,13 +15,13 @@ layout_string = """
             RC(0,0) RC(0,1) RC(2,2) RC(2,3) RC(4,4)     RC(10,5) RC(13,6) RC(13,7) RC(11,8) RC(11,9)
             RC(5,0) RC(6,1) RC(7,2) RC(8,3) RC(3,4)     RC(14,5) RC(6,6)  RC(8,7)  RC(5,8)  RC(7,9)
             RC(4,0) RC(1,1) RC(1,2) RC(3,3) RC(9,4)     RC(9,5)  RC(14,6) RC(12,7) RC(12,8) RC(10,9)
-"""  # from ZMK curved_conversion-layouts.dtsi
+"""  # from ZMK warped30-layouts.dtsi
 
 layout_keys = """
                 &kp Q  &kp W  &kp E  &kp R  &kp T       &kp Y &kp U &kp I     &kp O   &kp P
                 &kp A  &kp S  &kp D  &kp F  &kp G       &kp H &kp J &kp K     &kp L   &kp SEMI
                 &kp Z  &kp X  &kp C  &kp V  &kp B       &kp N &kp M &kp COMMA &kp DOT &kp SLASH
-"""  # from ZMK curved_conversion.keymap
+"""  # from ZMK warped30.keymap
 pretty_chars = {
     "DOT": ".",
     "COMMA": ",",
