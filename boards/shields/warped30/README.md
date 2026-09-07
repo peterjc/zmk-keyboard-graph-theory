@@ -8,7 +8,7 @@ with ZMK Studio or otherwise:
 This is firmware for a Raspberry Pi PR2040 (or potentially RP2350) 'Pro Micro' controller
 tented monoblock 30 key design, my [Wee Bit Warped (30 keys) keyboard](https://codeberg.org/peterjc/pico-keyboards/src/branch/main/warped30).
 This is a single bendable PCB version of my earlier twin PCB
-[Rugby Union keyboard](https://codeberg.org/peterjc/pico-keyboards/src/branch/main/rugby_union)
+[Rugby Union keyboard](../rugby_union)
 with a different GPIO allocation. Their firmware is *not* interchangeable.
 
 As before this is a *diode-free* design with a sparse 10 by 15 scanning matrix designed using the
