@@ -1,9 +1,9 @@
 # Copyright (c) 2020 The ZMK Contributors
 # SPDX-License-Identifier: MIT
 
-if SHIELD_CURVED_CONVERSION
+if SHIELD_WARPED30
 
 config ZMK_KEYBOARD_NAME
-    default "Curved Conversion"
+    default "Wee Bit Warped"
 
 endif

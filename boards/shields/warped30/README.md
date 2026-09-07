@@ -1,12 +1,12 @@
-# Rugby Union 'Curved Conversion' keyboard firmware
+# Wee Bit Warped (30 keys) keyboard firmware
 
 This is the default keymap which you would be expected to customise to your needs
 with ZMK Studio or otherwise:
 
-![Default keymap for the Rugby Union 'Curved Conversion' keyboard ZMK firmware](../../../keymap-drawer/curved_conversion.svg)
+![Default keymap for the Wee Bit Warped (30 keys) keyboard ZMK firmware](../../../keymap-drawer/warped30.svg)
 
 This is firmware for a Raspberry Pi PR2040 (or potentially RP2350) 'Pro Micro' controller
-tented monoblock 30 key design, my [Rugby Union 'Curved Conversion' keyboard](https://codeberg.org/peterjc/pico-keyboards/src/branch/main/curved_conversion).
+tented monoblock 30 key design, my [Wee Bit Warped (30 keys) keyboard](https://codeberg.org/peterjc/pico-keyboards/src/branch/main/warped30).
 This is a single bendable PCB version of my earlier twin PCB
 [Rugby Union keyboard](https://codeberg.org/peterjc/pico-keyboards/src/branch/main/rugby_union)
 with a different GPIO allocation. Their firmware is *not* interchangeable.
@@ -53,7 +53,7 @@ This minimal default layout is rendered as an image above.
 
 The ZMK Studio unlock combo is Q (top left) and P (top right).
 
-See also the [QMK Rugby Union firmware](https://github.com/peterjc/qmk_userspace/tree/main/keyboards/curved_conversion),
+See also the [QMK Rugby Union firmware](https://github.com/peterjc/qmk_userspace/tree/main/keyboards/warped30),
 [RMK Rugby Union firmware](https://github.com/peterjc/rmk-pico-keyboards/tree/main/Curved_Conversion_RP2040),
 the [Heawood42 keyboard](https://github.com/triliu/Heawood42) which was the first no-diode
 keyboard using graph theory (42 key split design), and the later 56-key monoblock

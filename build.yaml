@@ -47,9 +47,9 @@ include:
     shield: rugby_union
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
-  # Rugby Union Curved Conversion (RP2040-Pro-Micro):
+  # Wee Bit Warped (30 keys) (RP2040-Pro-Micro):
   - board: rpi_pico//zmk
-    shield: curved_conversion
+    shield: warped30
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
   # Gamma Omega Hesse
