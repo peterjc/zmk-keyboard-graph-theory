@@ -46,7 +46,7 @@ The keys here are labeled as per Qwerty, with B and N for the thumbs,
 
 | Q | W | E | R | T |       | Y | U | I | O | P |
 |:-:|:-:|:-:|:-:|:-:|:-----:|:-:|:-:|:-:|:-:|:-:|
-| A | S | D | F | G |       | H | J | K | L | - |
+| A | S | D | F | G |       | H | J | K | L | ; |
 | Z | X | C | V | B |       | N | M | , | . | / |
 
 This minimal default layout is rendered as an image above.
