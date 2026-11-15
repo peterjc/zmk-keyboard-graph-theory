@@ -43,7 +43,7 @@ and up/down/left/right/push as ⬆️/⬇️/⬅️/➡️/⏺️ for the naviga
 
 | Q | W | E | R | T |       |       | Y | U | I | O | P |
 |:-:|:-:|:-:|:-:|:-:|:-----:|:-----:|:-:|:-:|:-:|:-:|:-:|
-| A | S | D | F | G |       |       | H | J | K | L | - |
+| A | S | D | F | G |       |       | H | J | K | L | ; |
 | Z | X | C | V |   |       |       |   | M | , | . | / |
 |   |   |   |   | B | BkSpc | Space | N |   |   |   |   |
 
