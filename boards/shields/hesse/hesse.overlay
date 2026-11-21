@@ -14,8 +14,8 @@
  * Those are P1.01, P1.02, and P1.07 - referenced here via their &gpio1 names.
  */
 / {
-    kscan0: kscan0 {
-        compatible = "zmk,kscan-gpio-matrix";
+    matrix: matrix {
+        compatible = "zmk,input-gpio-matrix";
         diode-direction = "col2row";
         wakeup-source;
 
@@ -66,7 +66,7 @@
     physical_layout0: physical_layout_0 { // First physical layout, use different naming for other layouts
         compatible = "zmk,physical-layout";
         display-name = "Default Layout";
-        kscan = <&kscan0>; // Label of the kscan node, optional if all layouts use the same
+        input = <&matrix>; // optional if all layouts use the same
         transform = <&default_transform>; // Label of the matrix transform for this layout
     };
 };

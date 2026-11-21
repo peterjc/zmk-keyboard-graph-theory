@@ -57,7 +57,7 @@
         compatible = "zmk,physical-layout";
         display-name = "32-keys";
 
-        kscan = <&kscan0>;
+        input = <&matrix>;
         transform = <&matrix_transform32>;
         keys  //                     w   h    x    y     rot    rx    ry
             = <&key_physical_attrs 100 140   36   33    1000    86    83>
@@ -104,7 +104,7 @@
         compatible = "zmk,physical-layout";
         display-name = "30-key";
 
-        kscan = <&kscan0>;
+        input = <&matrix>;
         transform = <&matrix_transform30>;
 
         keys  //                     w   h    x    y     rot    rx    ry

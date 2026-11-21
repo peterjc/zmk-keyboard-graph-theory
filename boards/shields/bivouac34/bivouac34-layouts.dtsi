@@ -40,7 +40,7 @@
         compatible = "zmk,physical-layout";
         display-name = "34-keys";
 
-        kscan = <&kscan0>;
+        input = <&matrix>;
         transform = <&matrix_transform34>;
 
         keys  //                     w   h    x    y     rot    rx    ry
@@ -85,7 +85,7 @@
         compatible = "zmk,physical-layout";
         display-name = "32-key";
 
-        kscan = <&kscan0>;
+        input = <&matrix>;
         transform = <&matrix_transform32>;
 
         keys  //                     w   h    x    y     rot    rx    ry
